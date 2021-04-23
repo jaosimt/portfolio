@@ -5,7 +5,7 @@ function App() {
 	return (
 		<div className="App">
 			<div className="header">
-				<div className="logo bybyn"><strong>ᜐᜒᜋ᜔</strong> ᜑᜏ᜔</div>
+				<div className="logo bybyn"><strong title="Sim">ᜐᜒᜋ᜔</strong>&nbsp;<span title="Jao">ᜑᜏ᜔</span></div>
 				<ul>
 					<li className="about-me">About Me</li>
 					<li className="portfolio">Portfolio</li>
@@ -13,6 +13,7 @@ function App() {
 				</ul>
 			</div>
 			<div className="content">
+				<h2 title="Greetings" className="greetings bybyn">ᜃᜋᜓᜐ᜔ᜆ</h2>
 				<div className="profile-image" />
 				<div className="profile-description">
 					<div className="greetings bybyn">ᜃᜋᜓᜐ᜔ᜆ</div>
@@ -31,7 +32,7 @@ function App() {
 				</div>
 			</div>
 			<div className="footer">
-				<span className="bybyn"><strong>ᜊᜒᜐᜌ</strong>&nbsp;|&nbsp;ᜉᜒᜎᜒᜉᜒᜈᜓ</span>
+				<span className="bybyn"><strong title="Bisaya">ᜊᜒᜐᜌ</strong>&nbsp;|&nbsp;<span title="Filipino">ᜉᜒᜎᜒᜉᜒᜈᜓ</span></span>
 				<SocialMediaLinks />
 			</div>
 		</div>
