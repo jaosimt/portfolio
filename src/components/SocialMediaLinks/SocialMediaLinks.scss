@@ -1,18 +1,28 @@
-@import "../../common";
+@mixin transition($transition, $duration) {
+    -webkit-transition-duration: $duration;
+    -moz-transition-duration: $duration;
+    transition-duration: $duration;
+
+    -webkit-transition-timing-function: $transition;
+    -moz-transition-timing-function: $transition;
+    -ms-transition-timing-function: $transition;
+    -o-transition-timing-function: $transition;
+    transition-timing-function: $transition;
+}
 
 .social-media-links {
     display: flex;
     
+    > div:not(:last-child) { margin-right: 7px; }
     > div {
         display: inline-block;
-        margin: 7px;
         @include transition(linear, 0.3s);
         float: left;
         -webkit-box-shadow: 0 0 7px white;
         -moz-box-shadow: 0 0 7px white;
         box-shadow: 0 0 7px white;
-        border-radius: $border-radius;
-        border: 1px solid $babayi;
+        border-radius: 7px;
+        border: 1px solid #ff9900;
         overflow: hidden;
     }
     
