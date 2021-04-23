@@ -49,7 +49,7 @@
     justify-content: center;
     align-items: center;
 
-    .greetings { display: none; }
+    > .greetings { display: none; }
 
     .profile-image {
       margin-right: 35px;
@@ -77,12 +77,12 @@
 .bybyn {
   font-family: Baybayin-Modern-Club, serif; }
 
-@media (max-width: 785px) {
+@media (max-width: 847px) {
   .App {
     .content {
       flex-direction: column;
 
-      .greetings { display: flex; }
+      > .greetings { display: flex; }
 
       .profile-image { margin: 0 };
 
