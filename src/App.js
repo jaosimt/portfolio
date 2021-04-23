@@ -26,7 +26,7 @@ function App() {
 						am a fullstack developer.
 					</p>
 					<p>
-						At times, I maybe vocal and loud, but I am a more laid-back person.
+						At times, I maybe annoying and loud, but I am kind of a laid-back person really.
 					</p>
 				</div>
 			</div>
