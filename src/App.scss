@@ -1,0 +1,76 @@
+@import "fonts/Baybayin.css";
+@media (prefers-reduced-motion: no-preference) {
+
+}
+
+.App {
+  background-color: #f1f1f1;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em 1.5em;
+
+  .header,
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header {
+    align-items: center;
+    height: 28px;
+
+    .logo {
+      height: 100%;
+      background: transparent url("images/logo.svg") no-repeat left;
+      padding-left: 35px;
+      background-size: 28px;
+      align-items: center;
+      display: flex;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+
+      li { display: none; }
+
+      li:not(:last-child) {
+        margin-right: 3em;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .profile-image {
+      margin-right: 35px;
+      background: white url("images/profile.png") no-repeat center;
+      background-size: cover;
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      border: 14px solid white;
+      box-shadow: 0 0 7px 3px #cdcdcd;
+    }
+
+    .profile-description {
+      max-width: 450px;
+
+      .greetings { font-weight: bold; }
+    }
+  }
+
+  .footer {
+    align-items: flex-end;
+  }
+}
+
+.bybyn {
+  font-family: Baybayin-Modern-Club, serif; }
