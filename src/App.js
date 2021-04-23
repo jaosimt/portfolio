@@ -31,7 +31,7 @@ function App() {
 				</div>
 			</div>
 			<div className="footer">
-				<span><strong>What</strong> I Do</span>
+				<span className="bybyn"><strong>ᜊᜒᜐᜌ</strong>&nbsp;|&nbsp;ᜉᜒᜎᜒᜉᜒᜈᜓ</span>
 				<SocialMediaLinks />
 			</div>
 		</div>
