@@ -1,5 +1,4 @@
-import bg from './images/sImo-transparent-bg.png';
-import styles from './App.css';
+import './App.css';
 
 function App() {
    return (
