@@ -12,7 +12,7 @@ class AboutMe extends Component {
 			<div className="wrapper">
 				<div className="banner">About me</div>
 				<div className="content">
-					<h1>I am Tero Jao, I am a Web Developer</h1>
+					<h1>I am <span className='gold'>Sim Tero Jao</span>, I am a <span className="gold">Web Developer</span>.</h1>
 					<p>
 						Born and raised in Alburquerque, Bohol, Philippines, now living in Cebu. A husband and a father of two
 						beautiful kids. Originally dreamed to be in the army but failed after a strong contradiction from my

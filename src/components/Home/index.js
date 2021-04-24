@@ -9,7 +9,7 @@ class Home extends Component {
 			<div className="profile-image" />
 			<div className="profile-description">
 				<div className="greetings bybyn">ᜃᜋᜓᜐ᜔ᜆ</div>
-				<h1 className="name">Sim Jao</h1>
+				<h1 className="name gold">Sim Jao</h1>
 				<p>
 					I am a web designer and developer specializing in JavasSript including but not limited to React JS.
 				</p>
