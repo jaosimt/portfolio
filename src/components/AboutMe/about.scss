@@ -1,0 +1,71 @@
+.about-me {
+  .wrapper {
+    padding-top: 14px;
+
+    .banner {
+      height: 300px;
+      background: transparent url(./life.jpeg) no-repeat center;
+      background-size: cover;
+      margin: 0 -14px 14px -14px;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 49px;
+      text-transform: capitalize;
+      font-weight: bold;
+      opacity: 0.7;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 42px;
+
+      h1,
+      p { font-family: Courier, "Courier New", monospace, serif; }
+
+      h1 {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 49px;
+      }
+
+      p {
+        padding: 0 21%;
+      }
+
+      img.award {
+        margin: 14px 0;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.header.about-me-page {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  padding: 14px;
+  height: 57px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.header.about-me-page ~ .about-me { margin-top: 28px; }
+
+@media (max-width: 847px) {
+  .about-me {
+    .wrapper {
+      .content {
+        p {
+          padding: 0 7%;
+        }
+      }
+    }
+  }
+}

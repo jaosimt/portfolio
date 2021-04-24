@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="shortcut" href="%PUBLIC_URL%/favicon.ico" />
     <link rel=”canonical” href=”http://www.jaosimt.com/” />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -28,8 +29,13 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Portfolio: Sim Jao</title>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function(event) {
+        document.querySelector('body').style.opacity = 1;
+      });
+    </script>
   </head>
-  <body>
+  <body style="opacity: 0">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
