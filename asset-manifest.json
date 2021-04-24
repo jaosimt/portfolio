@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.353764b1.chunk.css",
-    "main.js": "/static/js/main.22d43807.chunk.js",
-    "main.js.map": "/static/js/main.22d43807.chunk.js.map",
+    "main.css": "/static/css/main.d00f52fa.chunk.css",
+    "main.js": "/static/js/main.a84738a3.chunk.js",
+    "main.js.map": "/static/js/main.a84738a3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.09475058.js",
     "runtime-main.js.map": "/static/js/runtime-main.09475058.js.map",
     "static/js/2.a28a400c.chunk.js": "/static/js/2.a28a400c.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.5576b4e3.chunk.js": "/static/js/3.5576b4e3.chunk.js",
     "static/js/3.5576b4e3.chunk.js.map": "/static/js/3.5576b4e3.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.353764b1.chunk.css.map": "/static/css/main.353764b1.chunk.css.map",
+    "static/css/main.d00f52fa.chunk.css.map": "/static/css/main.d00f52fa.chunk.css.map",
     "static/js/2.a28a400c.chunk.js.LICENSE.txt": "/static/js/2.a28a400c.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/static/media/Baybayin_Clu.e0a94389.ttf",
     "static/media/SocialMediaLinks.scss": "/static/media/instagram.b7c5e343.jpg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.09475058.js",
     "static/js/2.a28a400c.chunk.js",
-    "static/css/main.353764b1.chunk.css",
-    "static/js/main.22d43807.chunk.js"
+    "static/css/main.d00f52fa.chunk.css",
+    "static/js/main.a84738a3.chunk.js"
   ]
 }
