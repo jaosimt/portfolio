@@ -8,7 +8,7 @@ class Footer extends Component {
 		
 		return <div className="footer" ref={ setRef }>
 			<span className="bybyn"><strong title="Bisaya">ᜊᜒᜐᜌ</strong>&nbsp;|&nbsp;<span title="Filipino">ᜉᜒᜎᜒᜉᜒᜈᜓ</span></span>
-			<SocialMediaLinks />
+			<SocialMediaLinks iconSize={28}/>
 		</div>
 	}
 }
