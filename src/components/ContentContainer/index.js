@@ -36,11 +36,15 @@ class ContentContainer extends Component {
 	render() {
 		const { menuItem, offset } = this.state;
 		
-		return <Fragment>
+		return <div className="content-container" style={ {
+			marginTop: `${ offset.header - offset.margin }px`,
+			minHeight: `calc(100vh - ${offset.header + offset.margin}px)`
+		} }>
 			<Router>
 				<Header setRef={ this.setHeaderRef }
 				        onClick={ this.menuClickHandler }
 				        selected={ menuItem } />
+				<span></span>
 				<Switch>
 					<Route exact path="/">
 						<Home />
@@ -57,7 +61,7 @@ class ContentContainer extends Component {
 				</Switch>
 			</Router>
 			<Footer setRef={ this.setFooterRef } />
-		</Fragment>
+		</div>
 	}
 	
 	menuClickHandler = e => {

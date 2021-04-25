@@ -10,8 +10,7 @@ class AboutMe extends Component {
 		return <div
 			className={ 'about-me' }
 			style={ {
-				minHeight: `calc(100vh - ${ offset }px)`,
-				marginTop: `${o.header - o.margin }px`
+				minHeight: `calc(100vh - ${ offset }px)`
 			} }>
 			<div className="wrapper">
 				<div className="banner">About me</div>

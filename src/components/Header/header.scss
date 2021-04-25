@@ -2,7 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 28px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  padding: 14px;
+  height: 57px;
+  border-bottom: 1px solid #e7e7e7;
+  background-color: #f1f1f1;
 
   .logo {
     height: 100%;

@@ -44,18 +44,6 @@ div.about-me {
   }
 }
 
-.header.about-me-page {
-  position: fixed;
-  width: 100%;
-  background-color: white;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  padding: 14px;
-  height: 57px;
-  border-bottom: 1px solid #e7e7e7;
-}
-
 @media (max-width: 847px) {
   div.about-me {
     .wrapper {
