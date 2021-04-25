@@ -4,11 +4,15 @@ import award from './sImoAwardSmall.png';
 
 class AboutMe extends Component {
 	render() {
-		const { offset } = this.props;
+		const { offset: o } = this.props;
+		const offset = o.header + o.footer + o.margin;
 		
 		return <div
 			className={ 'about-me' }
-			style={ { minHeight: `calc(100vh - ${ offset }px)` } }>
+			style={ {
+				minHeight: `calc(100vh - ${ offset }px)`,
+				marginTop: `${o.header - o.margin }px`
+			} }>
 			<div className="wrapper">
 				<div className="banner">About me</div>
 				<div className="content">

@@ -1,7 +1,7 @@
-.about-me {
-  .wrapper {
-    padding-top: 14px;
+div.about-me {
+  padding-bottom: 14px;
 
+  .wrapper {
     .banner {
       height: 300px;
       background: transparent url(./life.jpeg) no-repeat center;
@@ -56,10 +56,8 @@
   border-bottom: 1px solid #e7e7e7;
 }
 
-.header.about-me-page ~ .about-me { margin-top: 28px; }
-
 @media (max-width: 847px) {
-  .about-me {
+  div.about-me {
     .wrapper {
       .content {
         p {

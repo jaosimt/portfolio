@@ -17,7 +17,11 @@ class ContentContainer extends Component {
 		super();
 		this.state = {
 			menuItem: window.location.pathname === '/' ? 'home' : window.location.pathname.replace(/^\//, ""),
-			offset: 0
+			offset: {
+				header: 0,
+				footer: 0,
+				margin: 0
+			}
 		}
 		
 		this.headerRef = React.createRef();
@@ -26,7 +30,6 @@ class ContentContainer extends Component {
 	
 	componentDidMount() {
 		const offset = this.offsetHeight();
-		console.log('ContentContainer [componentDidMount]:', offset);
 		this.setState({ offset: offset })
 	}
 	
@@ -66,7 +69,11 @@ class ContentContainer extends Component {
 	setFooterRef = ref => this.footerRef = ref;
 	
 	offsetHeight = () => {
-		return this.headerRef.clientHeight + (this.footerRef.clientHeight || 0) + 28;
+		return {
+			header: this.headerRef.clientHeight,
+			footer: this.footerRef.clientHeight,
+			margin: 14
+		};
 	}
 }
 
