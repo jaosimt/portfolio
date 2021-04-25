@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import {
 	BrowserRouter as Router,
 	Switch,
@@ -9,8 +9,9 @@ import Home from "../Home";
 import Footer from "../Footer";
 import Blogs from "../Blogs";
 import Porfolio from "../Portfolio";
-import AboutMe from "../AboutMe";
+import About from "../About";
 import './content.scss';
+import PageNotFound from "../PageNotFound";
 
 class ContentContainer extends Component {
 	constructor() {
@@ -38,7 +39,7 @@ class ContentContainer extends Component {
 		
 		return <div className="content-container" style={ {
 			marginTop: `${ offset.header - offset.margin }px`,
-			minHeight: `calc(100vh - ${offset.header + offset.margin}px)`
+			minHeight: `calc(100vh - ${ offset.header + offset.margin }px)`
 		} }>
 			<Router>
 				<Header setRef={ this.setHeaderRef }
@@ -49,14 +50,17 @@ class ContentContainer extends Component {
 					<Route exact path="/">
 						<Home />
 					</Route>
-					<Route path="/about-me">
-						<AboutMe offset={ offset } />
+					<Route basename={ process.env.PUBLIC_URL } path="/about">
+						<About offset={ offset } />
 					</Route>
-					<Route path="/portfolio">
+					<Route basename={ process.env.PUBLIC_URL } path="/portfolio">
 						<Porfolio />
 					</Route>
-					<Route path="/blogs">
+					<Route basename={ process.env.PUBLIC_URL } path="/blogs">
 						<Blogs />
+					</Route>
+					<Route>
+						<PageNotFound />
 					</Route>
 				</Switch>
 			</Router>

@@ -23,3 +23,9 @@
 
 .hidden { display: none !important; }
 .gold { color: #f90; }
+
+button {
+  padding: 7px;
+  cursor: pointer;
+  &:active { opacity: 0.3; }
+}

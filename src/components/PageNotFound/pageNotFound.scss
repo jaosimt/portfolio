@@ -1,0 +1,25 @@
+.PageNotFound{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: center;
+  width: 434px;
+
+  span:nth-child(1),
+  span:nth-child(2) {
+    font-weight: bolder;
+  }
+
+  span:nth-child(1) {
+    font-size: 98px;
+  }
+
+  span:nth-child(2),
+  span:nth-child(3) {
+    margin-bottom: 14px;
+  }
+
+  span:nth-child(3) {
+    font-size: smaller;
+  }
+}

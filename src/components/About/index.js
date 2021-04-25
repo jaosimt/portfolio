@@ -2,13 +2,13 @@ import { Component } from "react";
 import './about.scss';
 import award from './sImoAwardSmall.png';
 
-class AboutMe extends Component {
+class About extends Component {
 	render() {
 		const { offset: o } = this.props;
 		const offset = o.header + o.footer + o.margin;
 		
 		return <div
-			className={ 'about-me' }
+			className={ 'about' }
 			style={ {
 				minHeight: `calc(100vh - ${ offset }px)`
 			} }>
@@ -43,4 +43,4 @@ class AboutMe extends Component {
 	}
 }
 
-export default AboutMe;
+export default About;
