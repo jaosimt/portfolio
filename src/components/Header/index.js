@@ -47,16 +47,17 @@ class Header extends Component {
 	outsideClickHandler = event => {
 		const { right } = this.state;
 		
-		if (right === '0px' && this.ulRef && this.ulRef.current && !this.ulRef.current.contains(event.target)) {
-			console.log('outside click');
-		}
+		if (right === '0px' && this.ulRef && this.ulRef.current && !this.ulRef.current.contains(event.target)) this.toggleMenu();
 	}
 	
-	toggleMenu = () => this.setState(prevState => {
-		return {
-			right: prevState.right === '0px' ? '-101%' : '0px'
-		}
-	})
+	toggleMenu = () => {
+		const menuWidth = this.ulRef && this.ulRef.current && this.ulRef.current ? `-${Math.round(this.ulRef.current.getBoundingClientRect().width) + 10}px` : '-100%';
+		this.setState(prevState => {
+			return {
+				right: prevState.right === '0px' ? menuWidth : '0px'
+			}
+		})
+	}
 }
 
 export default Header;
