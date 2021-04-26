@@ -8,7 +8,7 @@ class About extends Component {
 		const offset = o.header + o.footer + o.margin;
 		
 		return <div
-			className={ 'about' }
+			className={ 'About' }
 			style={ {
 				minHeight: `calc(100vh - ${ offset }px)`
 			} }>

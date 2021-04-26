@@ -6,7 +6,7 @@ class Footer extends Component {
 	render() {
 		const { setRef } = this.props;
 		
-		return <div className="footer" ref={ setRef }>
+		return <div className="Footer" ref={ setRef }>
 			<span className="bybyn"><strong title="Bisaya">ᜊᜒᜐᜌ</strong>&nbsp;|&nbsp;<span title="Filipino">ᜉᜒᜎᜒᜉᜒᜈᜓ</span></span>
 			<SocialMediaLinks iconSize={28}/>
 		</div>

@@ -1,10 +1,15 @@
-import { Component} from "react";
+import { Component } from "react";
 import './blogs.scss';
+import PageNotFound from "../PageNotFound";
 
 class Blogs extends Component {
 	render() {
-		return <div className={'blogs'}>
-			Blogs
+		const { history } = this.props;
+		return <div className={ 'Blogs flex-center' }>
+			<PageNotFound
+				title="Blogs"
+				history={ history }
+				isUnderConstruction={ true } />
 		</div>
 	}
 }

@@ -16,9 +16,8 @@ class Header extends Component {
 	render() {
 		const { right } = this.state;
 		const { selected, onClick, setRef } = this.props;
-		const disabledMenuItem = [ 'portfolio', 'blogs' ];
 		
-		return <div className={ `header ${ selected }-page` } ref={ setRef }>
+		return <div className={ `Header ${ selected }-page` } ref={ setRef }>
 			<div
 				onClick={ () => window.location = '/' }
 				className="logo bybyn">
@@ -34,7 +33,7 @@ class Header extends Component {
 						const menuItem = SnakeCase(m);
 						return <li key={ i }
 						           data-value={ menuItem }
-						           className={ `${ menuItem } ${ selected === menuItem && 'selected' } ${ disabledMenuItem.includes(menuItem) ? 'disabled' : '' }` }
+						           className={ `${ menuItem } ${ selected === menuItem && 'selected' }` }
 						           onClick={ onClick }>
 							<NavLink to={ `/${ menuItem === 'home' ? '' : menuItem }` }>{ Capitalize(m) }</NavLink>
 						</li>

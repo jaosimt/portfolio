@@ -4,7 +4,7 @@ import './home.scss';
 class Home extends Component {
 	
 	render() {
-		return <div className="home">
+		return <div className="Home">
 			<h2 title="Greetings" className="greetings bybyn">ᜃᜋᜓᜐ᜔ᜆ</h2>
 			<div className="profile-image" />
 			<div className="profile-description">

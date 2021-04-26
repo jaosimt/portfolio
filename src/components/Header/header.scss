@@ -1,4 +1,4 @@
-.header {
+.Header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,6 +39,7 @@
       &.selected {
         opacity: 1;
         text-decoration: underline;
+        color: #ff9900;
       }
 
       &.selected { pointer-events: none; }
@@ -88,7 +89,7 @@
 }
 
 @media (max-width: 847px) {
-  .header {
+  .Header {
     ul {
       li {
         &:not(:last-child) {
@@ -100,7 +101,7 @@
 }
 
 @media (max-width: 768px) {
-  .header {
+  .Header {
     ul {
       flex-direction: column;
       position: fixed;

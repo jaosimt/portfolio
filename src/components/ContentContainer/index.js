@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import {
-	BrowserRouter as Router,
 	Switch,
-	Route
+	Route,
+	useHistory
 } from "react-router-dom";
 import Header from "../Header";
 import Home from "../Home";
@@ -13,9 +13,12 @@ import About from "../About";
 import './content.scss';
 import PageNotFound from "../PageNotFound";
 
+
 export default function ContentContainer() {
-	const [menuItem, setMenuItem] = useState(window.location.pathname === '/' ? 'home' : window.location.pathname.replace(/^\//, ""))
-	const [offset, setOffset] = useState({
+	const history = useHistory();
+	
+	const [ menuItem, setMenuItem ] = useState(window.location.pathname === '/' ? 'home' : window.location.pathname.replace(/^\//, ""))
+	const [ offset, setOffset ] = useState({
 		header: 0,
 		footer: 0,
 		margin: 0
@@ -40,39 +43,46 @@ export default function ContentContainer() {
 	}
 	
 	useEffect(() => {
+		console.log('[ContentContainer] useEffect');
+		
 		const offset = offsetHeight();
 		setOffset(offset);
+		const currentPath = window.location.pathname.replace(/^\//, "");
+		if (currentPath !== '') {
+			console.log(`[ContentContainer] useEffect -> redirecting to ${ currentPath }`, history);
+			history.push(currentPath);
+		}
 	}, [])
 	
-	return <div className="content-container" style={ {
+	return <div className="ContentContainer" style={ {
 		marginTop: `${ offset.header - offset.margin }px`,
 		minHeight: `calc(100vh - ${ offset.header + offset.margin }px)`
 	} }>
-		<Router>
-			<Header setRef={ setHeaderRef }
-			        onClick={ menuClickHandler }
-			        selected={ menuItem } />
-			<span />
-			{
-				<Switch>
-					<Route exact path="/">
-						<Home />
-					</Route>
-					<Route path="/about">
-						<About offset={ offset } />
-					</Route>
-					<Route path="/portfolio">
-						<Porfolio />
-					</Route>
-					<Route path="/blogs">
-						<Blogs />
-					</Route>
-					<Route>
-						<PageNotFound />
-					</Route>
-				</Switch>
-			}
-		</Router>
+		<Header setRef={ setHeaderRef }
+		        onClick={ menuClickHandler }
+		        selected={ menuItem } />
+		<span />
+		{
+			<Switch>
+				<Route exact path="/">
+					<Home />
+				</Route>
+				<Route path="/about">
+					<About offset={ offset } />
+				</Route>
+				<Route path="/portfolio">
+					<Porfolio history={ history } />
+				</Route>
+				<Route path="/blogs">
+					<Blogs history={ history } />
+				</Route>
+				<Route>
+					<PageNotFound
+						title={ history.location.pathname }
+						history={ history } />
+				</Route>
+			</Switch>
+		}
 		<Footer setRef={ setFooterRef } />
 	</div>
 }

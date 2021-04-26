@@ -10,7 +10,7 @@
     transition-timing-function: $transition;
 }
 
-.social-media-links {
+.SocialMediaLinks {
     display: flex;
     
     > div:not(:last-child) { margin-right: 7px; }
@@ -61,7 +61,7 @@
 }
 
 @media (max-width: 767px) {
-    .social-media-links {
+    .SocialMediaLinks {
         > div {
             margin: 3px;
         }

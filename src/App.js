@@ -1,10 +1,13 @@
+import { BrowserRouter as Router } from 'react-router-dom';
 import ContentContainer from "./components/ContentContainer";
 import './App.scss';
 
 function App() {
 	return (
 		<div className="App">
-			<ContentContainer/>
+			<Router>
+				<ContentContainer/>
+			</Router>
 		</div>
 	);
 }
