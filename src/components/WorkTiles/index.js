@@ -17,7 +17,7 @@ class WorkTiles extends Component {
 	render() {
 		const { logoHeight } = this.state;
 		const { data } = this.props;
-		const { dateRange, position, company, image } = data;
+		const { dateRange, position, company, image, notes, details } = data;
 		
 		const logo = <div
 			ref={ ref => this.logoRef = ref }
@@ -43,10 +43,18 @@ class WorkTiles extends Component {
 					logo
 				}
 			</div>
-			<div className="details">
-				<h3 className="position">{ position }</h3>
-				<h5 className="company">{ company.name }</h5>
-				<h5 className="date-range">{ dateRange }</h5>
+			<div className="details" style={{
+				height: `calc(100% - ${logoHeight}px)`
+			} }>
+				<div>
+					<h3 className="position">{ position }</h3>
+					<h5 className="company">{ company.name }</h5>
+					<h5 className="date-range">{ dateRange }</h5>
+				</div>
+				{/*{*/}
+				{/*	details &&*/}
+				{/*	<span className='read-more'>... read more</span>*/}
+				{/*}*/}
 			</div>
 		</div>
 	}
