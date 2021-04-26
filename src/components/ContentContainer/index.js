@@ -45,24 +45,26 @@ class ContentContainer extends Component {
 				<Header setRef={ this.setHeaderRef }
 				        onClick={ this.menuClickHandler }
 				        selected={ menuItem } />
-				<span></span>
-				<Switch>
-					<Route exact path="/">
-						<Home />
-					</Route>
-					<Route basename={ process.env.PUBLIC_URL } path="/about">
-						<About offset={ offset } />
-					</Route>
-					<Route basename={ process.env.PUBLIC_URL } path="/portfolio">
-						<Porfolio />
-					</Route>
-					<Route basename={ process.env.PUBLIC_URL } path="/blogs">
-						<Blogs />
-					</Route>
-					<Route>
-						<PageNotFound />
-					</Route>
-				</Switch>
+				<span />
+				{
+					<Switch>
+						<Route exact path="/">
+							<Home />
+						</Route>
+						<Route path="/about">
+							<About offset={ offset } />
+						</Route>
+						<Route path="/portfolio">
+							<Porfolio />
+						</Route>
+						<Route path="/blogs">
+							<Blogs />
+						</Route>
+						<Route>
+							<PageNotFound />
+						</Route>
+					</Switch>
+				}
 			</Router>
 			<Footer setRef={ this.setFooterRef } />
 		</div>
