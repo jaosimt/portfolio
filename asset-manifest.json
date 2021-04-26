@@ -1,27 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.39b297a2.chunk.css",
-    "main.js": "/static/js/main.767a8034.chunk.js",
-    "main.js.map": "/static/js/main.767a8034.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e14e7b20.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e14e7b20.js.map",
+    "main.css": "/static/css/main.08f8894e.chunk.css",
+    "main.js": "/static/js/main.4c5ab789.chunk.js",
+    "main.js.map": "/static/js/main.4c5ab789.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fd1ce5ef.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fd1ce5ef.js.map",
     "static/js/2.0997a888.chunk.js": "/static/js/2.0997a888.chunk.js",
     "static/js/2.0997a888.chunk.js.map": "/static/js/2.0997a888.chunk.js.map",
-    "static/js/3.3465f8ce.chunk.js": "/static/js/3.3465f8ce.chunk.js",
-    "static/js/3.3465f8ce.chunk.js.map": "/static/js/3.3465f8ce.chunk.js.map",
+    "static/js/3.01596743.chunk.js": "/static/js/3.01596743.chunk.js",
+    "static/js/3.01596743.chunk.js.map": "/static/js/3.01596743.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.39b297a2.chunk.css.map": "/static/css/main.39b297a2.chunk.css.map",
+    "static/css/main.08f8894e.chunk.css.map": "/static/css/main.08f8894e.chunk.css.map",
     "static/js/2.0997a888.chunk.js.LICENSE.txt": "/static/js/2.0997a888.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/static/media/Baybayin_Clu.e0a94389.ttf",
+    "static/media/codev.9d2d9c0f.webp": "/static/media/codev.9d2d9c0f.webp",
     "static/media/SocialMediaLinks.scss": "/static/media/instagram.b7c5e343.jpg",
+    "static/media/kimwa.f213f3fe.png": "/static/media/kimwa.f213f3fe.png",
     "static/media/about.scss": "/static/media/life.6d86b5ad.jpeg",
     "static/media/header.scss": "/static/media/logo.e2a91469.svg",
-    "static/media/sImoAwardSmall.5daf61d1.png": "/static/media/sImoAwardSmall.5daf61d1.png"
+    "static/media/metron.ed660293.png": "/static/media/metron.ed660293.png",
+    "static/media/portfolio.scss": "/static/media/professional-experience.74d12952.png",
+    "static/media/rizon.b1b4afe7.png": "/static/media/rizon.b1b4afe7.png",
+    "static/media/sImoAwardSmall.5daf61d1.png": "/static/media/sImoAwardSmall.5daf61d1.png",
+    "static/media/tieto.462695a5.png": "/static/media/tieto.462695a5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e14e7b20.js",
+    "static/js/runtime-main.fd1ce5ef.js",
     "static/js/2.0997a888.chunk.js",
-    "static/css/main.39b297a2.chunk.css",
-    "static/js/main.767a8034.chunk.js"
+    "static/css/main.08f8894e.chunk.css",
+    "static/js/main.4c5ab789.chunk.js"
   ]
 }
