@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import {
 	BrowserRouter as Router,
 	Switch,
@@ -13,78 +13,66 @@ import About from "../About";
 import './content.scss';
 import PageNotFound from "../PageNotFound";
 
-class ContentContainer extends Component {
-	constructor() {
-		super();
-		this.state = {
-			menuItem: window.location.pathname === '/' ? 'home' : window.location.pathname.replace(/^\//, ""),
-			offset: {
-				header: 0,
-				footer: 0,
-				margin: 0
-			}
-		}
-		
-		this.headerRef = React.createRef();
-		this.footerRef = React.createRef();
+export default function ContentContainer() {
+	const [menuItem, setMenuItem] = useState(window.location.pathname === '/' ? 'home' : window.location.pathname.replace(/^\//, ""))
+	const [offset, setOffset] = useState({
+		header: 0,
+		footer: 0,
+		margin: 0
+	});
+	
+	let headerRef = React.createRef(),
+		footerRef = React.createRef();
+	
+	const menuClickHandler = e => {
+		setMenuItem(e.currentTarget.getAttribute('data-value'));
 	}
 	
-	componentDidMount() {
-		const offset = this.offsetHeight();
-		this.setState({ offset: offset })
-	}
+	const setHeaderRef = ref => headerRef = ref;
+	const setFooterRef = ref => footerRef = ref;
 	
-	render() {
-		const { menuItem, offset } = this.state;
-		
-		return <div className="content-container" style={ {
-			marginTop: `${ offset.header - offset.margin }px`,
-			minHeight: `calc(100vh - ${ offset.header + offset.margin }px)`
-		} }>
-			<Router>
-				<Header setRef={ this.setHeaderRef }
-				        onClick={ this.menuClickHandler }
-				        selected={ menuItem } />
-				<span />
-				{
-					<Switch>
-						<Route exact path="/">
-							<Home />
-						</Route>
-						<Route path="/about">
-							<About offset={ offset } />
-						</Route>
-						<Route path="/portfolio">
-							<Porfolio />
-						</Route>
-						<Route path="/blogs">
-							<Blogs />
-						</Route>
-						<Route>
-							<PageNotFound />
-						</Route>
-					</Switch>
-				}
-			</Router>
-			<Footer setRef={ this.setFooterRef } />
-		</div>
-	}
-	
-	menuClickHandler = e => {
-		const menuItem = e.currentTarget.getAttribute('data-value');
-		this.setState({ menuItem });
-	}
-	
-	setHeaderRef = ref => this.headerRef = ref;
-	setFooterRef = ref => this.footerRef = ref;
-	
-	offsetHeight = () => {
+	const offsetHeight = () => {
 		return {
-			header: this.headerRef.clientHeight,
-			footer: this.footerRef.clientHeight,
+			header: headerRef.clientHeight,
+			footer: footerRef.clientHeight,
 			margin: 14
 		};
 	}
+	
+	useEffect(() => {
+		const offset = offsetHeight();
+		setOffset(offset);
+	}, [])
+	
+	return <div className="content-container" style={ {
+		marginTop: `${ offset.header - offset.margin }px`,
+		minHeight: `calc(100vh - ${ offset.header + offset.margin }px)`
+	} }>
+		<Router>
+			<Header setRef={ setHeaderRef }
+			        onClick={ menuClickHandler }
+			        selected={ menuItem } />
+			<span />
+			{
+				<Switch>
+					<Route exact path="/">
+						<Home />
+					</Route>
+					<Route path="/about">
+						<About offset={ offset } />
+					</Route>
+					<Route path="/portfolio">
+						<Porfolio />
+					</Route>
+					<Route path="/blogs">
+						<Blogs />
+					</Route>
+					<Route>
+						<PageNotFound />
+					</Route>
+				</Switch>
+			}
+		</Router>
+		<Footer setRef={ setFooterRef } />
+	</div>
 }
-
-export default ContentContainer
