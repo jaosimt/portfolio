@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.89113932.chunk.css",
-    "main.js": "/static/js/main.a78740e4.chunk.js",
-    "main.js.map": "/static/js/main.a78740e4.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.d3dbbf38.js",
-    "runtime-main.js.map": "/static/js/runtime-main.d3dbbf38.js.map",
-    "static/js/2.a28a400c.chunk.js": "/static/js/2.a28a400c.chunk.js",
-    "static/js/2.a28a400c.chunk.js.map": "/static/js/2.a28a400c.chunk.js.map",
-    "static/js/3.e124744e.chunk.js": "/static/js/3.e124744e.chunk.js",
-    "static/js/3.e124744e.chunk.js.map": "/static/js/3.e124744e.chunk.js.map",
+    "main.css": "/static/css/main.39b297a2.chunk.css",
+    "main.js": "/static/js/main.5b1052c6.chunk.js",
+    "main.js.map": "/static/js/main.5b1052c6.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e14e7b20.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e14e7b20.js.map",
+    "static/js/2.0997a888.chunk.js": "/static/js/2.0997a888.chunk.js",
+    "static/js/2.0997a888.chunk.js.map": "/static/js/2.0997a888.chunk.js.map",
+    "static/js/3.3465f8ce.chunk.js": "/static/js/3.3465f8ce.chunk.js",
+    "static/js/3.3465f8ce.chunk.js.map": "/static/js/3.3465f8ce.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.89113932.chunk.css.map": "/static/css/main.89113932.chunk.css.map",
-    "static/js/2.a28a400c.chunk.js.LICENSE.txt": "/static/js/2.a28a400c.chunk.js.LICENSE.txt",
+    "static/css/main.39b297a2.chunk.css.map": "/static/css/main.39b297a2.chunk.css.map",
+    "static/js/2.0997a888.chunk.js.LICENSE.txt": "/static/js/2.0997a888.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/static/media/Baybayin_Clu.e0a94389.ttf",
     "static/media/SocialMediaLinks.scss": "/static/media/instagram.b7c5e343.jpg",
     "static/media/about.scss": "/static/media/life.6d86b5ad.jpeg",
     "static/media/header.scss": "/static/media/logo.e2a91469.svg",
-    "static/media/sImoAwardSmall.5daf61d1.png": "/static/media/sImoAwardSmall.5daf61d1.png"
+    "static/media/sImoAwardSmall.5daf61d1.png": "/static/media/sImoAwardSmall.5daf61d1.png",
+    "static/media/under-construction.f274203c.png": "/static/media/under-construction.f274203c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.d3dbbf38.js",
-    "static/js/2.a28a400c.chunk.js",
-    "static/css/main.89113932.chunk.css",
-    "static/js/main.a78740e4.chunk.js"
+    "static/js/runtime-main.e14e7b20.js",
+    "static/js/2.0997a888.chunk.js",
+    "static/css/main.39b297a2.chunk.css",
+    "static/js/main.5b1052c6.chunk.js"
   ]
 }
