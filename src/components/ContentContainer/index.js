@@ -79,7 +79,7 @@ export default function ContentContainer() {
 				<Route path="/blogs">
 					<Blogs history={ history } />
 				</Route>
-				<Route>
+				<Route path="*">
 					<PageNotFound
 						title={ history.location.pathname }
 						history={ history } />
