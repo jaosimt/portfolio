@@ -1,3 +1,27 @@
 .Portfolio {
+  text-align: center;
 
+  .banner {
+    height: 294px;
+    background: #c3c3c3 url(./professional-experience.png) no-repeat center 49%;
+    background-size: cover;
+    margin: 0 -14px 14px -14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0.7;
+    margin-bottom: 35px;
+    color: #ff9900;
+    font-size: 49px;
+  }
+
+  > h1 { text-align: left; }
+  .work-list {
+    display: inline-flex;
+    width: 84%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

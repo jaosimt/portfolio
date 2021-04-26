@@ -13,7 +13,7 @@ class About extends Component {
 				minHeight: `calc(100vh - ${ offset }px)`
 			} }>
 			<div className="wrapper">
-				<div className="banner">About me</div>
+				<div className="banner text-shadow-white">About me</div>
 				<div className="content">
 					<h1>I am <span className='gold'>Sim Tero Jao</span>, I am a <span className="gold">Web Developer</span>.</h1>
 					<p>

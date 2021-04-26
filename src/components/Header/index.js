@@ -15,13 +15,16 @@ class Header extends Component {
 	
 	render() {
 		const { right } = this.state;
-		const { selected, onClick, setRef, history } = this.props;
+		const { selected, onClick, setRef, history, setMenuItem } = this.props;
 		
 		return <div className={ `Header ${ selected }-page` } ref={ setRef }>
 			<div
-				onClick={ () => history.push('/') }
+				onClick={ () => {
+					history.push('/');
+					setMenuItem('home');
+				} }
 				className="logo bybyn">
-				<strong title="Sim">ᜐᜒᜋ᜔</strong>&nbsp;<span title="Jao">ᜑᜏ᜔</span>
+				<strong title="Sim Jao">ᜐᜒᜋ᜔&nbsp;ᜑᜏ᜔</strong>
 			</div>
 			<div id="header-hamburger"><span onClick={ this.toggleMenu }>☰</span></div>
 			<ul
@@ -50,7 +53,7 @@ class Header extends Component {
 	}
 	
 	toggleMenu = () => {
-		const menuWidth = this.ulRef && this.ulRef.current && this.ulRef.current ? `-${Math.round(this.ulRef.current.getBoundingClientRect().width) + 10}px` : '-100%';
+		const menuWidth = this.ulRef && this.ulRef.current && this.ulRef.current ? `-${ Math.round(this.ulRef.current.getBoundingClientRect().width) + 10 }px` : '-100%';
 		this.setState(prevState => {
 			return {
 				right: prevState.right === '0px' ? menuWidth : '0px'

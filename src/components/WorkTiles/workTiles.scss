@@ -1,0 +1,39 @@
+.WorkTiles {
+  border: 1px solid gainsboro;
+  margin: 21px;
+  width: 294px;
+  max-width: 100%;
+  box-shadow: 0 0 7px 3px gainsboro;
+  overflow: hidden;
+
+  .logo-wrapper {
+    overflow: hidden;
+
+    a.logo { cursor: pointer}
+
+    .logo {
+      transition: all ease-in-out 300ms;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 100%;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .details {
+    border-top: 1px solid gainsboro;
+    padding: 7px;
+    flex-direction: column;
+    display: flex;
+    > * { text-align: right; }
+  }
+
+  h3,
+  h5 {
+    margin: 0;
+  }
+}

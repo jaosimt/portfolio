@@ -49,7 +49,6 @@ export default function ContentContainer() {
 		setOffset(offset);
 		const currentPath = window.location.pathname.replace(/^\//, "");
 		if (currentPath !== '') {
-			console.log(`[ContentContainer] useEffect -> redirecting to ${ currentPath }`, history);
 			history.push(currentPath);
 		}
 	}, [])
@@ -62,6 +61,7 @@ export default function ContentContainer() {
 			history={ history }
 			setRef={ setHeaderRef }
 			onClick={ menuClickHandler }
+			setMenuItem={ setMenuItem }
 			selected={ menuItem } />
 		
 		<span />
@@ -74,18 +74,21 @@ export default function ContentContainer() {
 					<About offset={ offset } />
 				</Route>
 				<Route path="/portfolio">
-					<Porfolio history={ history } />
+					<Porfolio offset={ offset } history={ history } />
 				</Route>
 				<Route path="/blogs">
-					<Blogs history={ history } />
+					<Blogs
+						setMenuItem={ setMenuItem }
+						history={ history } />
 				</Route>
 				<Route path="*">
 					<PageNotFound
+						setMenuItem={ setMenuItem }
 						title={ history.location.pathname }
 						history={ history } />
 				</Route>
 			</Switch>
 		}
-		<Footer setRef={ setFooterRef } />
+		<Footer history={ history } setRef={ setFooterRef } />
 	</div>
 }
