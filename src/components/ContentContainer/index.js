@@ -58,9 +58,12 @@ export default function ContentContainer() {
 		marginTop: `${ offset.header - offset.margin }px`,
 		minHeight: `calc(100vh - ${ offset.header + offset.margin }px)`
 	} }>
-		<Header setRef={ setHeaderRef }
-		        onClick={ menuClickHandler }
-		        selected={ menuItem } />
+		<Header
+			history={ history }
+			setRef={ setHeaderRef }
+			onClick={ menuClickHandler }
+			selected={ menuItem } />
+		
 		<span />
 		{
 			<Switch>

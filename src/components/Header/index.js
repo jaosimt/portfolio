@@ -15,11 +15,11 @@ class Header extends Component {
 	
 	render() {
 		const { right } = this.state;
-		const { selected, onClick, setRef } = this.props;
+		const { selected, onClick, setRef, history } = this.props;
 		
 		return <div className={ `Header ${ selected }-page` } ref={ setRef }>
 			<div
-				onClick={ () => window.location = '/' }
+				onClick={ () => history.push('/') }
 				className="logo bybyn">
 				<strong title="Sim">ᜐᜒᜋ᜔</strong>&nbsp;<span title="Jao">ᜑᜏ᜔</span>
 			</div>
