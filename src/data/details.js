@@ -26,13 +26,13 @@ export const rphcDetails = <Fragment>
 			<li className='italic'>Development</li>
 			<ul>
 				<li>Company Website</li>
-				<li>Accounting Information System</li>
+				<li><a href="https://ais.rizonholdings.com/" target="_blank" rel="noreferrer">Accounting Information System</a></li>
 					<ul>
 						<li className="italic">Modifications and maintenance</li>
 						<li className='italic'>Report Pages</li>
 					</ul>
 				<li>Data Recovery and Enhancement System</li>
-				<li>Customer Support / Ticket System</li>
+				<li><a href="//helpdesk.rizonholdings.com/" target="_blank" rel="noreferrer">Help Desk</a></li>
 			</ul>
 			<li className="italic">Server Administration</li>
 			<ul>
