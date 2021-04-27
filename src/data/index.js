@@ -1,5 +1,3 @@
-import React, { Fragment } from "react";
-
 // COMPANY LOGOS
 import codev from './codev.webp';
 import metron from './metron.png';
@@ -7,9 +5,10 @@ import tieto from './tieto.png';
 import rizon from './rizon.png';
 import kimwa from './kimwa.png';
 
-// LANGUAGES AND WHATNOT
-import foxPro from './FoxPro_2.6_Developers_Guide_Cover.png';
-import foxProDosScreens from './FoxproDosScreens.png';
+import {
+	hmcDetails,
+	kimwaDetails
+} from './details';
 
 export const workList = [
 	{
@@ -85,7 +84,7 @@ export const workList = [
 		},
 		position: 'EDP Head / Transport Supervisor / Plant Supervisor',
 		image: kimwa,
-		notes: 'Started as EDP Head in 1997.  Heavy Equipment. & Transport Supervisor in 2000, and end up as a Plant Supervisor/Manager/ET AL in 2002.'
+		details: kimwaDetails
 	}, {
 		id: 'hmc',
 		dateRange: '1996',
@@ -94,56 +93,6 @@ export const workList = [
 			address: '11 Zamora street, Cebu City, 6000 Philippines'
 		},
 		position: 'Computer Programmer',
-		notes: 'Right after graduation in 1996, I was hired after rendering OJT on the same Company.',
-		details: <Fragment>
-			<p>Was a startup company owned by a Pilipino-American.</p>
-			<p>
-				The Company provides I.T. services, sales & consultancy with address at 11 P. Zamora street, Cebu City,
-				Philippines. By now, the company was long gone for reasons that I am not entirely sure. One is that, the
-				owner went back to the U.S.
-			</p>
-			<h4 style={ { marginBottom: 0 } }>Employment:</h4>
-			<ul>
-				<li>On-The-Job Training</li>
-				<li>Project based Computer Programmer</li>
-			</ul>
-			<p>
-				During my second year in college, I took an On-The-Job training as a computer programmer. I was responsible
-				on building a quotation system for all the sales and services that the company offers.
-			</p>
-			<p>
-				During my Project based employment, I was restoring a half damage Hospital System originally designed and
-				used in the Philippine Armed Forces. How the CEO able to grab such application and who originally built it?
-				I never asked. All I have at the time was the excitement to work as all graduates probably have.
-			</p>
-			<p>
-				Part of the modification needed was to convert the application’s design from military to civilian. It was a
-				painful process since the design especially the templates in adding/admitting patient always comes with a
-				military rank and it was all over the system and yes, it was not dynamic. Labels and titles have embedded
-				ranks and are manually placed.
-			</p>
-			<p>
-				However a newbie, I was able to revive and revise the application in less than two weeks which I originally
-				estimated to be 2 to 3 months. I was very happy and I thought that If I was not lucky, I must be very good.
-				Talk about an excited newbie able to pocket a 5k Philippine peso in just a little over a week 😉.
-			</p>
-			<p>
-				Behind the proud and very delighted newbie being able to complete the job way ahead of time is the fact
-				that, I was about to lose my job. I totally forgot that I was a project based employee hired to work on a
-				one and only project. Ha ha, I laughed… but saddened deep inside.
-			</p>
-			<p>
-				Nevertheless, It was an achievement and an experience, my very first in-fact after college.
-			</p>
-			<h4 style={ { marginBottom: 0 } }>Language:</h4>
-			<p>
-				Back then, It was <a href="//en.wikipedia.org/wiki/FoxPro" target="_blank" rel="noreferrer">Foxpro</a> Dos.
-				A text-based procedural programming language and database management system.
-			</p>
-			<div>
-				<img className='lang-images' src={foxPro} alt="Foxpro Dos" />
-				<img className='lang-images' src={foxProDosScreens} alt="Foxpro Dos" />
-			</div>
-		</Fragment>
+		details: hmcDetails
 	}
 ]

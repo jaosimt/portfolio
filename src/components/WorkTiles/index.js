@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import './workTiles.scss';
 import noImage from '../../images/noimage.png';
-import { Link } from "react-router-dom";
 
 class WorkTiles extends Component {
 	state = {
@@ -17,8 +16,8 @@ class WorkTiles extends Component {
 	
 	render() {
 		const { logoHeight } = this.state;
-		const { data, history } = this.props;
-		const { id, dateRange, position, company, image, details } = data;
+		const { data } = this.props;
+		const { dateRange, position, company, image, details } = data;
 		
 		const logo = <div
 			ref={ ref => this.logoRef = ref }
@@ -27,8 +26,6 @@ class WorkTiles extends Component {
 				backgroundImage: `url(${ image || noImage })`,
 				height: `${ logoHeight }px`
 			} } />;
-		
-		const path = `${ history.location.pathname }/${ id }`;
 		
 		return <div className="WorkTiles">
 			<div className="logo-wrapper">
@@ -57,12 +54,19 @@ class WorkTiles extends Component {
 				</div>
 				{
 					details &&
-					<Link className="read-more" to={ path }>... read
-						more</Link>
+					<span className="read-more" onClick={ this.readMoreClick }>... read more</span>
 				}
 			</div>
 		</div>
 	}
+	
+	readMoreClick = () => {
+		const { data, history } = this.props;
+		const { id } = data;
+		const path = `${ history.location.pathname }/${ id }`;
+		
+		history.push(path)
+	};
 }
 
 WorkTiles.propTypes = {

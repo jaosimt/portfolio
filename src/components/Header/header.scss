@@ -43,7 +43,7 @@
         color: #ff9900;
       }
 
-      &.selected { pointer-events: none; }
+      &.selected:not(.portfolio) { pointer-events: none; }
 
       &:not(:last-child) {
         margin-right: 3em;

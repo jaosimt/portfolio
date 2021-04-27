@@ -12,6 +12,10 @@
   }
 
   .work-details {
+    display: inline-flex;
+    max-width: 798px;
+    flex-direction: column;
+
     .company-name {
       text-transform: uppercase;
       margin: 0;
@@ -22,19 +26,24 @@
       margin-top: 0;
     }
 
+    img.inline {
+
+    }
+
     div {
       display: inline-flex;
       flex-wrap: wrap;
 
-      .lang-images {
+      img.lang-images {
         width: 385px;
         margin: 7px;
       }
     }
 
-    display: inline-flex;
-    max-width: 798px;
-    flex-direction: column;
+    li { line-height: 1.3; }
+    li ~ ul ~ li {
+      margin-top: 3px;
+    }
   }
 }
 
