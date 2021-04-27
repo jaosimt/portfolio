@@ -9,6 +9,7 @@ import kimwa from './kimwa.png';
 
 // LANGUAGES AND WHATNOT
 import foxPro from './FoxPro_2.6_Developers_Guide_Cover.png';
+import foxProDosScreens from './FoxproDosScreens.png';
 
 export const workList = [
 	{
@@ -139,7 +140,10 @@ export const workList = [
 				Back then, It was <a href="//en.wikipedia.org/wiki/FoxPro" target="_blank" rel="noreferrer">Foxpro</a> Dos.
 				A text-based procedural programming language and database management system.
 			</p>
-			<img className='lang-images' src={foxPro} alt="Foxpro Dos" />
+			<div>
+				<img className='lang-images' src={foxPro} alt="Foxpro Dos" />
+				<img className='lang-images' src={foxProDosScreens} alt="Foxpro Dos" />
+			</div>
 		</Fragment>
 	}
 ]
