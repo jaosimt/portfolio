@@ -76,7 +76,7 @@ export const workList = [
 		dateRange: '2008 to 2012',
 		company: {
 			name: 'Rizon Property Holdings Corporation',
-			website: '//www.rizonholdings.com',
+			website: 'http://www.rizonholdings.com',
 			address: 'M. Rizon Building, Dap-dap, Mactan, Lapu-Lapu City, Cebu, 6015 Philippines'
 		},
 		position: 'EDP Head',
