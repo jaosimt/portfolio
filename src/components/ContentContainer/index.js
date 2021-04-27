@@ -12,7 +12,7 @@ import Porfolio from "../Portfolio";
 import About from "../About";
 import './content.scss';
 import PageNotFound from "../PageNotFound";
-
+import PortfolioDetails from "../Portfolio/details";
 
 export default function ContentContainer() {
 	const history = useHistory();
@@ -34,16 +34,15 @@ export default function ContentContainer() {
 	const setHeaderRef = ref => headerRef = ref;
 	const setFooterRef = ref => footerRef = ref;
 	
-	const offsetHeight = () => {
-		return {
-			header: headerRef.clientHeight,
-			footer: footerRef.clientHeight,
-			margin: 14
-		};
-	}
-	
 	useEffect(() => {
 		console.log('[ContentContainer] useEffect');
+		const offsetHeight = () => {
+			return {
+				header: headerRef.clientHeight,
+				footer: footerRef.clientHeight,
+				margin: 14
+			};
+		}
 		
 		const offset = offsetHeight();
 		setOffset(offset);
@@ -51,7 +50,7 @@ export default function ContentContainer() {
 		if (currentPath !== '') {
 			history.push(currentPath);
 		}
-	}, [])
+	}, [footerRef.clientHeight, headerRef.clientHeight, history])
 	
 	return <div className="ContentContainer" style={ {
 		marginTop: `${ offset.header - offset.margin }px`,
@@ -73,7 +72,13 @@ export default function ContentContainer() {
 				<Route path="/about">
 					<About offset={ offset } />
 				</Route>
-				<Route path="/portfolio">
+				<Route path="/portfolio/:companyId">
+					<PortfolioDetails
+						setMenuItem={ setMenuItem }
+						offset={ offset }
+						history={ history } />
+				</Route>
+				<Route exact path="/portfolio">
 					<Porfolio offset={ offset } history={ history } />
 				</Route>
 				<Route path="/blogs">

@@ -1,0 +1,42 @@
+.PortfolioDetails {
+  display: flex;
+  justify-content: center;
+  padding: 62px 0 14px;
+
+  .banner {
+    width: 434px;
+    height: 434px;
+    margin-right: 49px;
+    background: #c7c7c7 url("../../images/noimage.png") no-repeat center 49%;
+    background-size: cover;
+  }
+
+  .work-details {
+    .company-name {
+      text-transform: uppercase;
+      margin: 0;
+      color: #ff9900;
+    }
+
+    .company-address {
+      margin-top: 0;
+    }
+
+    .lang-images {
+      width: 343px
+    }
+
+    display: inline-flex;
+    max-width: 798px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .PortfolioDetails {
+    .work-details {
+      width: 100%;
+      max-width: unset;
+    }
+  }
+}

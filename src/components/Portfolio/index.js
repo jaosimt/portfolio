@@ -1,11 +1,11 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import './portfolio.scss';
 import { workList } from "../../data";
 import WorkTiles from "../WorkTiles";
 
 class Porfolio extends Component {
 	render() {
-		const { offset: o } = this.props;
+		const { offset: o, history } = this.props;
 		const offset = o.header + o.footer + o.margin;
 		
 		return <div
@@ -16,7 +16,7 @@ class Porfolio extends Component {
 			<div className="banner text-shadow-white">Work Experience</div>
 			<div className="work-list">
 				{
-					workList.map((w, i) => <WorkTiles key={ i } data={ w } />)
+					workList.map((w, i) => <WorkTiles key={ i } data={ w } history={ history } />)
 				}
 			</div>
 		</div>

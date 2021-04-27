@@ -1,11 +1,14 @@
 @import "fonts/Baybayin.css";
 @import "fonts/TahomaBold.css";
+@import "fonts/PhosphateInline.css";
+@import "fonts/OpenSansRegular.css";
 
 @media (prefers-reduced-motion: no-preference) {
 
 }
 
 .App {
+  font-family: Courier, "Courier New", monospace, OpenSans-Regular, Tahoma-Bold, serif;
   background-color: #f1f1f1;
   height: 100%;
   min-height: 100vh;

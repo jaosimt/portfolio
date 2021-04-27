@@ -1,5 +1,6 @@
 .Header {
   display: flex;
+  font-family: OpenSans-Regular, Tahoma-Bold, serif;
   justify-content: space-between;
   align-items: center;
   position: fixed;
@@ -23,14 +24,14 @@
   }
 
   ul {
-    transition: all ease-in-out 300ms;
+    font-weight: bold;
+    transition: all ease-in-out 100ms;
     list-style: none;
     display: flex;
     margin: 0;
     align-items: center;
 
     li {
-      transition: all ease-in-out 300ms;
       cursor: pointer;
       opacity: 0.7;
       white-space: nowrap;
@@ -107,7 +108,6 @@
       position: fixed;
       right: 0;
       top: 0;
-      align-items: center;
       line-height: 2em;
       background-color: white;
       color: #f90;

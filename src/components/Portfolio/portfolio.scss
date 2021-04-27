@@ -1,17 +1,17 @@
 .Portfolio {
   text-align: center;
+  font-family: OpenSans-Regular, Tahoma-Bold, serif;
 
   .banner {
     height: 294px;
     background: #000 url(./professional-experience.png) no-repeat center 49%;
     background-size: cover;
-    margin: 0 -14px 14px -14px;
+    margin: 0 -14px 35px -14px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
     opacity: 0.7;
-    margin-bottom: 35px;
     color: #ff9900;
     font-family: Tahoma-Bold, Tahoma, serif;
     font-weight: bold;
