@@ -15,7 +15,7 @@ class Header extends Component {
 	
 	render() {
 		const { right } = this.state;
-		const { selected, onClick, setRef, history, setMenuItem } = this.props;
+		const { selected, setRef, history, setMenuItem } = this.props;
 		
 		return <div className={ `Header ${ selected }-page` } ref={ setRef }>
 			<div
@@ -37,13 +37,24 @@ class Header extends Component {
 						return <li key={ i }
 						           data-value={ menuItem }
 						           className={ `${ menuItem } ${ selected === menuItem && 'selected' }` }
-						           onClick={ onClick }>
+						           onClick={ this.menuItemClick }>
 							<NavLink to={ `/${ menuItem === 'home' ? '' : menuItem }` }>{ Capitalize(m) }</NavLink>
 						</li>
 					})
 				}
 			</ul>
 		</div>
+	}
+	
+	menuItemClick = e => {
+		const { right } = this.state,
+			{ onClick } = this.props;
+
+		onClick(e);
+		
+		console.log(right);
+		
+		if (right === '0px') this.toggleMenu();
 	}
 	
 	outsideClickHandler = event => {
