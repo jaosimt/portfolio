@@ -36,7 +36,10 @@ export default function Details(props) {
 					{ logo }
 				</a> : logo
 			}
-			<button className="go-back" onClick={ () => history.goBack() }>← Go Back</button>
+			<button className="go-back" onClick={ () => {
+				if (history.action !== 'POP') history.goBack();
+				else history.push('/portfolio');
+			} }>← Go Back</button>
 		</div>
 		<div className="work-details">
 			<h1 className="company-name">{ data.company.name }</h1>
