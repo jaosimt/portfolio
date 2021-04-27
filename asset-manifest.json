@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.2a2b9577.chunk.css",
-    "main.js": "/static/js/main.5f9a9e39.chunk.js",
-    "main.js.map": "/static/js/main.5f9a9e39.chunk.js.map",
+    "main.css": "/static/css/main.0006c5cc.chunk.css",
+    "main.js": "/static/js/main.14d46cb9.chunk.js",
+    "main.js.map": "/static/js/main.14d46cb9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.bcdb3d4b.js",
     "runtime-main.js.map": "/static/js/runtime-main.bcdb3d4b.js.map",
     "static/js/2.f764bd78.chunk.js": "/static/js/2.f764bd78.chunk.js",
@@ -10,10 +10,11 @@
     "static/js/3.235fdf56.chunk.js": "/static/js/3.235fdf56.chunk.js",
     "static/js/3.235fdf56.chunk.js.map": "/static/js/3.235fdf56.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.2a2b9577.chunk.css.map": "/static/css/main.2a2b9577.chunk.css.map",
+    "static/css/main.0006c5cc.chunk.css.map": "/static/css/main.0006c5cc.chunk.css.map",
     "static/js/2.f764bd78.chunk.js.LICENSE.txt": "/static/js/2.f764bd78.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/static/media/Tahoma_Bold.9d58a73b.ttf",
     "static/media/FoxPro_2.6_Developers_Guide_Cover.7d5658c2.png": "/static/media/FoxPro_2.6_Developers_Guide_Cover.7d5658c2.png",
+    "static/media/FoxproDosScreens.016a96d1.png": "/static/media/FoxproDosScreens.016a96d1.png",
     "static/media/codev.9d2d9c0f.webp": "/static/media/codev.9d2d9c0f.webp",
     "static/media/SocialMediaLinks.scss": "/static/media/instagram.b7c5e343.jpg",
     "static/media/kimwa.f213f3fe.png": "/static/media/kimwa.f213f3fe.png",
@@ -28,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.bcdb3d4b.js",
     "static/js/2.f764bd78.chunk.js",
-    "static/css/main.2a2b9577.chunk.css",
-    "static/js/main.5f9a9e39.chunk.js"
+    "static/css/main.0006c5cc.chunk.css",
+    "static/js/main.14d46cb9.chunk.js"
   ]
 }
