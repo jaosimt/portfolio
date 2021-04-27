@@ -4,6 +4,51 @@ import foxPro from './FoxPro_2.6_Developers_Guide_Cover.png';
 import foxProDosScreens from './FoxproDosScreens.png';
 import sbt from './sbtAccounting.png';
 
+export const codevDetails = <Fragment>
+
+</Fragment>
+
+export const metroDetails = <Fragment>
+
+</Fragment>
+
+export const tietoDetails = <Fragment>
+
+</Fragment>
+
+export const rphcDetails = <Fragment>
+	<p>Owner and operator of an appliance dealer, furniture manufacturer, memorial park, hotel and apartelle services.</p>
+	<p>Hired as EDP Head back in 2008 after the Company acquired an Accounting Information System.</p>
+	<h4 style={ { marginBottom: 0 } }>Employment:</h4>
+	<ul>
+		<li className="bold italic">20018 - 2012</li>
+		<ul>
+			<li className='italic'>Development</li>
+			<ul>
+				<li>Company Website</li>
+				<li>Accounting Information System</li>
+					<ul>
+						<li className="italic">Modifications and maintenance</li>
+						<li className='italic'>Report Pages</li>
+					</ul>
+				<li>Data Recovery and Enhancement System</li>
+				<li>Customer Support / Ticket System</li>
+			</ul>
+			<li className="italic">Server Administration</li>
+			<ul>
+				<li>Accounting Information System</li>
+				<li>Database</li>
+			</ul>
+		</ul>
+	</ul>
+	<p>
+		From JavaScript and ASP.Net to C# and Java, MSSql andPostgreSQL to IIS and Tomcat; A wide array of technology that I juggled almost all at the same time.  It was NEVER easy considering that I was derailed from the I.T. industry for a decade and the learning curved from an xbase language programmer to becoming a Web Developer.
+	</p>
+	<p>
+		Struggled but learned by doing it!  But the support of at least 2 wonderful individuals, (1)my brother, a Network Administrator from a reputable Japanese company and (2)a seasoned Java developer that believes in me really was a factor.  This was a reboot to my I.T. career that open a few doors.
+	</p>
+</Fragment>
+
 export const kimwaDetails = <Fragment>
 	<p>One of, if not the largest and pioneer supplier of ready-mixed concrete, and quality aggregates in the Visayas and
 		Mindanao.</p>

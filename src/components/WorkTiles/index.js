@@ -66,6 +66,7 @@ class WorkTiles extends Component {
 		const path = `${ history.location.pathname }/${ id }`;
 		
 		history.push(path)
+		window.scrollTo({top: 0});
 	};
 }
 

@@ -7,7 +7,11 @@ import kimwa from './kimwa.png';
 
 import {
 	hmcDetails,
-	kimwaDetails
+	kimwaDetails,
+	rphcDetails,
+	tietoDetails,
+	metroDetails,
+	codevDetails
 } from './details';
 
 export const workList = [
@@ -42,7 +46,8 @@ export const workList = [
 				notes: '',
 				languages: 'HTML, JavaScript, JQuery, PHP'
 			}
-		]
+		],
+		// details: codevDetails
 	}, {
 		id: 'metron',
 		dateRange: '2013 to 2018',
@@ -53,7 +58,8 @@ export const workList = [
 		position: 'Senior Front-End Engineer',
 		image: metron,
 		notes: "Spearheaded the Cebu team during a part time job in 2013.  Signed a full time job as a Sr. Frontend Engineer in 2014.",
-		languages: "Javascript MVC, React JS, IOS Swift"
+		languages: "Javascript MVC, React JS, IOS Swift",
+		// details: metroDetails
 	}, {
 		id: 'tieto',
 		dateRange: '2012 to 2014',
@@ -63,24 +69,27 @@ export const workList = [
 		position: 'Web UI Developer',
 		image: tieto,
 		notes: "In 2012, applied and Hired as a Web UI Developer. The companies label for a Front-End Developer.  Working alongside a handful of a few hundreds employee all in all.",
-		languages: "Java, JSF"
+		languages: "Java, JSF",
+		// details: tietoDetails
 	}, {
 		id: 'rphc',
 		dateRange: '2008 to 2012',
 		company: {
 			name: 'Rizon Property Holdings Corporation',
-			website: '//www.rizonholdings.com'
+			website: '//www.rizonholdings.com',
+			address: 'M. Rizon Building, Dap-dap, Mactan, Lapu-Lapu City, Cebu, 6015 Philippines'
 		},
 		position: 'EDP Head',
 		image: rizon,
-		notes: '',
-		languages: 'APS Net, JQuery, Java, JSP'
+		languages: 'APS Net, JQuery, Java, JSP',
+		details: rphcDetails
 	}, {
 		id: 'kcdc',
 		dateRange: '1997 - 2007',
 		company: {
 			name: 'Kimwa Construction & Development Corporation',
-			website: '//kimwaconstruction.com'
+			website: '//kimwaconstruction.com',
+			address: 'S. O. Albaño Street, Subangdaku, Mandaue City, Cebu, 6014 Philippines'
 		},
 		position: 'EDP Head / Transport Supervisor / Plant Supervisor',
 		image: kimwa,
