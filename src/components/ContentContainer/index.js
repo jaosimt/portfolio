@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import {
 	Switch,
 	Route,
-	useHistory,
-	useLocation
+	useHistory
 } from "react-router-dom";
 import Header from "../Header";
 import Home from "../Home";
@@ -17,7 +16,6 @@ import PortfolioDetails from "../Portfolio/details";
 
 export default function ContentContainer() {
 	const history = useHistory();
-	const location = useLocation();
 	
 	const [ menuItem, setMenuItem ] = useState(window.location.pathname === '/' ? 'home' : window.location.pathname.replace(/^\//, ""))
 	const [ offset, setOffset ] = useState({
@@ -77,8 +75,7 @@ export default function ContentContainer() {
 				<Route exact path="/portfolio/:companyId">
 					<PortfolioDetails
 						setMenuItem={ setMenuItem }
-						offset={ offset }
-						history={ history } />
+						offset={ offset } />
 				</Route>
 				<Route exact path="/portfolio">
 					<Porfolio offset={ offset } history={ history } />

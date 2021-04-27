@@ -9,9 +9,9 @@ import {
 	hmcDetails,
 	kimwaDetails,
 	rphcDetails,
-	tietoDetails,
-	metroDetails,
-	codevDetails
+	// tietoDetails,
+	// metroDetails,
+	// codevDetails
 } from './details';
 
 export const workList = [
