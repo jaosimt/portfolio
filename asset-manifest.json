@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.0006c5cc.chunk.css",
-    "main.js": "/static/js/main.14d46cb9.chunk.js",
-    "main.js.map": "/static/js/main.14d46cb9.chunk.js.map",
+    "main.css": "/static/css/main.efa5a07b.chunk.css",
+    "main.js": "/static/js/main.4a77c3d1.chunk.js",
+    "main.js.map": "/static/js/main.4a77c3d1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.bcdb3d4b.js",
     "runtime-main.js.map": "/static/js/runtime-main.bcdb3d4b.js.map",
-    "static/js/2.f764bd78.chunk.js": "/static/js/2.f764bd78.chunk.js",
-    "static/js/2.f764bd78.chunk.js.map": "/static/js/2.f764bd78.chunk.js.map",
+    "static/js/2.bfbfc3f1.chunk.js": "/static/js/2.bfbfc3f1.chunk.js",
+    "static/js/2.bfbfc3f1.chunk.js.map": "/static/js/2.bfbfc3f1.chunk.js.map",
     "static/js/3.235fdf56.chunk.js": "/static/js/3.235fdf56.chunk.js",
     "static/js/3.235fdf56.chunk.js.map": "/static/js/3.235fdf56.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.0006c5cc.chunk.css.map": "/static/css/main.0006c5cc.chunk.css.map",
-    "static/js/2.f764bd78.chunk.js.LICENSE.txt": "/static/js/2.f764bd78.chunk.js.LICENSE.txt",
+    "static/css/main.efa5a07b.chunk.css.map": "/static/css/main.efa5a07b.chunk.css.map",
+    "static/js/2.bfbfc3f1.chunk.js.LICENSE.txt": "/static/js/2.bfbfc3f1.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/static/media/Tahoma_Bold.9d58a73b.ttf",
     "static/media/FoxPro_2.6_Developers_Guide_Cover.7d5658c2.png": "/static/media/FoxPro_2.6_Developers_Guide_Cover.7d5658c2.png",
     "static/media/FoxproDosScreens.016a96d1.png": "/static/media/FoxproDosScreens.016a96d1.png",
@@ -24,12 +24,13 @@
     "static/media/portfolio.scss": "/static/media/professional-experience.74d12952.png",
     "static/media/rizon.b1b4afe7.png": "/static/media/rizon.b1b4afe7.png",
     "static/media/sImoAwardSmall.5daf61d1.png": "/static/media/sImoAwardSmall.5daf61d1.png",
+    "static/media/sbtAccounting.a612a333.png": "/static/media/sbtAccounting.a612a333.png",
     "static/media/tieto.462695a5.png": "/static/media/tieto.462695a5.png"
   },
   "entrypoints": [
     "static/js/runtime-main.bcdb3d4b.js",
-    "static/js/2.f764bd78.chunk.js",
-    "static/css/main.0006c5cc.chunk.css",
-    "static/js/main.14d46cb9.chunk.js"
+    "static/js/2.bfbfc3f1.chunk.js",
+    "static/css/main.efa5a07b.chunk.css",
+    "static/js/main.4a77c3d1.chunk.js"
   ]
 }
