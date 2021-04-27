@@ -32,7 +32,7 @@ export const rphcDetails = <Fragment>
 						<li className='italic'>Report Pages</li>
 					</ul>
 				<li>Data Recovery and Enhancement System</li>
-				<li><a href="//helpdesk.rizonholdings.com/" target="_blank" rel="noreferrer">Help Desk</a></li>
+				<li><a href="http://helpdesk.rizonholdings.com/" target="_blank" rel="noreferrer">Help Desk</a></li>
 			</ul>
 			<li className="italic">Server Administration</li>
 			<ul>
