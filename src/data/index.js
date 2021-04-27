@@ -12,7 +12,7 @@ export const workList = [
 			name: 'Complete Development (CoDev)',
 			website: '//www.codev.com'
 		},
-		position: 'Senior Web Developer',
+		position: 'Senior Front-End Developer',
 		image: codev,
 		client: [
 			{
@@ -112,7 +112,7 @@ export const workList = [
 			</p>
 			<h5>Language:</h5>
 			<p>
-				Back then, It was <a href="//en.wikipedia.org/wiki/FoxPro" target='_blank'>Foxpro</a> Dos.  A text-based procedural programming language and database management system.
+				Back then, It was <a href="//en.wikipedia.org/wiki/FoxPro" target='_blank' rel="noreferrer">Foxpro</a> Dos.  A text-based procedural programming language and database management system.
 			</p>
 		</Fragment>
 	}

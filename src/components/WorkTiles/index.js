@@ -32,6 +32,7 @@ class WorkTiles extends Component {
 				{
 					company.website &&
 					<a
+						rel="noreferrer"
 						href={ company.website || "#" }
 						target="_blank"
 						className="website">

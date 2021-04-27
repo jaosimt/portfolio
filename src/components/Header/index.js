@@ -24,7 +24,7 @@ class Header extends Component {
 					setMenuItem('home');
 				} }
 				className="logo bybyn">
-				<strong title="Sim Jao">ᜐᜒᜋ᜔&nbsp;ᜑᜏ᜔</strong>
+				<strong title="Sim Jao">ᜐᜒᜋ᜔</strong>&nbsp;<span>ᜑᜏ᜔</span>
 			</div>
 			<div id="header-hamburger"><span onClick={ this.toggleMenu }>☰</span></div>
 			<ul
