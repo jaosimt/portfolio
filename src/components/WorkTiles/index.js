@@ -61,12 +61,13 @@ class WorkTiles extends Component {
 	}
 	
 	readMoreClick = () => {
-		const { data, history } = this.props;
+		const { data, history, logHistory } = this.props;
 		const { id } = data;
 		const path = `${ history.location.pathname }/${ id }`;
 		
 		history.push(path)
 		window.scrollTo({top: 0});
+		logHistory();
 	};
 }
 

@@ -1,17 +1,14 @@
 import React  from "react";
 import './footer.scss';
 import SocialMediaLinks from "../SocialMediaLinks/SocialMediaLinks";
-import { Capitalize } from "../../scripts/utils";
-import { useHistory } from "react-router-dom";
 
 function Footer(props) {
-	const history = useHistory();
-	const { setRef } = props;
+	const { setRef, currentPath } = props;
 	
-	const currentPath = history.location.pathname.replace(/^\//, '');
+	console.log('[Footer] currentPath:', currentPath);
 	
 	return <div className="Footer" ref={ setRef }>
-			<span className="current-page">{ currentPath ? Capitalize(currentPath) : <span className='bybyn'>
+			<span className="current-page">{ currentPath !== "/" ? currentPath.replace(/^\//, '').split("/").join(".") : <span className='bybyn'>
 					<span title="Bisaya"><strong>ᜊᜒᜐᜌᜓ</strong></span>&nbsp;|&nbsp;
 				<span title="Filipino">ᜉᜒᜎᜒᜉᜒᜈᜓ</span>
 				</span> }</span>

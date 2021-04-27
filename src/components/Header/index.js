@@ -52,8 +52,6 @@ class Header extends Component {
 
 		onClick(e);
 		
-		console.log(right);
-		
 		if (right === '0px') this.toggleMenu();
 	}
 	

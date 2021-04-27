@@ -45,7 +45,7 @@ export const rphcDetails = <Fragment>
 		From JavaScript and ASP.Net to C# and Java, MSSql andPostgreSQL to IIS and Tomcat; A wide array of technology that I juggled almost all at the same time.  It was NEVER easy considering that I was derailed from the I.T. industry for a decade and the learning curved from an xbase language programmer to becoming a Web Developer.
 	</p>
 	<p>
-		Struggled but learned by doing it!  But the support of at least 2 wonderful individuals, (1)my brother, a Network Administrator from a reputable Japanese company and (2)a seasoned Java developer that believes in me really was a factor.  This was a reboot to my I.T. career that open a few doors.
+		Struggled but learned by doing it!  But the support of at least 2 wonderful individuals, (1)my brother, a Network Administrator from a reputable Japanese company and (2)a seasoned Java developer that believes in me really was a factor.  This was the reboot to my I.T. career that opened a few doors.
 	</p>
 </Fragment>
 

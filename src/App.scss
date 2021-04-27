@@ -30,8 +30,14 @@
 .gold { color: #f90; }
 
 button {
-  padding: 7px;
+  transition: all ease-in-out 300ms;
+  border-radius: 0;
+  border: 1px solid gainsboro;
+  padding: 7px 14px;
   cursor: pointer;
+  line-height: 28px;
+
+  &:hover { border: 1px solid #c7c7c7; }
   &:active { opacity: 0.3; }
 }
 

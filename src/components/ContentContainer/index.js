@@ -17,7 +17,8 @@ import PortfolioDetails from "../Portfolio/details";
 export default function ContentContainer() {
 	const history = useHistory();
 	
-	const [ menuItem, setMenuItem ] = useState(window.location.pathname === '/' ? 'home' : window.location.pathname.replace(/^\//, ""))
+	const [ pathname, setPathname ] = useState(history.location.pathname);
+	const [ menuItem, setMenuItem ] = useState(window.location.pathname === '/' ? 'home' : window.location.pathname.replace(/^\//, ""));
 	const [ offset, setOffset ] = useState({
 		header: 0,
 		footer: 0,
@@ -27,15 +28,25 @@ export default function ContentContainer() {
 	let headerRef = React.createRef(),
 		footerRef = React.createRef();
 	
-	const menuClickHandler = e => {
-		setMenuItem(e.currentTarget.getAttribute('data-value'));
+	const menuClickHandler = e => setMenuItem(e.currentTarget.getAttribute('data-value'));
+	
+	const logHistory = e => {
+		console.log('[logHistory] history.location.pathname:', history.location.pathname);
+		setPathname(history.location.pathname);
 	}
 	
 	const setHeaderRef = ref => headerRef = ref;
 	const setFooterRef = ref => footerRef = ref;
 	
 	useEffect(() => {
-		console.log('[ContentContainer] useEffect');
+		console.log('[ContentContainer] [useEffect] componentDidMount')
+	}, [])
+	
+	useEffect(() => {
+		const pathName = history.location.pathname;
+		
+		console.log('[ContentContainer] [useEffect] [componentDidUpdate] history.location.pathname:', pathName);
+		
 		const offsetHeight = () => {
 			return {
 				header: headerRef.clientHeight,
@@ -46,11 +57,23 @@ export default function ContentContainer() {
 		
 		const offset = offsetHeight();
 		setOffset(offset);
-		const currentPath = window.location.pathname.replace(/^\//, "");
-		if (currentPath !== '') {
-			history.push(currentPath);
+		setPathname(pathName);
+		
+		if (window.location.pathname !== pathName) {
+			history.push(window.location.pathname);
 		}
-	}, [footerRef.clientHeight, headerRef.clientHeight, history])
+		
+		const currentPath = pathName.replace(/^\//, '').split("/")[ 0 ];
+		if (currentPath === "") setMenuItem('home');
+		else if (menuItem !== currentPath) setMenuItem(currentPath);
+		
+	}, [
+		footerRef.clientHeight,
+		headerRef.clientHeight,
+		history,
+		history.location.pathname,
+		menuItem
+	])
 	
 	return <div className="ContentContainer" style={ {
 		marginTop: `${ offset.header - offset.margin }px`,
@@ -78,7 +101,7 @@ export default function ContentContainer() {
 						offset={ offset } />
 				</Route>
 				<Route exact path="/portfolio">
-					<Porfolio offset={ offset } history={ history } />
+					<Porfolio logHistory={ logHistory } offset={ offset } history={ history } />
 				</Route>
 				<Route path="/blogs">
 					<Blogs
@@ -93,6 +116,6 @@ export default function ContentContainer() {
 				</Route>
 			</Switch>
 		}
-		<Footer history={ history } setRef={ setFooterRef } />
+		<Footer currentPath={ pathname } setRef={ setFooterRef } />
 	</div>
 }
