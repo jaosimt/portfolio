@@ -3,6 +3,7 @@ div.About {
 
   .wrapper {
     .banner {
+      transition: all ease-in-out 3000ms;
       height: 294px;
       background: transparent url(./life.jpeg) no-repeat center;
       background-size: cover;
