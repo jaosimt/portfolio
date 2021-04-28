@@ -19,7 +19,7 @@ class Home extends Component {
 					am a fullstack developer.
 				</p>
 				<p>
-					At times, I maybe annoying and loud, but I am kind of a laid-back person really.
+					At times, I may be annoying and loud, but I am kind of a laid-back person really.
 				</p>
 			</div>
 		</div>

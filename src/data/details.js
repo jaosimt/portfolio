@@ -50,10 +50,8 @@ export const rphcDetails = <Fragment>
 </Fragment>
 
 export const kimwaDetails = <Fragment>
-	<p>One of, if not the largest and pioneer supplier of ready-mixed concrete, and quality aggregates in the Visayas and
-		Mindanao.</p>
-	<p>Started as EDP Head in 1997. Heavy Equipment & Transport Supervisor in 2000, and end up as a Plant
-		Supervisor/Manager/ET AL in 2002.</p>
+	<p>One of, if not the largest and pioneer supplier of ready-mixed concrete, and quality aggregates in the Visayas and Mindanao.</p>
+	<p>Started as EDP Head in 1997. Heavy Equipment & Transport Supervisor in 2000, and end up as a Plant Supervisor/Manager/ET AL in 2002.</p>
 	<h4 style={ { marginBottom: 0 } }>Employment:</h4>
 	<ul>
 		<li className="bold italic">1997 - 1998</li>
@@ -157,9 +155,7 @@ export const kimwaDetails = <Fragment>
 	<p>
 		If that ain’t crazy  then I don’t know what is.  Nevertheless, taught me a lot of things.  From learning to drive and operate all the equipments that the company has; to working with educated down to less educated personnel.  Handling the business aspect and even communicating with various government offices and officials as far as permits and collaborations are concerned.
 	</p>
-	<p>
-		Crazy but more than educational.
-	</p>
+	<p>Crazy but more than educational.</p>
 </Fragment>;
 
 export const hmcDetails = <Fragment>
