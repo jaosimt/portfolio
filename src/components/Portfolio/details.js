@@ -20,7 +20,7 @@ export default function Details(props) {
 	const offset = o.header + o.footer + o.margin;
 	
 	const logo = <div
-		className="banner"
+		className="company-logo"
 		style={ {
 			backgroundImage: `url(${ data && data.image ? data.image : noImage })`
 		} } />;

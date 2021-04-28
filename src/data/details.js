@@ -17,20 +17,32 @@ export const tietoDetails = <Fragment>
 </Fragment>
 
 export const rphcDetails = <Fragment>
-	<p>Owner and operator of an appliance dealer, furniture manufacturer, memorial park, hotel and apartelle services.</p>
+	<p>Owner and operator of an appliance dealer, furniture manufacturer, memorial park, hotel and apartelle
+		services.</p>
 	<p>Hired as EDP Head back in 2008 after the Company acquired an Accounting Information System.</p>
 	<h4 style={ { marginBottom: 0 } }>Employment:</h4>
 	<ul>
 		<li className="bold italic">20018 - 2012</li>
 		<ul>
-			<li className='italic'>Development</li>
+			<li className="italic">Development</li>
 			<ul>
-				<li>Company Website</li>
-				<li><a href="https://ais.rizonholdings.com/" target="_blank" rel="noreferrer">Accounting Information System</a></li>
-					<ul>
-						<li className="italic">Modifications and maintenance</li>
-						<li className='italic'>Report Pages</li>
-					</ul>
+				<li><a href="http://www.rizonholdings.com/" target="_blank" rel="noreferrer">Company Website</a></li>
+				<ul>
+					<li className="italic"><a href="http://www.rizonholdings.com/cecile/home.aspx" target="_blank"
+					                          rel="noreferrer">Cecile Enterprises</a></li>
+					<li className="italic"><a href="http://www.rizonholdings.com/fred/home.aspx" target="_blank"
+					                          rel="noreferrer">Fredzon Furniture and Appliance Center</a></li>
+					<li className="italic"><a href="http://www.rizonholdings.com/farm/home.aspx" target="_blank"
+					                          rel="noreferrer">M & C Agricultural Integrated Farm Incorporated</a></li>
+					<li className="italic"><a href="http://www.rizonholdings.com/realty/home.aspx" target="_blank"
+					                          rel="noreferrer">Lorenz Executive Apartelle</a></li>
+				</ul>
+				<li><a href="https://ais.rizonholdings.com/" target="_blank" rel="noreferrer">Accounting Information
+					System</a></li>
+				<ul>
+					<li className="italic">Modifications and maintenance</li>
+					<li className="italic">Report Pages</li>
+				</ul>
 				<li>Data Recovery and Enhancement System</li>
 				<li><a href="http://helpdesk.rizonholdings.com/" target="_blank" rel="noreferrer">Help Desk</a></li>
 			</ul>
@@ -42,16 +54,22 @@ export const rphcDetails = <Fragment>
 		</ul>
 	</ul>
 	<p>
-		From JavaScript and ASP.Net to C# and Java, MSSql and PostgreSQL to IIS and Tomcat; A wide array of language that I juggled almost all at the same time.  It was NEVER easy considering that I was derailed from the I.T. industry for a decade on top of the learning curve from an xbase language programmer to becoming a Web Developer.
+		From JavaScript and ASP.Net to C# and Java, MSSql and PostgreSQL to IIS and Tomcat; A wide array of language that
+		I juggled almost all at the same time. It was NEVER easy considering that I was derailed from the I.T. industry
+		for a decade on top of the learning curve from an xbase language programmer to becoming a Web Developer.
 	</p>
 	<p>
-		Struggled but learned it by doing it!  Nevertheless, the support of at least 2 wonderful individuals, (1)my brother, a Network Administrator from a reputable Japanese company and (2)a seasoned Java developer that believes in me really was a big deal.  This was the reboot to my I.T. career that opened a few doors.
+		Struggled but learned it by doing it! Nevertheless, the support of at least 2 wonderful individuals, (1)my
+		brother, a Network Administrator from a reputable Japanese company and (2)a seasoned Java developer that believes
+		in me really was a big deal. This was the reboot to my I.T. career that opened a few doors.
 	</p>
 </Fragment>
 
 export const kimwaDetails = <Fragment>
-	<p>One of, if not the largest and pioneer supplier of ready-mixed concrete, and quality aggregates in the Visayas and Mindanao.</p>
-	<p>Started as EDP Head in 1997. Heavy Equipment & Transport Supervisor in 2000, and end up as a Plant Supervisor/Manager/ET AL in 2002.</p>
+	<p>One of, if not the largest and pioneer supplier of ready-mixed concrete, and quality aggregates in the Visayas and
+		Mindanao.</p>
+	<p>Started as EDP Head in 1997. Heavy Equipment & Transport Supervisor in 2000, and end up as a Plant
+		Supervisor/Manager/ET AL in 2002.</p>
 	<h4 style={ { marginBottom: 0 } }>Employment:</h4>
 	<ul>
 		<li className="bold italic">1997 - 1998</li>
@@ -112,7 +130,7 @@ export const kimwaDetails = <Fragment>
 	<p>The problem was, I graduated a Computer Programming course and my hardware knowledge back then was next to nothing
 		and are all theories. I haven’t tried assembling one ever.</p>
 	<p>
-		But then like I said, I considered myself more than lucky to have found the job and so maybe I could fix one.
+		But then like I said, I considered myself blessed to have found the job and so maybe I could fix one.
 		Needless to say perhaps? Indeed, I was able to identify the working parts that was just lying all over the place
 		and eventually able to configure and have a working computer after almost a day.
 	</p>
@@ -124,36 +142,59 @@ export const kimwaDetails = <Fragment>
 	</p>
 	<p>SBT Accounting system. A system most likely today’s ERP, before it was even called “ERP”. My primary
 		responsibility.</p>
-	<img src={ sbt } alt="SBT Accounting" className="inline" />
+	<div className="inline-image" style={ { backgroundImage: `url(${ sbt })` } } />
 	<p>
-		Considering that nobody was there to walk me through the technical aspect of the system, It was more than luck
-		that it was built using Foxpro. However, it does comes with a dozen books or so that helps me up to speed.
+		Considering that nobody was there to walk me through the technical aspect of the system, it was a blessing that it
+		was built using Foxpro. And, it does comes with a dozen books or so that helps me up to speed.
 	</p>
 	<p>For the mentioned developed applications, I built it all using Foxpro programming language too.</p>
 	<h4 style={ { marginBottom: 0 } }>The Crazy Part:</h4>
 	<p>
-		Year 1999, the company suffers labor issues and was forced to temporarily shut down almost all main office and main ready-mixed-concrete plant operations and issued a forced indefinite leave to all affected personnels.  Needless to say that it includes me.
+		Year 1999, the company suffers labor issues and was forced to temporarily shut down almost all main office and
+		main ready-mixed-concrete plant operations and issued a forced indefinite leave to all affected personnels.
+		Needless to say that it includes me.
 	</p>
 	<p>
-		For a year, after making a living in my in-laws farm in Mindanao, I got a call from the office, but it was not a recall.  The company still couldn’t restore the EDP Department.  I was only asked to develop a system for the motor pool departments (Transport and Maintenance shop).  The offer was good and so I took it.
+		For a year, after making a living in my in-laws farm in Mindanao, I got a call from the office, but it was not a
+		recall. The company still couldn’t restore the EDP Department. I was only asked to develop a system for the motor
+		pool departments (Transport and Maintenance shop). The offer was good and so I took it.
 	</p>
 	<p>
-		That was year 2000.  A system that monitor equipment’s consumptions from diesel down to lug nuts.  It also monitor the routine maintenances from tuneups to oil change and even the number of trips or the operation time for timed based equipments such as excavators and dozers.  It was a good two plus months of development.
+		That was year 2000. A system that monitor equipment’s consumptions from diesel down to lug nuts. It also monitor
+		the routine maintenances from tuneups to oil change and even the number of trips or the operation time for timed
+		based equipments such as excavators and dozers. It was a good two plus months of development.
 	</p>
 	<p>
-		During the implementation of the system, an unexpected offer from my boss to supervise the department itself primarily because of the newly built application and since there was nobody that has any computer knowledge in that department nor a supervisor too.  Obviously, it was never his plan since he called me to build and did pay me a good amount for it.  Despite the need to have a job, I was a little scared and definitely shocked.  It was way out of my league obviously.  I am young and knows nothing other than to work in front of a computer, except of course in my in-laws farm since I was born on a small farm too.  But Heavy Equipment and Transport? I don’t even know how to drive at that point… but, I have to give it to him, he persuaded me good, and his right on one thing for sure.  I knew the system because I built it.  So how hard could it be, he said.
+		During the implementation of the system, an unexpected offer from my boss to supervise the department itself
+		primarily because of the newly built application and since there was nobody that has any computer knowledge in
+		that department nor a supervisor too. Obviously, it was never his plan since he called me to build and did pay me
+		a good amount for it. Despite the need to have a job, I was a little scared and definitely shocked. It was way out
+		of my league obviously. I am young and knows nothing other than to work in front of a computer, except of course
+		in my in-laws farm since I was born on a small farm too. But Heavy Equipment and Transport? I don’t even know how
+		to drive at that point… but, I have to give it to him, he persuaded me good, and his right on one thing for sure.
+		I knew the system because I built it. So how hard could it be, he said.
 	</p>
 	<p>
-		Having a kid already, I took the job.  Development updates continues almost all through out while in the position.  And it was a good two years with a satisfied boss.  Satisfied enough that he trusted me on a bigger role for a much needed supervisory/management et al in an aggregates plant.  A remote crusher plant down south Cebu.  The offer includes a service vehicle, a house for me and my family with free utility expenses including gas.
+		Having a kid already, I took the job. Development updates continues almost all through out while in the position.
+		And it was a good two years with a satisfied boss. Satisfied enough that he trusted me on a bigger role for a much
+		needed supervisory/management et al in an aggregates plant. A remote crusher plant down south Cebu. The offer
+		includes a service vehicle, a house for me and my family with free utility expenses including gas.
 	</p>
 	<p>
-		And so I was persuaded once again and lasted for a good seven years.  I was having fun despite a rather crazy operation responsibilities across 2 towns in the south where 2 plants and 3 quarry sites are situated.
+		And so I was persuaded once again and lasted for a good seven years. I was having fun despite a rather crazy
+		operation responsibilities across 2 towns in the south where 2 plants and 3 quarry sites are situated.
 	</p>
 	<p>
-		The fun part actually was, It became easy when I completed the application that I built specifically to help me do all the necessary recordings and inventory from raw materials to finish products including all the functionality of the Equipment Maintenance & Monitoring system that I previously built and implemented in the company’s motor pool department.
+		The fun part actually was, It became easy when I completed the application that I built specifically to help me do
+		all the necessary recordings and inventory from raw materials to finish products including all the functionality
+		of the Equipment Maintenance & Monitoring system that I previously built and implemented in the company’s motor
+		pool department.
 	</p>
 	<p>
-		If that ain’t crazy  then I don’t know what is.  Nevertheless, taught me a lot of things.  From learning to drive and operate all the equipments that the company has; to working with educated down to less educated personnel.  Handling the business aspect and even communicating with various government offices and officials as far as permits and collaborations are concerned.
+		If that ain’t crazy then I don’t know what is. Nevertheless, taught me a lot of things. From learning to drive and
+		operate all the equipments that the company has; to working with educated down to less educated personnel.
+		Handling the business aspect and even communicating with various government offices and officials as far as
+		permits and collaborations are concerned.
 	</p>
 	<p>Crazy but more than educational.</p>
 </Fragment>;
@@ -187,9 +228,13 @@ export const hmcDetails = <Fragment>
 		ranks and are manually placed.
 	</p>
 	<p>
-		However a newbie, I was able to revive and revise the application in less than two weeks which I originally
-		estimated to be 2 to 3 months. I was very happy and I thought that If I was not lucky, I must be very good.
-		Talk about an excited newbie able to pocket a 5k Philippine peso in just a little over a week 😉.
+		However a newbie, I was able to revive and revise the application in a few weeks which I originally
+		estimated to be 2 to 3 months. I was very happy and I thought that If I wasn't getting any kind of help, I must be
+		very good.
+	</p>
+	<p>
+		Talk about an excited newbie able to pocket a 5k Philippine peso in just a little over a week! It wasn't that much
+		today but It was back in the 90s. 😉
 	</p>
 	<p>
 		Behind the proud and very delighted newbie being able to complete the job way ahead of time is the fact
@@ -204,8 +249,8 @@ export const hmcDetails = <Fragment>
 		Back then, It was <a href="//en.wikipedia.org/wiki/FoxPro" target="_blank" rel="noreferrer">Foxpro</a> Dos.
 		A text-based procedural programming language and database management system.
 	</p>
-	<div>
-		<img className="lang-images" src={ foxPro } alt="Foxpro Dos" />
-		<img className="lang-images" src={ foxProDosScreens } alt="Foxpro Dos" />
+	<div className="inline-flex-image">
+		<div className="img" style={ { backgroundImage: `url(${ foxPro })` } } />
+		<div className="img" style={ { backgroundImage: `url(${ foxProDosScreens })` } } />
 	</div>
 </Fragment>;
