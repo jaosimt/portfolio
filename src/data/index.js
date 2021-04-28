@@ -9,8 +9,8 @@ import {
 	hmcDetails,
 	kimwaDetails,
 	rphcDetails,
-	// tietoDetails,
-	// metroDetails,
+	tietoDetails,
+	metroDetails,
 	// codevDetails
 } from './details';
 
@@ -53,24 +53,26 @@ export const workList = [
 		dateRange: '2013 to 2018',
 		company: {
 			name: 'Metron Innovation Group',
-			website: '//metron.io'
+			website: '//metron.io',
+			address: 'San Jose, California'
 		},
 		position: 'Senior Front-End Engineer',
 		image: metron,
 		notes: "Spearheaded the Cebu team during a part time job in 2013.  Signed a full time job as a Sr. Frontend Engineer in 2014.",
 		languages: "Javascript MVC, React JS, IOS Swift",
-		// details: metroDetails
+		details: metroDetails
 	}, {
 		id: 'tieto',
 		dateRange: '2012 to 2014',
 		company: {
-			name: 'Tieto Global Oy - Philippines'
+			name: 'Tieto Global Oy - Philippines',
+			address: '8th Floor, Cebu I.T. Tower, Bohol Avenue, corner Mindanao Avenue, Cebu City 6000 Philippines'
 		},
 		position: 'Web UI Developer',
 		image: tieto,
 		notes: "In 2012, applied and Hired as a Web UI Developer. The companies label for a Front-End Developer.  Working alongside a handful of a few hundreds employee all in all.",
 		languages: "Java, JSF",
-		// details: tietoDetails
+		details: tietoDetails
 	}, {
 		id: 'rphc',
 		dateRange: '2008 to 2012',

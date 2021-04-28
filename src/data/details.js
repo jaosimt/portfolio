@@ -9,11 +9,89 @@ export const codevDetails = <Fragment>
 </Fragment>
 
 export const metroDetails = <Fragment>
-
+	<p>
+		A Silicon Valley technology start up that propels some of the biggest fitness coaches & brands in the world generating millions in revenue. We provide the tools and services they need to automate their business, so they can focus on what they do best.
+	</p>
+	<p>
+		In 2013, I was approached by a colleague to work as a par-time Front-End Developer.  I was asked if I'm familiar with <a href="https://en.wikipedia.org/wiki/JavaScriptMVC" target="_blank" rel="noreferrer">JavaScriptMVC</a> and I said, I know Javascript and I may have an idea what JavaScriptMVC is.  But no, I haven't come across with it.  And so I asked if I can take a look at it first prior to committing on the offered job.  And so I did.  Little did I know I already started working on the project.
+	</p>
+	<p>
+		In 2014, I officially signed a contract as a full-time Senior Front-end Engineer.
+	</p>
+	<h4 style={ { marginBottom: 0 } }>Employment:</h4>
+	<ul>
+		<li className="bold italic">2013 - 2017</li>
+		<ul>
+			<li className="bold">Responsibilities</li>
+			<ul>
+				<li className="italic">Lead and mentor Cebu UI development team</li>
+				<li className="italic">Help facilitate operations and the point of contact for Metron Innovation(formerly MailFin Inc dba WorkoutInbox) Cebu</li>
+				<li className="italic">Help recruit team members and build camaraderie and productivity</li>
+				<li className="italic">Development of the UI architecture to build usability, performance and scalability</li>
+				<li className="italic">Maintain and enhance current UI standards and libraries</li>
+				<li className="italic">Own and establish the documentation standards for the shared UI pattern library</li>
+				<li className="italic">Participate design, task break down, implementation, code reviews and ensure project schedule and quality</li>
+			</ul>
+			<li className="bold">Development</li>
+			<ul>
+				<li>JavaScript fitness applications</li>
+				<ul>
+					<li className="italic">Leaderboard</li>
+					<li className="italic">Workout application [Metron App]</li>
+				</ul>
+			</ul>
+			<li className="bold">Deployment</li>
+			<ul>
+				<li>Spearheaded the Cebu Team during Application deployment of Javascript (JavaScriptMVC & React JS) applications - hand-in-hand with the U.S. Team.</li>
+			</ul>
+		</ul>
+		<li className="bold italic">2017 - 2018</li>
+		<ul>
+			<li className="bold">Development</li>
+			<ul>
+				<li>IOS Fitness Application [Metron App]</li>
+			</ul>
+		</ul>
+	</ul>
+	<h4 style={ { marginBottom: 0 } }>Language:</h4>
+	<ul>
+		<li>HTML, CSS</li>
+		<li>JavaScript</li>
+		<ul>
+			<li className="italic">JavascriptMVC</li>
+			<li className="italic">React JS</li>
+		</ul>
+		<li>Bash script, subversion, Apache</li>
+		<li>IOS Swift</li>
+	</ul>
 </Fragment>
 
 export const tietoDetails = <Fragment>
-
+	<p>A leading Nordic IT services and software company.</p>
+	<p>A globally recognized technology company with strong drive to grasp the opportunities of the data-driven world and the aim to become customer’s first choice for business renewal.</p>
+	<p>
+		In 2012 I was one of the blessed Cebuano who became a part of Tieto - Philipines.  I boarded as a member of a small group developing a UI framework; A proprietary UI framework use to develop the clients web application.
+	</p>
+	<h4 style={ { marginBottom: 0 } }>Employment:</h4>
+	<ul>
+		<li className="bold italic">2012 - 2014</li>
+		<ul>
+			<li className="bold">Development</li>
+			<ul>
+				<li>WebUI Application Framework</li>
+			</ul>
+			<li className="bold">Management</li>
+			<ul>
+				<li>Merlin Production Pipe</li>
+			</ul>
+		</ul>
+	</ul>
+	<h4 style={ { marginBottom: 0 } }>Language:</h4>
+	<ul>
+		<li>HTML, CSS, JavaScript</li>
+		<li>Java JSF</li>
+		<li>Selenium, Robot Framework</li>
+	</ul>
 </Fragment>
 
 export const rphcDetails = <Fragment>
@@ -245,10 +323,12 @@ export const hmcDetails = <Fragment>
 		Nevertheless, It was an achievement and an experience, my very first in-fact after college.
 	</p>
 	<h4 style={ { marginBottom: 0 } }>Language:</h4>
-	<p>
-		Back then, It was <a href="//en.wikipedia.org/wiki/FoxPro" target="_blank" rel="noreferrer">Foxpro</a> Dos.
-		A text-based procedural programming language and database management system.
-	</p>
+	<ul>
+		<li><a href="//en.wikipedia.org/wiki/FoxPro" target="_blank" rel="noreferrer">Foxpro Dos</a></li>
+		<ul>
+			<li className="italic">A text-based procedural programming language and database management system.</li>
+		</ul>
+	</ul>
 	<div className="inline-flex-image">
 		<div className="img" style={ { backgroundImage: `url(${ foxPro })` } } />
 		<div className="img" style={ { backgroundImage: `url(${ foxProDosScreens })` } } />
