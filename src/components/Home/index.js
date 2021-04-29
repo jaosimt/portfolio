@@ -17,9 +17,13 @@ class Home extends Component {
 	
 	componentDidMount() {
 		const rotateImgIndex = () => {
+			const { imageIndex } = this.state;
+			let nextIndex = imageIndex + 1;
+			if (nextIndex === this.imageArray.length) nextIndex = 0;
+			
 			setTimeout(() => {
 				this.setState({
-					imageIndex: Math.floor(Math.random() * this.imageArray.length)
+					imageIndex: nextIndex
 				});
 				
 				rotateImgIndex();
