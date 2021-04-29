@@ -1,26 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.2ee5ad81.chunk.css",
-    "main.js": "/static/js/main.de9221d8.chunk.js",
-    "main.js.map": "/static/js/main.de9221d8.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.938af4a5.js",
-    "runtime-main.js.map": "/static/js/runtime-main.938af4a5.js.map",
+    "main.css": "/static/css/main.15245e4c.chunk.css",
+    "main.js": "/static/js/main.1d3aae4e.chunk.js",
+    "main.js.map": "/static/js/main.1d3aae4e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bcdb3d4b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bcdb3d4b.js.map",
     "static/js/2.3db2cfa7.chunk.js": "/static/js/2.3db2cfa7.chunk.js",
     "static/js/2.3db2cfa7.chunk.js.map": "/static/js/2.3db2cfa7.chunk.js.map",
-    "static/js/3.2b074204.chunk.js": "/static/js/3.2b074204.chunk.js",
-    "static/js/3.2b074204.chunk.js.map": "/static/js/3.2b074204.chunk.js.map",
+    "static/js/3.235fdf56.chunk.js": "/static/js/3.235fdf56.chunk.js",
+    "static/js/3.235fdf56.chunk.js.map": "/static/js/3.235fdf56.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.2ee5ad81.chunk.css.map": "/static/css/main.2ee5ad81.chunk.css.map",
+    "static/css/main.15245e4c.chunk.css.map": "/static/css/main.15245e4c.chunk.css.map",
     "static/js/2.3db2cfa7.chunk.js.LICENSE.txt": "/static/js/2.3db2cfa7.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/static/media/Tahoma_Bold.9d58a73b.ttf",
     "static/media/FoxPro_2.6_Developers_Guide_Cover.7d5658c2.png": "/static/media/FoxPro_2.6_Developers_Guide_Cover.7d5658c2.png",
     "static/media/FoxproDosScreens.016a96d1.png": "/static/media/FoxproDosScreens.016a96d1.png",
+    "static/media/baybayin-pilipinas.7696aff2.jpg": "/static/media/baybayin-pilipinas.7696aff2.jpg",
+    "static/media/baybayinCharacters.33152fae.png": "/static/media/baybayinCharacters.33152fae.png",
     "static/media/codev.9d2d9c0f.webp": "/static/media/codev.9d2d9c0f.webp",
     "static/media/SocialMediaLinks.scss": "/static/media/instagram.b7c5e343.jpg",
     "static/media/kimwa.f213f3fe.png": "/static/media/kimwa.f213f3fe.png",
     "static/media/about.scss": "/static/media/life.6d86b5ad.jpeg",
     "static/media/header.scss": "/static/media/logo.e2a91469.svg",
     "static/media/metron.ed660293.png": "/static/media/metron.ed660293.png",
+    "static/media/philippineScripts.eb1a8596.jpg": "/static/media/philippineScripts.eb1a8596.jpg",
+    "static/media/professional-experience.109f45e4.jpg": "/static/media/professional-experience.109f45e4.jpg",
+    "static/media/projects.8ca1fe88.jpg": "/static/media/projects.8ca1fe88.jpg",
     "static/media/rizon.b1b4afe7.png": "/static/media/rizon.b1b4afe7.png",
     "static/media/sImoAwardSmall.5daf61d1.png": "/static/media/sImoAwardSmall.5daf61d1.png",
     "static/media/sbtAccounting.a612a333.png": "/static/media/sbtAccounting.a612a333.png",
@@ -35,9 +40,9 @@
     "static/media/under-construction.506bfbfa.png": "/static/media/under-construction.506bfbfa.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.938af4a5.js",
+    "static/js/runtime-main.bcdb3d4b.js",
     "static/js/2.3db2cfa7.chunk.js",
-    "static/css/main.2ee5ad81.chunk.css",
-    "static/js/main.de9221d8.chunk.js"
+    "static/css/main.15245e4c.chunk.css",
+    "static/js/main.1d3aae4e.chunk.js"
   ]
 }
