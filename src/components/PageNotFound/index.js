@@ -23,7 +23,7 @@ class PageNotFound extends Component {
 			<span
 				className="description-one">{ isUnderConstruction ? 'This Page Is Under Construction' : 'Oops! This Page Could Not Be Found' }</span>
 			<span
-				className="description-two">{ isUnderConstruction ? 'Please revisit this page in the future.' : 'Sorry but the page you are looking for does not exist, have been removed, renamed or temporarily unavailable!' }</span>
+				className="description-two">{ isUnderConstruction ? 'Please revisit this page some time soon.' : 'Sorry but the page you are looking for does not exist, have been removed, renamed or temporarily unavailable!' }</span>
 			{
 				history &&
 				<button
