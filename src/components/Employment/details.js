@@ -26,7 +26,7 @@ export default function Details(props) {
 		} } />;
 	
 	const backButton = <button className="go-back" onClick={ () => {
-		history.push(`/portfolio#${ data.id }`);
+		history.push(`/employment#${ data.id }`);
 	} }>← Go Back</button>;
 	
 	useEffect(() => {
@@ -34,7 +34,7 @@ export default function Details(props) {
 	});
 	
 	return data ? <div
-		className={ 'PortfolioDetails' }
+		className={ 'EmploymentDetails' }
 		style={ {
 			minHeight: `calc(100vh - ${ offset }px)`
 		} }>

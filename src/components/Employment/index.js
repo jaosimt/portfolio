@@ -1,18 +1,18 @@
 import React, { Component } from "react";
-import './portfolio.scss';
+import './employment.scss';
 import { workList } from "../../data/WorkList";
 import WorkTiles from "../WorkTiles";
 
-class Porfolio extends Component {
+class Employment extends Component {
 	componentDidMount() {
 		const { history } = this.props;
 		const { logHistory } = this.props;
-		console.log('[Portfolio] componentDidMount');
+		console.log('[Employment] componentDidMount');
 		logHistory();
 		
 		
 		if (history.location.hash) {
-			console.log('[Porfolio] componentDidMount', history.location.hash);
+			console.log('[Employment] componentDidMount', history.location.hash);
 			setTimeout(() => {
 				document.querySelector(history.location.hash).scrollIntoView({
 					behavior: 'smooth',
@@ -28,11 +28,11 @@ class Porfolio extends Component {
 		const offset = o.header + o.footer + o.margin;
 		
 		return <div
-			className={ 'Portfolio' }
+			className={ 'Employment' }
 			style={ {
 				minHeight: `calc(100vh - ${ offset }px)`
 			} }>
-			<div className="banner text-shadow-white">Work Experience</div>
+			<div className="banner text-shadow-white">Employment</div>
 			<div className="work-list">
 				{
 					workList.map((w, i) => <WorkTiles key={ i } data={ w } history={ history } logHistory={ logHistory } />)
@@ -42,4 +42,4 @@ class Porfolio extends Component {
 	}
 }
 
-export default Porfolio;
+export default Employment;

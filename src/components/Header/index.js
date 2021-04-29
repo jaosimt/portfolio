@@ -32,7 +32,7 @@ class Header extends Component {
 				ref={ this.ulRef }>
 				<div id="menu-hamburger"><span onClick={ this.toggleMenu }>☰</span></div>
 				{
-					[ 'home', 'about', 'portfolio', 'blogs' ].map((m, i) => {
+					[ 'home', 'about', 'employment', 'projects', 'blogs' ].map((m, i) => {
 						const menuItem = SnakeCase(m);
 						return <li key={ i }
 						           data-value={ menuItem }

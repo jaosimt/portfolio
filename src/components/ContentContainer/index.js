@@ -8,11 +8,12 @@ import Header from "../Header";
 import Home from "../Home";
 import Footer from "../Footer";
 import Blogs from "../Blogs";
-import Porfolio from "../Portfolio";
+import Employment from "../Employment";
+import Projects from "../Projects";
 import About from "../About";
 import './content.scss';
 import PageNotFound from "../PageNotFound";
-import PortfolioDetails from "../Portfolio/details";
+import EmploymentDetails from "../Employment/details";
 
 export default function ContentContainer() {
 	const history = useHistory();
@@ -95,13 +96,16 @@ export default function ContentContainer() {
 				<Route path="/about">
 					<About offset={ offset } />
 				</Route>
-				<Route exact path="/portfolio/:companyId">
-					<PortfolioDetails
+				<Route exact path="/employment/:companyId">
+					<EmploymentDetails
 						setMenuItem={ setMenuItem }
 						offset={ offset } />
 				</Route>
-				<Route exact path="/portfolio">
-					<Porfolio logHistory={ logHistory } offset={ offset } history={ history } />
+				<Route exact path="/employment">
+					<Employment logHistory={ logHistory } offset={ offset } history={ history } />
+				</Route>
+				<Route exact path="/projects">
+					<Projects logHistory={ logHistory } offset={ offset } history={ history } />
 				</Route>
 				<Route path="/blogs">
 					<Blogs
