@@ -1,12 +1,41 @@
 import { Component } from 'react';
 import './home.scss';
+import simo1 from './simo1.jpg';
+import simo2 from './simo2.jpg';
+import simo3 from './simo3.jpg';
+import simo4 from './simo4.jpg';
+import simo5 from './simo5.jpg';
+import simo6 from './simo6.jpg';
+import simo7 from './simo7.jpg';
 
 class Home extends Component {
+	state = {
+		imageIndex: 0
+	}
+	
+	imageArray = [ simo1, simo2, simo3, simo4, simo5, simo6, simo7 ];
+	
+	componentDidMount() {
+		const rotateImgIndex = () => {
+			setTimeout(() => {
+				this.setState({
+					imageIndex: Math.floor(Math.random() * this.imageArray.length)
+				});
+				
+				rotateImgIndex();
+			}, 14000);
+		}
+		rotateImgIndex();
+	}
 	
 	render() {
+		const { imageIndex } = this.state;
+		
 		return <div className="Home">
 			<h2 title="Greetings" className="greetings bybyn">ᜃᜋᜓᜐ᜔ᜆ</h2>
-			<div className="profile-image" />
+			<div className="profile-image" style={ {
+				backgroundImage: `url(${this.imageArray[ imageIndex ]})`
+			} } />
 			<div className="profile-description">
 				<div className="greetings bybyn">ᜃᜋᜓᜐ᜔ᜆ</div>
 				<h1 className="name gold">Sim Jao</h1>
