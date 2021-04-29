@@ -5,11 +5,16 @@ import foxProDosScreens from './FoxproDosScreens.png';
 import sbt from './sbtAccounting.png';
 
 export const codevDetails = <Fragment>
-
+	<p className='italic'>CoDev solves staffing problems by providing highly skilled professionals to growing technical companies.</p>
+	<p>In June 2019, I was blessed to have been considered and boarded in this wonderful family.</p>
+	<h4 className="label"><span>Employment</span><span>2019 - present</span></h4>
+	<ul>
+		<li className="bold italic"></li>
+	</ul>
 </Fragment>
 
 export const metroDetails = <Fragment>
-	<p>
+	<p className='italic'>
 		A Silicon Valley technology start up that propels some of the biggest fitness coaches & brands in the world generating millions in revenue. We provide the tools and services they need to automate their business, so they can focus on what they do best.
 	</p>
 	<p>
@@ -18,42 +23,39 @@ export const metroDetails = <Fragment>
 	<p>
 		In 2014, I officially signed a contract as a full-time Senior Front-end Engineer.
 	</p>
-	<h4 style={ { marginBottom: 0 } }>Employment:</h4>
+	<h4 className="label"><span>Employment</span><span>2013 - 2017</span></h4>
 	<ul>
-		<li className="bold italic">2013 - 2017</li>
+		<li className="bold">Responsibilities</li>
 		<ul>
-			<li className="bold">Responsibilities</li>
+			<li className="italic">Lead and mentor Cebu UI development team</li>
+			<li className="italic">Help facilitate operations and the point of contact for Metron Innovation(formerly MailFin Inc dba WorkoutInbox) Cebu</li>
+			<li className="italic">Help recruit team members and build camaraderie and productivity</li>
+			<li className="italic">Development of the UI architecture to build usability, performance and scalability</li>
+			<li className="italic">Maintain and enhance current UI standards and libraries</li>
+			<li className="italic">Own and establish the documentation standards for the shared UI pattern library</li>
+			<li className="italic">Participate design, task break down, implementation, code reviews and ensure project schedule and quality</li>
+		</ul>
+		<li className="bold">Development</li>
+		<ul>
+			<li>JavaScript fitness applications</li>
 			<ul>
-				<li className="italic">Lead and mentor Cebu UI development team</li>
-				<li className="italic">Help facilitate operations and the point of contact for Metron Innovation(formerly MailFin Inc dba WorkoutInbox) Cebu</li>
-				<li className="italic">Help recruit team members and build camaraderie and productivity</li>
-				<li className="italic">Development of the UI architecture to build usability, performance and scalability</li>
-				<li className="italic">Maintain and enhance current UI standards and libraries</li>
-				<li className="italic">Own and establish the documentation standards for the shared UI pattern library</li>
-				<li className="italic">Participate design, task break down, implementation, code reviews and ensure project schedule and quality</li>
-			</ul>
-			<li className="bold">Development</li>
-			<ul>
-				<li>JavaScript fitness applications</li>
-				<ul>
-					<li className="italic">Leaderboard</li>
-					<li className="italic">Workout application [Metron App]</li>
-				</ul>
-			</ul>
-			<li className="bold">Deployment</li>
-			<ul>
-				<li>Spearheaded the Cebu Team during Application deployment of Javascript (JavaScriptMVC & React JS) applications - hand-in-hand with the U.S. Team.</li>
+				<li className="italic">Leaderboard</li>
+				<li className="italic">Workout application [Metron App]</li>
 			</ul>
 		</ul>
-		<li className="bold italic">2017 - 2018</li>
+		<li className="bold">Deployment</li>
 		<ul>
-			<li className="bold">Development</li>
-			<ul>
-				<li>IOS Fitness Application [Metron App]</li>
-			</ul>
+			<li>Spearheaded the Cebu Team during Application deployment of Javascript (JavaScriptMVC & React JS) applications - hand-in-hand with the U.S. Team.</li>
 		</ul>
 	</ul>
-	<h4 style={ { marginBottom: 0 } }>Language:</h4>
+	<h4 className="label">&nbsp;<span>2017 - 2018</span></h4>
+	<ul>
+		<li className="bold">Development</li>
+		<ul>
+			<li>IOS Fitness Application [Metron App]</li>
+		</ul>
+	</ul>
+	<h4 className="label">Language:</h4>
 	<ul>
 		<li>HTML, CSS</li>
 		<li>JavaScript</li>
@@ -67,26 +69,24 @@ export const metroDetails = <Fragment>
 </Fragment>
 
 export const tietoDetails = <Fragment>
-	<p>A leading Nordic IT services and software company.</p>
-	<p>A globally recognized technology company with strong drive to grasp the opportunities of the data-driven world and the aim to become customer’s first choice for business renewal.</p>
+	<p className='italic'>
+		A leading Nordic IT services and software company.  A globally recognized technology company with strong drive to grasp the opportunities of the data-driven world and the aim to become customer’s first choice for business renewal.
+	</p>
 	<p>
 		In 2012 I was one of the blessed Cebuano who became a part of Tieto - Philipines.  I boarded as a member of a small group developing a UI framework; A proprietary UI framework use to develop the clients web application.
 	</p>
-	<h4 style={ { marginBottom: 0 } }>Employment:</h4>
+	<h4 className="label"><span>Employment</span><span>2012 - 2014</span></h4>
 	<ul>
-		<li className="bold italic">2012 - 2014</li>
+		<li className="bold">Development</li>
 		<ul>
-			<li className="bold">Development</li>
-			<ul>
-				<li>WebUI Application Framework</li>
-			</ul>
-			<li className="bold">Management</li>
-			<ul>
-				<li>Merlin Production Pipe</li>
-			</ul>
+			<li>WebUI Application Framework</li>
+		</ul>
+		<li className="bold">Management</li>
+		<ul>
+			<li>Merlin Production Pipe</li>
 		</ul>
 	</ul>
-	<h4 style={ { marginBottom: 0 } }>Language:</h4>
+	<h4 className="label">Language:</h4>
 	<ul>
 		<li>HTML, CSS, JavaScript</li>
 		<li>Java JSF</li>
@@ -95,108 +95,105 @@ export const tietoDetails = <Fragment>
 </Fragment>
 
 export const rphcDetails = <Fragment>
-	<p>Owner and operator of an appliance dealer, furniture manufacturer, memorial park, hotel and apartelle
-		services.</p>
+	<p className='italic'>Owner and operator of an appliance dealer, furniture manufacturer, memorial park, hotel and apartelle services.</p>
 	<p>Hired as EDP Head back in 2008 after the Company acquired an Accounting Information System.</p>
-	<h4 style={ { marginBottom: 0 } }>Employment:</h4>
+	<h4 className="label"><span>Employment</span><span>20018 - 2012</span></h4>
 	<ul>
-		<li className="bold italic">20018 - 2012</li>
+		<li className="italic">Development</li>
 		<ul>
-			<li className="italic">Development</li>
+			<li><a href="http://www.rizonholdings.com/" target="_blank" rel="noreferrer">Company Website</a></li>
 			<ul>
-				<li><a href="http://www.rizonholdings.com/" target="_blank" rel="noreferrer">Company Website</a></li>
-				<ul>
-					<li className="italic"><a href="http://www.rizonholdings.com/cecile/home.aspx" target="_blank"
-					                          rel="noreferrer">Cecile Enterprises</a></li>
-					<li className="italic"><a href="http://www.rizonholdings.com/fred/home.aspx" target="_blank"
-					                          rel="noreferrer">Fredzon Furniture and Appliance Center</a></li>
-					<li className="italic"><a href="http://www.rizonholdings.com/farm/home.aspx" target="_blank"
-					                          rel="noreferrer">M & C Agricultural Integrated Farm Incorporated</a></li>
-					<li className="italic"><a href="http://www.rizonholdings.com/realty/home.aspx" target="_blank"
-					                          rel="noreferrer">Lorenz Executive Apartelle</a></li>
-				</ul>
-				<li><a href="https://ais.rizonholdings.com/" target="_blank" rel="noreferrer">Accounting Information
-					System</a></li>
-				<ul>
-					<li className="italic">Modifications and maintenance</li>
-					<li className="italic">Report Pages</li>
-				</ul>
-				<li>Data Recovery and Enhancement System</li>
-				<li><a href="http://helpdesk.rizonholdings.com/" target="_blank" rel="noreferrer">Help Desk</a></li>
+				<li className="italic"><a href="http://www.rizonholdings.com/cecile/home.aspx" target="_blank"
+				                          rel="noreferrer">Cecile Enterprises</a></li>
+				<li className="italic"><a href="http://www.rizonholdings.com/fred/home.aspx" target="_blank"
+				                          rel="noreferrer">Fredzon Furniture and Appliance Center</a></li>
+				<li className="italic"><a href="http://www.rizonholdings.com/farm/home.aspx" target="_blank"
+				                          rel="noreferrer">M & C Agricultural Integrated Farm Incorporated</a></li>
+				<li className="italic"><a href="http://www.rizonholdings.com/realty/home.aspx" target="_blank"
+				                          rel="noreferrer">Lorenz Executive Apartelle</a></li>
 			</ul>
-			<li className="italic">Server Administration</li>
+			<li><a href="https://ais.rizonholdings.com/" target="_blank" rel="noreferrer">Accounting Information
+				System</a></li>
 			<ul>
-				<li>Accounting Information System</li>
-				<li>Database</li>
+				<li className="italic">Modifications and maintenance</li>
+				<li className="italic">Report Pages</li>
 			</ul>
+			<li>Data Recovery and Enhancement System</li>
+			<li><a href="http://helpdesk.rizonholdings.com/" target="_blank" rel="noreferrer">Help Desk</a></li>
+		</ul>
+		<li className="italic">Server Administration</li>
+		<ul>
+			<li>Accounting Information System</li>
+			<li>Database</li>
 		</ul>
 	</ul>
 	<p>
-		From JavaScript and ASP.Net to C# and Java, MSSql and PostgreSQL to IIS and Tomcat; A wide array of language that
-		I juggled almost all at the same time. It was NEVER easy considering that I was derailed from the I.T. industry
-		for a decade on top of the learning curve from an xbase language programmer to becoming a Web Developer.
+		There was wide array of language that I juggled almost all at the same time. It was NEVER easy considering that I was derailed from the I.T. industry for a decade on top of the learning curve from an xbase language programmer to becoming a Web Developer.
 	</p>
 	<p>
 		Struggled but learned it by doing it! Nevertheless, the support of at least 2 wonderful individuals, (1)my
 		brother, a Network Administrator from a reputable Japanese company and (2)a seasoned Java developer that believes
 		in me really was a big deal. This was the reboot to my I.T. career that opened a few doors.
 	</p>
+	<h4 className="label">Language</h4>
+	<ul>
+		<li>HTML, CSS, JavaScript, jQuery, ASP.Net</li>
+		<li>C#, Java JSP/JSF</li>
+		<li>MSSql, PostgreSQL</li>
+		<li>IIS, Tomcat</li>
+	</ul>
 </Fragment>
 
 export const kimwaDetails = <Fragment>
-	<p>One of, if not the largest and pioneer supplier of ready-mixed concrete, and quality aggregates in the Visayas and
-		Mindanao.</p>
+	<p className='italic'>One of, if not the largest and pioneer supplier of ready-mixed concrete, and quality aggregates in the Visayas and Mindanao.</p>
 	<p>Started as EDP Head in 1997. Heavy Equipment & Transport Supervisor in 2000, and end up as a Plant
 		Supervisor/Manager/ET AL in 2002.</p>
-	<h4 style={ { marginBottom: 0 } }>Employment:</h4>
+	<h4 className="label"><span>Employment</span><span><span>EDP Head</span>&nbsp;|&nbsp;<span>1997 - 1998</span></span></h4>
 	<ul>
-		<li className="bold italic">1997 - 1998</li>
+		<li className="bold">Administration</li>
 		<ul>
-			<li className="bold">Administration</li>
-			<ul>
-				<li>SBT Accounting System</li>
-				<li>Novell Netware Network System</li>
-			</ul>
-			<li className="bold">Development</li>
-			<ul>
-				<li>Telephone Directory System</li>
-				<li>Customer Profiler & Quotation System</li>
-				<li>Human Resource Information System</li>
-			</ul>
+			<li>SBT Accounting System</li>
+			<li>Novell Netware Network System</li>
 		</ul>
-		<li className="bold italic">1998 – 1999 | Outsourced to Subsidiary CYL Trading</li>
+		<li className="bold">Development</li>
 		<ul>
-			<li className="bold">Development</li>
-			<ul>
-				<li>Payroll System</li>
-				<li>Water Billing System</li>
-				<li>Trucking Billing System</li>
-			</ul>
+			<li>Telephone Directory System</li>
+			<li>Customer Profiler & Quotation System</li>
+			<li>Human Resource Information System</li>
 		</ul>
-		<li className="bold italic">2000 – 2002 | Heavy Equipment & Transport Supervisor</li>
+	</ul>
+	<h4 className="label">&nbsp;<span><span>Outsourced to Subsidiary CYL Trading</span>&nbsp;|&nbsp;<span>1998 – 1999</span></span></h4>
+	<ul>
+		<li className="bold">Development</li>
 		<ul>
-			<li className="bold">Supervisory</li>
-			<ul>
-				<li>Oversee Transport / Equipment and Maintenance</li>
-				<li>Supervised more than 30 personnel</li>
-			</ul>
-			<li className="bold">Development</li>
-			<ul>
-				<li>Equipment Maintenance & Monitoring System</li>
-			</ul>
+			<li>Payroll System</li>
+			<li>Water Billing System</li>
+			<li>Trucking Billing System</li>
 		</ul>
-		<li className="bold italic">2002 – 2007 | Aggregates Plant Supervisor</li>
+	</ul>
+	<h4 className="label">&nbsp;<span><span>Heavy Equipment & Transport Supervisor</span>&nbsp;|&nbsp;<span>2000 – 2002</span></span></h4>
+	<ul>
+		<li className="bold">Supervisory</li>
 		<ul>
-			<li className="bold">Supervisory / Management</li>
-			<ul>
-				<li>Overall Plant Operation across 2 crusher plants and 3 quarry sites</li>
-				<li>Supervised more than 20 personnel</li>
-			</ul>
-			<li className="bold">Development</li>
-			<ul>
-				<li>Oil & Spare parts Inventory System</li>
-				<li>Plant Production System</li>
-			</ul>
+			<li>Oversee Transport / Equipment and Maintenance</li>
+			<li>Supervised more than 30 personnel</li>
+		</ul>
+		<li className="bold">Development</li>
+		<ul>
+			<li>Equipment Maintenance & Monitoring System</li>
+		</ul>
+	</ul>
+	<h4 className="label">&nbsp;<span><span>Aggregates Plant Supervisor</span>&nbsp;|&nbsp;<span>2002 – 2007</span></span></h4>
+	<ul>
+		<li className="bold">Supervisory / Management</li>
+		<ul>
+			<li>Overall Plant Operation across 2 crusher plants and 3 quarry sites</li>
+			<li>Supervised more than 30 personnel</li>
+		</ul>
+		<li className="bold">Development</li>
+		<ul>
+			<li>Oil & Spare parts Inventory System</li>
+			<li>Plant Production System</li>
 		</ul>
 	</ul>
 	<p>Right after my first ever job, I was hired to head Kimwa’s Electronic Data Processing Department.</p>
@@ -225,8 +222,12 @@ export const kimwaDetails = <Fragment>
 		Considering that nobody was there to walk me through the technical aspect of the system, it was a blessing that it
 		was built using Foxpro. And, it does comes with a dozen books or so that helps me up to speed.
 	</p>
-	<p>For the mentioned developed applications, I built it all using Foxpro programming language too.</p>
-	<h4 style={ { marginBottom: 0 } }>The Crazy Part:</h4>
+	<h4 className="label">Language</h4>
+	<ul>
+		<li><a href="//en.wikipedia.org/wiki/FoxPro" target="_blank" rel="noreferrer">Foxpro</a></li>
+		<li><a href="//en.wikipedia.org/wiki/Novell" target="_blank" rel="noreferrer">Novell Netware</a></li>
+	</ul>
+	<h4 className="label">The Crazy Part</h4>
 	<p>
 		Year 1999, the company suffers labor issues and was forced to temporarily shut down almost all main office and
 		main ready-mixed-concrete plant operations and issued a forced indefinite leave to all affected personnels.
@@ -278,14 +279,14 @@ export const kimwaDetails = <Fragment>
 </Fragment>;
 
 export const hmcDetails = <Fragment>
-	<p>Was a startup company owned by a Pilipino-American.</p>
+	<p className='italic'>Was a startup company owned by a Pilipino-American.</p>
 	<p>Right after graduation in 1996, I was hired after rendering OJT on the same Company.</p>
 	<p>
 		The Company provides I.T. services, sales & consultancy with address at 11 P. Zamora street, Cebu City,
 		Philippines. By now, the company was long gone for reasons that I am not entirely sure. One is that, the
 		owner went back to the U.S.
 	</p>
-	<h4 style={ { marginBottom: 0 } }>Employment:</h4>
+	<h4 className="label">Employment:</h4>
 	<ul>
 		<li>On-The-Job Training</li>
 		<li>Project based Computer Programmer</li>
@@ -322,7 +323,7 @@ export const hmcDetails = <Fragment>
 	<p>
 		Nevertheless, It was an achievement and an experience, my very first in-fact after college.
 	</p>
-	<h4 style={ { marginBottom: 0 } }>Language:</h4>
+	<h4 className="label">Language:</h4>
 	<ul>
 		<li><a href="//en.wikipedia.org/wiki/FoxPro" target="_blank" rel="noreferrer">Foxpro Dos</a></li>
 		<ul>

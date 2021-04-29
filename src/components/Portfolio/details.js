@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
-import { workList } from "../../data";
+import { workList } from "../../data/WorkList";
 import './details.scss';
 import PageNotFound from "../PageNotFound";
 import noImage from "../../images/noimage.png";
@@ -25,6 +25,14 @@ export default function Details(props) {
 			backgroundImage: `url(${ data && data.image ? data.image : noImage })`
 		} } />;
 	
+	const backButton = <button className="go-back" onClick={ () => {
+		history.push(`/portfolio#${ data.id }`);
+	} }>← Go Back</button>;
+	
+	useEffect(() => {
+		window.scrollTo({ top: 0 });
+	});
+	
 	return data ? <div
 		className={ 'PortfolioDetails' }
 		style={ {
@@ -36,10 +44,6 @@ export default function Details(props) {
 					{ logo }
 				</a> : logo
 			}
-			<button className="go-back" onClick={ () => {
-				if (history.action !== 'POP') history.goBack();
-				else history.push('/portfolio');
-			} }>← Go Back</button>
 		</div>
 		<div className="work-details">
 			<h1 className="company-name">{ data.company.name }</h1>
@@ -50,6 +54,9 @@ export default function Details(props) {
 			{
 				data.details
 			}
+			<div>
+				{ backButton }
+			</div>
 		</div>
 	</div> : <PageNotFound
 		setMenuItem={ setMenuItem }

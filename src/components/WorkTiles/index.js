@@ -17,7 +17,7 @@ class WorkTiles extends Component {
 	render() {
 		const { logoHeight } = this.state;
 		const { data } = this.props;
-		const { dateRange, position, company, image, details } = data;
+		const { id, dateRange, position, company, image, details } = data;
 		
 		const logo = <div
 			ref={ ref => this.logoRef = ref }
@@ -27,7 +27,7 @@ class WorkTiles extends Component {
 				height: `${ logoHeight }px`
 			} } />;
 		
-		return <div className="WorkTiles">
+		return <div id={ id } className="WorkTiles">
 			<div className="logo-wrapper">
 				{
 					company.website &&
@@ -66,7 +66,6 @@ class WorkTiles extends Component {
 		const path = `${ history.location.pathname }/${ id }`;
 		
 		history.push(path)
-		window.scrollTo({top: 0});
 		logHistory();
 	};
 }

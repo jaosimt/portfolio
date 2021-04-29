@@ -3,6 +3,10 @@ import './about.scss';
 import award from './sImoAwardSmall.png';
 
 class About extends Component {
+	componentDidMount() {
+		window.scrollTo({ top: 0 });
+	}
+	
 	render() {
 		const { offset: o } = this.props;
 		const offset = o.header + o.footer + o.margin;

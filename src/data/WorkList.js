@@ -11,8 +11,8 @@ import {
 	rphcDetails,
 	tietoDetails,
 	metroDetails,
-	// codevDetails
-} from './details';
+	codevDetails
+} from './WorkDetails';
 
 export const workList = [
 	{
@@ -20,7 +20,8 @@ export const workList = [
 		dateRange: '2019 to present',
 		company: {
 			name: 'Complete Development (CoDev)',
-			website: '//www.codev.com'
+			website: '//www.codev.com',
+			address: '7F, The Link Building, Cebu I.T. Park, Apas, Lahug, Cebu City, Cebu, 6000 Philippines'
 		},
 		position: 'Senior Front-End Developer',
 		image: codev,
@@ -47,7 +48,7 @@ export const workList = [
 				languages: 'HTML, JavaScript, JQuery, PHP'
 			}
 		],
-		// details: codevDetails
+		details: codevDetails
 	}, {
 		id: 'metron',
 		dateRange: '2013 to 2018',
