@@ -25,29 +25,6 @@ export const workList = [
 		},
 		position: 'Senior Front-End Developer',
 		image: codev,
-		client: [
-			{
-				name: 'Turingscraft',
-				website: 'turingscraft.com',
-				responsibility: 'Develop and maintain front-end projects',
-				notes: '',
-				languages: 'React JS, Cucumber, Java, JSP'
-			},
-			{
-				name: 'Visionem',
-				website: 'visionem.org',
-				responsibility: 'Develop and maintain front-end projects',
-				notes: '',
-				languages: 'HTML, JavaScript, JQuery, PHP'
-			},
-			{
-				name: 'Securechannel',
-				website: 'www.securechannel.com',
-				responsibility: 'Develop and maintain front-end projects',
-				notes: '',
-				languages: 'HTML, JavaScript, JQuery, PHP'
-			}
-		],
 		details: codevDetails
 	}, {
 		id: 'metron',
@@ -60,7 +37,7 @@ export const workList = [
 		position: 'Senior Front-End Engineer',
 		image: metron,
 		notes: "Spearheaded the Cebu team during a part time job in 2013.  Signed a full time job as a Sr. Frontend Engineer in 2014.",
-		languages: "Javascript MVC, React JS, IOS Swift",
+		languages: "JavaScript MVC, React JS, IOS Swift",
 		details: metroDetails
 	}, {
 		id: 'tieto',
@@ -84,7 +61,7 @@ export const workList = [
 		},
 		position: 'EDP Head',
 		image: rizon,
-		languages: 'APS Net, JQuery, Java, JSP',
+		languages: 'APS Net, jQuery, Java, JSP',
 		details: rphcDetails
 	}, {
 		id: 'kcdc',

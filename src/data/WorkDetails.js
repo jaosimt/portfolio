@@ -3,17 +3,54 @@ import React, { Fragment } from "react";
 import foxPro from './FoxPro_2.6_Developers_Guide_Cover.png';
 import foxProDosScreens from './FoxproDosScreens.png';
 import sbt from './sbtAccounting.png';
-import PageNotFound from "../components/PageNotFound";
 
 export const codevDetails = <Fragment>
 	<p className='italic'>CoDev solves staffing problems by providing highly skilled professionals to growing technical companies.</p>
 	<p>In June 2019, I was blessed to have been considered and boarded in this wonderful family.</p>
 	<h4 className="label"><span>Employment</span><span>2019 - present</span></h4>
 	<ul>
-		<li className="bold italic"></li>
+		<li className="bold">
+			<a href="//turingscraft.com" target="_blank" rel="noreferrer">TuringsCraft</a>
+		</li>
+		<ul>
+			<li>Develop and maintain front-end projects</li>
+			<li className="italic">Language</li>
+			<ul>
+				<li>React JS, Cucumber, Java, JSP</li>
+			</ul>
+		</ul>
+		<li className="bold">VisionEm</li>
+		<ul>
+			<li>Develop and maintain front-end projects</li>
+			<ul>
+				<li><a href="//visionem.org/" target="_blank" rel="noreferrer">VisionEm</a></li>
+				<li><a href="//allegroreviews.visionem.org/" target="_blank" rel="noreferrer">AllegroReviews</a></li>
+				<li><a href="//excellerence.visionem.org/" target="_blank" rel="noreferrer">Excellerence</a></li>
+			</ul>
+			<li className="italic">Language</li>
+			<ul>
+				<li>HTML, CSS, JavaScript, jQuery, PHP</li>
+			</ul>
+		</ul>
+		<li className="bold">
+			<a href="//www.securechannels.com/" target="_blank" rel="noreferrer">SecureChannels</a>
+		</li>
+		<ul>
+			<li>Develop and maintain front-end project</li>
+			<ul>
+				<li><a href="//scifcom.com/" target="_blank" rel="noreferrer">scifcom.com</a></li>
+			</ul>
+			<li className="italic">Language</li>
+			<ul>
+				<li>HTML, CSS, JavaScript, jQuery, PHP</li>
+			</ul>
+		</ul>
 	</ul>
-	<PageNotFound isUnderConstruction={ true } />
-	<br/>
+	<h4 className="label">Nomination</h4>
+	<ul>
+		<li>Nominee for May 2020 Employee of the Month</li>
+		<li>Nominee for March 2021 Employee of the Month</li>
+	</ul>
 </Fragment>
 
 export const metroDetails = <Fragment>
@@ -21,7 +58,7 @@ export const metroDetails = <Fragment>
 		A Silicon Valley technology start up that propels some of the biggest fitness coaches & brands in the world generating millions in revenue. We provide the tools and services they need to automate their business, so they can focus on what they do best.
 	</p>
 	<p>
-		In 2013, I was approached by a colleague to work as a par-time Front-End Developer.  I was asked if I'm familiar with <a href="https://en.wikipedia.org/wiki/JavaScriptMVC" target="_blank" rel="noreferrer">JavaScriptMVC</a> and I said, I know Javascript and I may have an idea what JavaScriptMVC is.  But no, I haven't come across with it.  And so I asked if I can take a look at it first prior to committing on the offered job.  And so I did.  Little did I know I already started working on the project.
+		In 2013, I was approached by a colleague to work as a par-time Front-End Developer.  I was asked if I'm familiar with <a href="https://en.wikipedia.org/wiki/JavaScriptMVC" target="_blank" rel="noreferrer">JavaScriptMVC</a> and I said, I know JavaScript and I may have an idea what JavaScriptMVC is.  But no, I haven't come across with it.  And so I asked if I can take a look at it first prior to committing on the offered job.  And so I did.  Little did I know I already started working on the project.
 	</p>
 	<p>
 		In 2014, I officially signed a contract as a full-time Senior Front-end Engineer.
@@ -48,7 +85,7 @@ export const metroDetails = <Fragment>
 		</ul>
 		<li className="bold">Deployment</li>
 		<ul>
-			<li>Spearheaded the Cebu Team during Application deployment of Javascript (JavaScriptMVC & React JS) applications - hand-in-hand with the U.S. Team.</li>
+			<li>Spearheaded the Cebu Team during Application deployment of JavaScript (JavaScriptMVC & React JS) applications - hand-in-hand with the U.S. Team.</li>
 		</ul>
 	</ul>
 	<h4 className="label">&nbsp;<span>2017 - 2018</span></h4>

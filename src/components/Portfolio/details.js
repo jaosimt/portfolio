@@ -44,6 +44,7 @@ export default function Details(props) {
 					{ logo }
 				</a> : logo
 			}
+			{ backButton }
 		</div>
 		<div className="work-details">
 			<h1 className="company-name">{ data.company.name }</h1>
