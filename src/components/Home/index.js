@@ -10,12 +10,16 @@ import simo7 from './simo7.jpg';
 
 class Home extends Component {
 	state = {
-		imageIndex: 0
+		imageIndex: 0,
+		imageOpacity: 0
 	}
 	
 	imageArray = [ simo1, simo2, simo3, simo4, simo5, simo6, simo7 ];
 	
 	componentDidMount() {
+		let idxs = [],
+			timeout = 49;
+		
 		const rotateImgIndex = () => {
 			const { imageIndex } = this.state;
 			let nextIndex = imageIndex + 1;
@@ -26,19 +30,27 @@ class Home extends Component {
 					imageIndex: nextIndex
 				});
 				
+				if (idxs.length !== this.imageArray.length) {
+					if (!idxs.includes(imageIndex)) idxs.push(imageIndex);
+					console.log('idxs:', idxs);
+				} else {
+					timeout = 14000;
+					this.setState({ imageOpacity: 1});
+				}
 				rotateImgIndex();
-			}, 14000);
+			}, timeout);
 		}
 		rotateImgIndex();
 	}
 	
 	render() {
-		const { imageIndex } = this.state;
+		const { imageIndex, imageOpacity } = this.state;
 		
 		return <div className="Home">
 			<h2 title="Greetings" className="greetings bybyn">ᜃᜋᜓᜐ᜔ᜆ</h2>
 			<div className="profile-image" style={ {
-				backgroundImage: `url(${this.imageArray[ imageIndex ]})`
+				backgroundImage: `url(${this.imageArray[ imageIndex ]})`,
+				opacity: imageOpacity
 			} } />
 			<div className="profile-description">
 				<div className="greetings bybyn">ᜃᜋᜓᜐ᜔ᜆ</div>

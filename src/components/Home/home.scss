@@ -7,7 +7,7 @@
   > .greetings { display: none; }
 
   .profile-image {
-    transition: background-image ease-in-out 7000ms;
+    transition: background-image ease-in-out 3000ms, opacity ease-in-out 300ms;
     margin-right: 35px;
     background-color: white;
     background-repeat: no-repeat;
