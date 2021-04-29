@@ -1,11 +1,14 @@
-.PageNotFound{
+.PageNotFound {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   align-self: center;
   max-width: 434px;
 
-  span.bybyn { font-size: 35px; }
+  span.bybyn {
+    font-size: 35px;
+    margin-bottom: 7px;
+  }
 
   span.title,
   span.bybyn,
@@ -25,16 +28,29 @@
     word-break: break-word;
   }
 
-  span.message { font-size: 98px; }
+  span.message {
+    font-size: 98px;
+    line-height: 1;
+  }
+
+  span.message.four-o-four {
+    margin-bottom: 21px;
+  }
 
   span.description-one,
   span.description-two {
-    margin-bottom: 14px;
+    margin: 0;
   }
 
   span.description-two {
     font-size: smaller;
   }
 
-  span.font-smaller { font-size: 28px; }
+  span.font-smaller {
+    font-size: 28px;
+  }
+
+  button {
+    margin-top: 14px;
+  }
 }

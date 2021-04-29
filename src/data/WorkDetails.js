@@ -3,6 +3,7 @@ import React, { Fragment } from "react";
 import foxPro from './FoxPro_2.6_Developers_Guide_Cover.png';
 import foxProDosScreens from './FoxproDosScreens.png';
 import sbt from './sbtAccounting.png';
+import PageNotFound from "../components/PageNotFound";
 
 export const codevDetails = <Fragment>
 	<p className='italic'>CoDev solves staffing problems by providing highly skilled professionals to growing technical companies.</p>
@@ -11,6 +12,8 @@ export const codevDetails = <Fragment>
 	<ul>
 		<li className="bold italic"></li>
 	</ul>
+	<PageNotFound isUnderConstruction={ true } />
+	<br/>
 </Fragment>
 
 export const metroDetails = <Fragment>
