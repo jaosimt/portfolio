@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
-import './workTiles.scss';
+import './tiles.scss';
 import noImage from '../../images/noimage.png';
 
-class WorkTiles extends Component {
+class Tiles extends Component {
 	state = {
 		logoHeight: 0
 	}
@@ -17,7 +17,7 @@ class WorkTiles extends Component {
 	render() {
 		const { logoHeight } = this.state;
 		const { data } = this.props;
-		const { id, dateRange, position, company, image, details } = data;
+		const { id, dateRange, title, subject, image, details } = data;
 		
 		const logo = <div
 			ref={ ref => this.logoRef = ref }
@@ -30,17 +30,17 @@ class WorkTiles extends Component {
 		return <div id={ id } className="WorkTiles">
 			<div className="logo-wrapper">
 				{
-					company.website &&
+					subject.website &&
 					<a
 						rel="noreferrer"
-						href={ company.website || "#" }
+						href={ subject.website || "#" }
 						target="_blank"
 						className="website">
 						{ logo }
 					</a>
 				}
 				{
-					!company.website &&
+					!subject.website &&
 					logo
 				}
 			</div>
@@ -48,8 +48,8 @@ class WorkTiles extends Component {
 				height: `calc(100% - ${ logoHeight }px)`
 			} }>
 				<div>
-					<h3 className="position">{ position }</h3>
-					<h5 className="company">{ company.name }</h5>
+					<h3 className="title">{ title }</h3>
+					<h5 className="subject">{ subject.name }</h5>
 					<h5 className="date-range">{ dateRange }</h5>
 				</div>
 				{
@@ -70,12 +70,12 @@ class WorkTiles extends Component {
 	};
 }
 
-WorkTiles.propTypes = {
+Tiles.propTypes = {
 	data: PropTypes.shape({
 		id: PropTypes.string.isRequired,
-		dateRange: PropTypes.string.isRequired,
-		position: PropTypes.string.isRequired,
-		company: PropTypes.shape({
+		dateRange: PropTypes.string,
+		title: PropTypes.string.isRequired,
+		subject: PropTypes.shape({
 			name: PropTypes.string.isRequired,
 			website: PropTypes.string,
 			address: PropTypes.string
@@ -83,4 +83,4 @@ WorkTiles.propTypes = {
 	})
 };
 
-export default WorkTiles;
+export default Tiles;

@@ -1,4 +1,4 @@
-.EmploymentDetails {
+.Details {
   display: flex;
   justify-content: center;
   padding: 62px 0 14px;
@@ -7,7 +7,7 @@
     text-align: center;
     margin-right: 49px;
 
-    a > .company-logo {
+    a > .subject-logo {
       transition: opacity ease-in-out 300ms;
       opacity: 0.7;
 
@@ -16,7 +16,7 @@
       }
     }
 
-    .company-logo {
+    .subject-logo {
       width: 434px;
       height: 434px;
       background: #c7c7c7 url("../../images/noimage.png") no-repeat center 49%;
@@ -28,7 +28,7 @@
     }
   }
 
-  .work-details {
+  .subject-details {
     display: inline-flex;
     max-width: 798px;
     flex-direction: column;
@@ -49,13 +49,13 @@
       }
     }
 
-    .company-name {
+    .topic-title {
       text-transform: uppercase;
       margin: 0;
       color: #ff9900;
     }
 
-    .company-address {
+    .topic-label {
       margin: 0;
     }
 
@@ -102,14 +102,14 @@
 }
 
 @media (max-width: 1325px) {
-  .EmploymentDetails {
+  .Details {
     flex-direction: column;
     align-items: center;
 
     .logo-wrapper {
       margin: 0;
 
-      .company-logo {
+      .subject-logo {
         width: 294px;
         height: 294px;
       }
@@ -122,8 +122,8 @@
 }
 
 @media (max-width: 768px) {
-  .EmploymentDetails {
-    .work-details {
+  .Details {
+    .subject-details {
       width: 100%;
       max-width: unset;
     }

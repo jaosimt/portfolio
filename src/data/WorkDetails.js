@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
 
-import foxPro from './FoxPro_2.6_Developers_Guide_Cover.png';
-import foxProDosScreens from './FoxproDosScreens.png';
-import sbt from './sbtAccounting.png';
+import foxPro from './images/work/FoxPro_2.6_Developers_Guide_Cover.png';
+import foxProDosScreens from './images/work/FoxproDosScreens.png';
+import sbt from './images/work/sbtAccounting.png';
 
 export const codevDetails = <Fragment>
 	<p className='italic'>CoDev solves staffing problems by providing highly skilled professionals to growing technical companies.</p>

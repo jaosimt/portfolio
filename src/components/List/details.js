@@ -1,17 +1,15 @@
-import PropTypes from 'prop-types';
 import React, { useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
-import { workList } from "../../data/WorkList";
 import './details.scss';
 import PageNotFound from "../PageNotFound";
 import noImage from "../../images/noimage.png";
 
 export default function Details(props) {
-	const { companyId } = useParams(),
+	const { id } = useParams(),
 		history = useHistory();
 	
 	
-	let data = workList.filter(d => d.id === companyId);
+	let data = props.data.filter(d => d.id === id);
 	
 	if (data.length) data = data[ 0 ];
 	else data = null;
@@ -20,13 +18,17 @@ export default function Details(props) {
 	const offset = o.header + o.footer + o.margin;
 	
 	const logo = <div
-		className="company-logo"
+		className="subject-logo"
 		style={ {
 			backgroundImage: `url(${ data && data.image ? data.image : noImage })`
 		} } />;
 	
+	let pathNames = history.location.pathname.split('/');
+	pathNames.pop();
+	pathNames = pathNames.join("/");
+	
 	const backButton = <button className="go-back" onClick={ () => {
-		history.push(`/employment#${ data.id }`);
+		history.push(`${pathNames}#${ data.id }`);
 	} }>← Go Back</button>;
 	
 	useEffect(() => {
@@ -34,23 +36,23 @@ export default function Details(props) {
 	});
 	
 	return data ? <div
-		className={ 'EmploymentDetails' }
+		className={ 'Details' }
 		style={ {
 			minHeight: `calc(100vh - ${ offset }px)`
 		} }>
 		<div className="logo-wrapper">
 			{
-				data.company.website ? <a href={ data.company.website } target="_blank" rel="noreferrer">
+				data.subject.website ? <a href={ data.subject.website } target="_blank" rel="noreferrer">
 					{ logo }
 				</a> : logo
 			}
 			{ backButton }
 		</div>
-		<div className="work-details">
-			<h1 className="company-name">{ data.company.name }</h1>
+		<div className="subject-details">
+			<h1 className="topic-title">{ data.subject.name }</h1>
 			{
-				data.company.address &&
-				<h5 className="company-address">{ data.company.address }</h5>
+				data.subject.address &&
+				<h5 className="topic-label">{ data.subject.address }</h5>
 			}
 			{
 				data.details
@@ -65,16 +67,3 @@ export default function Details(props) {
 		history={ history }
 		isUnderConstruction={ true } />
 }
-
-Details.propTypes = {
-	data: PropTypes.shape({
-		id: PropTypes.string.isRequired,
-		dateRange: PropTypes.string.isRequired,
-		position: PropTypes.string.isRequired,
-		company: PropTypes.shape({
-			name: PropTypes.string.isRequired,
-			website: PropTypes.string,
-			address: PropTypes.string
-		})
-	})
-};

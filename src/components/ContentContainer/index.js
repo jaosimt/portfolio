@@ -8,12 +8,16 @@ import Header from "../Header";
 import Home from "../Home";
 import Footer from "../Footer";
 import Blogs from "../Blogs";
-import Employment from "../Employment";
-import Projects from "../Projects";
+import List from "../List";
 import About from "../About";
 import './content.scss';
 import PageNotFound from "../PageNotFound";
-import EmploymentDetails from "../Employment/details";
+import Details from "../List/details";
+import { workList } from "../../data/WorkList";
+import { projectList } from "../../data/Project";
+
+import employmentBanner from "./images/professional-experience.jpg";
+import projectBanner from "./images/projects.jpg";
 
 export default function ContentContainer() {
 	const history = useHistory();
@@ -96,16 +100,35 @@ export default function ContentContainer() {
 				<Route path="/about">
 					<About offset={ offset } />
 				</Route>
-				<Route exact path="/employment/:companyId">
-					<EmploymentDetails
+				<Route exact path="/employment/:id">
+					<Details
+						data={ workList }
+						setMenuItem={ setMenuItem }
+						offset={ offset } />
+				</Route>
+				<Route exact path="/projects/:id">
+					<Details
+						data={ projectList }
 						setMenuItem={ setMenuItem }
 						offset={ offset } />
 				</Route>
 				<Route exact path="/employment">
-					<Employment logHistory={ logHistory } offset={ offset } history={ history } />
+					<List
+						logHistory={ logHistory }
+						offset={ offset }
+						history={ history }
+						data={ workList }
+						banner={ employmentBanner }
+						title="Employment" />
 				</Route>
 				<Route exact path="/projects">
-					<Projects logHistory={ logHistory } offset={ offset } history={ history } />
+					<List
+						logHistory={ logHistory }
+						offset={ offset }
+						history={ history }
+						data={ projectList }
+						banner={ projectBanner }
+						title="Projects" />
 				</Route>
 				<Route path="/blogs">
 					<Blogs
