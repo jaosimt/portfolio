@@ -22,7 +22,7 @@ class About extends Component {
 					<h1>I am <span className='gold'>Sim Tero Jao</span>, I am a <span className="gold">Web Developer</span>.</h1>
 					<p>
 						Born and raised in Alburquerque, Bohol, Philippines, now living in Cebu. A husband and a father of two
-						beautiful kids. Originally dreamed to be in the army but failed after a strong contradiction from my
+						beautiful kids. Originally dreamed to be in the army but failed after a strong opposition from my
 						ever loving mother. Got fascinated with computers way back in the early 90’s after my older brother
 						enrolled me into it.
 					</p>
