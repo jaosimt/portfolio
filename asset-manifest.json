@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.05841e84.chunk.css",
-    "main.js": "/static/js/main.a8de8aa2.chunk.js",
-    "main.js.map": "/static/js/main.a8de8aa2.chunk.js.map",
+    "main.js": "/static/js/main.d05fff68.chunk.js",
+    "main.js.map": "/static/js/main.d05fff68.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fd1ce5ef.js",
     "runtime-main.js.map": "/static/js/runtime-main.fd1ce5ef.js.map",
     "static/js/2.3db2cfa7.chunk.js": "/static/js/2.3db2cfa7.chunk.js",
@@ -29,10 +29,14 @@
     "static/media/blogs.a11ae942.jpg": "/static/media/blogs.a11ae942.jpg",
     "static/media/codev.9d2d9c0f.webp": "/static/media/codev.9d2d9c0f.webp",
     "static/media/SocialMediaLinks.scss": "/static/media/instagram.b7c5e343.jpg",
+    "static/media/kadaugan.c5650d01.jpeg": "/static/media/kadaugan.c5650d01.jpeg",
+    "static/media/kadauganSaMactan.6c071319.jpg": "/static/media/kadauganSaMactan.6c071319.jpg",
     "static/media/kimwa.f213f3fe.png": "/static/media/kimwa.f213f3fe.png",
+    "static/media/lapulapuDecals.98b4e89c.jpg": "/static/media/lapulapuDecals.98b4e89c.jpg",
     "static/media/about.scss": "/static/media/life.6d86b5ad.jpeg",
     "static/media/header.scss": "/static/media/logo.e2a91469.svg",
     "static/media/metron.ed660293.png": "/static/media/metron.ed660293.png",
+    "static/media/moreDecals.e167183c.jpg": "/static/media/moreDecals.e167183c.jpg",
     "static/media/philippineCollar.d80d2cb6.jpg": "/static/media/philippineCollar.d80d2cb6.jpg",
     "static/media/philippineScripts.eb1a8596.jpg": "/static/media/philippineScripts.eb1a8596.jpg",
     "static/media/professional-experience.109f45e4.jpg": "/static/media/professional-experience.109f45e4.jpg",
@@ -48,6 +52,7 @@
     "static/media/simo6.1c641bc0.jpg": "/static/media/simo6.1c641bc0.jpg",
     "static/media/simo7.1f0f0da0.jpg": "/static/media/simo7.1f0f0da0.jpg",
     "static/media/teeth.90c61376.jpeg": "/static/media/teeth.90c61376.jpeg",
+    "static/media/tibo_okSinkoMil.d53fe429.jpg": "/static/media/tibo_okSinkoMil.d53fe429.jpg",
     "static/media/tieto.462695a5.png": "/static/media/tieto.462695a5.png",
     "static/media/under-construction.506bfbfa.png": "/static/media/under-construction.506bfbfa.png"
   },
@@ -55,6 +60,6 @@
     "static/js/runtime-main.fd1ce5ef.js",
     "static/js/2.3db2cfa7.chunk.js",
     "static/css/main.05841e84.chunk.css",
-    "static/js/main.a8de8aa2.chunk.js"
+    "static/js/main.d05fff68.chunk.js"
   ]
 }
