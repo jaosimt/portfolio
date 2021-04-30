@@ -14,7 +14,7 @@ class Home extends Component {
 		imageOpacity: 0
 	}
 	
-	imageArray = [ simo1, simo2, simo3, simo4, simo5, simo6, simo7 ];
+	imageArray = [ simo2, simo1, simo3, simo4, simo5, simo6, simo7 ];
 	
 	componentDidMount() {
 		let idxs = [],
