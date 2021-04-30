@@ -2,7 +2,6 @@
 import keyboard from './images/blogs/baybayin_keyboard.png';
 import ancientHumanPH from './images/blogs/ancientHumanPH.jpg';
 import awitSaBohol from './images/blogs/awit-sa-bohol.jpg';
-import underConstruction from '../components/PageNotFound/under-construction.png';
 
 import {
 	boholHymnDetails,
