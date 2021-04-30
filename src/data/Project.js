@@ -1,4 +1,4 @@
-// COMPANY LOGOS
+// PROJECT LOGOS
 import baybayinPilipinas from './images/projects/baybayin-pilipinas.jpg';
 import underConstruction from '../components/PageNotFound/under-construction.png';
 

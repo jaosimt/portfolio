@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import {
 	Switch,
 	Route,
@@ -7,7 +7,6 @@ import {
 import Header from "../Header";
 import Home from "../Home";
 import Footer from "../Footer";
-import Blogs from "../Blogs";
 import List from "../List";
 import About from "../About";
 import './content.scss';
@@ -15,9 +14,11 @@ import PageNotFound from "../PageNotFound";
 import Details from "../List/details";
 import { workList } from "../../data/WorkList";
 import { projectList } from "../../data/Project";
+import { blogList } from "../../data/Blogs";
 
 import employmentBanner from "./images/professional-experience.jpg";
 import projectBanner from "./images/projects.jpg";
+import blogBanner from "./images/blogs.jpg";
 
 export default function ContentContainer() {
 	const history = useHistory();
@@ -112,6 +113,12 @@ export default function ContentContainer() {
 						setMenuItem={ setMenuItem }
 						offset={ offset } />
 				</Route>
+				<Route exact path="/blogs/:id">
+					<Details
+						data={ blogList }
+						setMenuItem={ setMenuItem }
+						offset={ offset } />
+				</Route>
 				<Route exact path="/employment">
 					<List
 						logHistory={ logHistory }
@@ -131,9 +138,14 @@ export default function ContentContainer() {
 						title="Projects" />
 				</Route>
 				<Route path="/blogs">
-					<Blogs
-						setMenuItem={ setMenuItem }
-						history={ history } />
+					<List
+						logHistory={ logHistory }
+						offset={ offset }
+						history={ history }
+						data={ blogList }
+						banner={ blogBanner }
+						title={ <div style={ { display: 'flex', flexFlow: 'column' } }><span>Random Articles</span><span
+							style={ { fontSize: '21px', textTransform: 'none' } }>Anything Out Of The Blue</span></div> } />
 				</Route>
 				<Route path="*">
 					<PageNotFound

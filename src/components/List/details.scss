@@ -17,8 +17,8 @@
     }
 
     .subject-logo {
-      width: 434px;
-      height: 434px;
+      width: 294px;
+      height: 294px;
       background: #c7c7c7 url("../../images/noimage.png") no-repeat center 49%;
       background-size: contain;
     }
@@ -33,16 +33,32 @@
     max-width: 798px;
     flex-direction: column;
 
+    .bohol-hym-lyrics {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      p { margin: 1em 0 0; }
+    }
+
+    audio {
+      width: 100%;
+    }
+
     .label {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
+    h3,
+    h4.label {
+      margin-bottom: 0;
+    }
+
     h4.label {
       background-color: gainsboro;
       padding: 3px 7px;
-      margin-bottom: 0;
 
       > *:not(:first-child) {
         margin-left: 7px;
@@ -63,10 +79,56 @@
     div {
       display: inline-flex;
       flex-wrap: wrap;
+      justify-content: center;
 
       .img {
         width: 385px;
         margin: 7px;
+      }
+    }
+
+    div.articles {
+      flex-direction: row;
+
+      a {
+        text-decoration: none;
+        text-align: center;
+        width: calc(calc(100% / 3) - 14px);
+
+        &:not(:last-child) {
+          margin-right: 14px;
+        }
+      }
+
+      a {
+        p {
+          margin-top: 7px;
+          color: #565656;
+        }
+      }
+
+      .group {
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+          margin-bottom: 7px;
+        }
+
+        p {
+          text-align: center;
+          font-size: small;
+          text-decoration: none !important;
+        }
+
+        .img {
+          margin: 0;
+          width: 100%;
+          height: 200px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
       }
     }
 
@@ -87,16 +149,26 @@
     }
 
     .inline-image {
-      height: 343px;
+      height: 92%;
+    }
+
+    .inline-flex-image.transparent .img {
+      background-color: transparent;
+    }
+
+    .inline-flex-image:not(.transparent) .img,
+    .inline-image {
+      background-color: #000;
     }
 
     .inline-flex-image .img,
     .inline-image {
       background-repeat: no-repeat;
       background-position: center;
-      background-color: gainsboro;
       background-size: contain;
       max-width: 100%;
+      height: auto;
+      min-height: 196px;
     }
   }
 }
@@ -108,11 +180,6 @@
 
     .logo-wrapper {
       margin: 0;
-
-      .subject-logo {
-        width: 294px;
-        height: 294px;
-      }
 
       button.go-back {
         margin: 21px 0;
@@ -126,6 +193,13 @@
     .subject-details {
       width: 100%;
       max-width: unset;
+
+      div.articles {
+
+        a {
+          width: calc(calc(100% / 2) - 14px);
+        }
+      }
     }
   }
 }
