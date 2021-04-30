@@ -17,7 +17,7 @@ class Tiles extends Component {
 	render() {
 		const { logoHeight } = this.state;
 		const { data } = this.props;
-		const { id, dateRange, title, subject, image, details } = data;
+		const { id, date, title, subject, image, details } = data;
 		
 		const logo = <div
 			ref={ ref => this.logoRef = ref }
@@ -50,7 +50,7 @@ class Tiles extends Component {
 				<div>
 					<h3 className="title">{ title }</h3>
 					<h5 className="subject">{ subject.name }</h5>
-					<h5 className="date-range">{ dateRange }</h5>
+					<h5 className="date-range">{ date }</h5>
 				</div>
 				{
 					details &&
@@ -73,7 +73,7 @@ class Tiles extends Component {
 Tiles.propTypes = {
 	data: PropTypes.shape({
 		id: PropTypes.string.isRequired,
-		dateRange: PropTypes.string,
+		date: PropTypes.string,
 		title: PropTypes.string.isRequired,
 		subject: PropTypes.shape({
 			name: PropTypes.string.isRequired,

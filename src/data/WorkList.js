@@ -17,7 +17,7 @@ import {
 export const workList = [
 	{
 		id: 'codev',
-		dateRange: '2019 to present',
+		date: '2019 to present',
 		subject: {
 			name: 'Complete Development (CoDev)',
 			website: '//www.codev.com',
@@ -28,7 +28,7 @@ export const workList = [
 		details: codevDetails
 	}, {
 		id: 'metron',
-		dateRange: '2013 to 2018',
+		date: '2013 to 2018',
 		subject: {
 			name: 'Metron Innovation Group',
 			website: '//metron.io',
@@ -41,7 +41,7 @@ export const workList = [
 		details: metroDetails
 	}, {
 		id: 'tieto',
-		dateRange: '2012 to 2014',
+		date: '2012 to 2014',
 		subject: {
 			name: 'Tieto Global Oy - Philippines',
 			address: '8th Floor, Cebu I.T. Tower, Bohol Avenue, corner Mindanao Avenue, Cebu City 6000 Philippines'
@@ -53,7 +53,7 @@ export const workList = [
 		details: tietoDetails
 	}, {
 		id: 'rphc',
-		dateRange: '2008 to 2012',
+		date: '2008 to 2012',
 		subject: {
 			name: 'Rizon Property Holdings Corporation',
 			website: 'http://www.rizonholdings.com',
@@ -65,7 +65,7 @@ export const workList = [
 		details: rphcDetails
 	}, {
 		id: 'kcdc',
-		dateRange: '1997 - 2007',
+		date: '1997 - 2007',
 		subject: {
 			name: 'Kimwa Construction & Development Corporation',
 			website: '//kimwaconstruction.com',
@@ -76,7 +76,7 @@ export const workList = [
 		details: kimwaDetails
 	}, {
 		id: 'hmc',
-		dateRange: '1996',
+		date: '1996',
 		subject: {
 			name: 'Has-Mirage Corporation',
 			address: '11 Zamora street, Cebu City, 6000 Philippines'

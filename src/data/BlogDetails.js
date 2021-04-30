@@ -7,6 +7,58 @@ import philippineCollar from './images/blogs/philippineCollar.jpg';
 import boxerCodex from './images/blogs/PhilippineBoxerCodex.jpg';
 import boholFlag from './images/blogs/FlagOfBohol.jpg';
 import boholHymn from './media/Awit-sa-Bohol-Bohol-Hymn.mp3';
+import kadaugan from './images/blogs/kadauganSaMactan.jpg';
+import kadaugan2 from './images/blogs/kadaugan.jpeg';
+import fiveK from './images/blogs/tibo_okSinkoMil.jpg';
+import moreDecals from './images/blogs/moreDecals.jpg';
+
+export const kadauganDetails = <Fragment>
+	<br />
+	<div className="inline-image" style={ {
+		backgroundPosition: 'center top',
+		backgroundSize: 'cover',
+		backgroundImage: `url(${ kadaugan })`
+	} } />
+	<p>Kadaugan sa Mactan (or the Victory in Mactan) is a celebration reenacting the victory of Mactan people
+		(Oponganons) during the famous “Battle of Mactan” in the 16th century.</p>
+	<h3>Brief History</h3>
+	<span>The bloody Battle of Mactan took place in April 27, 1521 when the iron-clad soldiers of Ferdinand Magellan reach
+		the shores of the island but was fiercely confronted by Chief Lapu-Lapu and his fighters.</span><br/>
+	<span>During the confrontation, the Portuguese explorer lost the battle and met his fate together with most of his
+		soldiers. Most historians have agreed that the event actually took place and there is no doubt that it
+		happened.</span><br/>
+	<div className="inline-image"
+	     style={ { backgroundPosition: 'center', backgroundSize: 'cover', backgroundImage: `url(${ kadaugan2 })` } } />
+	<br />
+	<h3>A battle won! Or is it?</h3>
+	<span>This year, 2021, We are commemorating the 500th anniversary of the arrival of Christianity in the Philippines. BSP
+		even printed a Php5000 Lapu-lapu commemorative banknote with the Quincentennial Commemoration logo in it.</span><br/>
+	<div className="inline-image" style={ { backgroundSize: 'cover', backgroundImage: `url(${ fiveK })` } } />
+	<br />
+	<h3>Did Chief Lapu-lapu embraced Christianity?</h3>
+	<span>I think not! He fought and won! And probably died hating it... Or not liking it at-least.</span><br/>
+	<div style={ {
+		backgroundColor: '#000',
+		color: "#fff",
+		fontWeight: 'bold',
+		justifyContent: 'flex-start',
+		flexDirection: 'column',
+		padding: '14px 21px'
+	} }>
+		<h1 style={ { margin: 0, lineHeight: 0.7 } }>com·mem·o·rate</h1>
+		<span>recall and show respect for (someone or something)</span>
+	</div>
+	<br/>
+	<div className="inline-image" style={ { backgroundSize: 'cover', minHeight: 300, backgroundImage: `url(${ moreDecals })` } } />
+	<br />
+	<h3>So who or what are we commemorating?</h3>
+	<span>Is it Chief Lapu-lapu? His bravery for standing his ground against the colonizers? And most probably Christianity is one of the reason he stood his ground and fought.</span>
+	<p>None of these make any sense to me at all!</p>
+	<p>We are not respecting Chief Lapu-lapu if we're infusing the very same thing, religion or someone else's tradition that he probably fought against, especially during the celebration of what is supposed to be <strong className="italic">The Kadaugan sa Mactan</strong>.</p>
+	<p>This is my humble opinion and my opinion alone and I am asking...</p>
+	<h3>Did he really win?</h3>
+	<br/>
+</Fragment>;
 
 export const boholHymnDetails = <Fragment>
 	<br />
@@ -16,43 +68,43 @@ export const boholHymnDetails = <Fragment>
 		Hymn, is the official anthem of the province of Bohol in the Philippines.</p>
 	<div className="bohol-hym-lyrics">
 		<p>
-			<span>Yuta kong minahal, Hatag ni Bathala;</span><br/>
+			<span>Yuta kong minahal, Hatag ni Bathala;</span><br />
 			<strong className="bybyn">ᜌᜓᜆ ᜃᜓᜅ᜔ ᜋᜒᜈᜑᜎ᜔, ᜑᜆᜄ᜔ ᜈᜒ ᜊᜆ᜔ᜑᜎ;</strong>
 		</p>
 		<p>
-			<span>Sa adlaw’g gabi-i, Taknang tanan</span><br/>
+			<span>Sa adlaw’g gabi-i, Taknang tanan</span><br />
 			<strong className="bybyn">ᜐ ᜀᜇ᜔ᜎᜏ᜔'ᜄ᜔ ᜄᜊᜒ-ᜁ, ᜆᜃ᜔ᜈᜅ᜔ ᜆᜈᜈ᜔</strong>
 		</p>
 		<p>
-			<span>Dinasig sa kinaiyahan, Sa mga bayaning yutawhan</span><br/>
+			<span>Dinasig sa kinaiyahan, Sa mga bayaning yutawhan</span><br />
 			<strong className="bybyn">ᜇᜒᜈᜐᜒᜄ᜔ ᜐ ᜃᜒᜈᜁᜌᜑᜈ᜔, ᜐ ᜋᜅ ᜊᜌᜈᜒᜅ᜔ ᜌᜓᜆᜏ᜔ᜑᜈ᜔</strong>
 		</p>
 		<p>
-			<span>Imong kalinaw gi-ampingan.  Lungsod sa bungtod nga matunhay</span><br/>
+			<span>Imong kalinaw gi-ampingan.  Lungsod sa bungtod nga matunhay</span><br />
 			<strong className="bybyn">ᜁᜋᜓᜅ᜔ ᜃᜎᜒᜈᜏ᜔ ᜄᜒ-ᜀᜋ᜔ᜉᜒᜅᜈ᜔. ᜎᜓᜅ᜔ᜐᜓᜇ᜔ ᜐ ᜊᜓᜅ᜔ᜆᜓᜇ᜔ ᜅ ᜋᜆᜓᜈ᜔ᜑᜌ᜔</strong>
 		</p>
 		<p>
-			<span>Ug matam-is nga kinampay</span><br/>
+			<span>Ug matam-is nga kinampay</span><br />
 			<strong className="bybyn">ᜂᜄ᜔ ᜋᜆᜋ᜔-ᜁᜐ᜔ ᜅ ᜃᜒᜈᜋ᜔ᜉᜌ᜔</strong>
 		</p>
 		<p>
-			<span>Puti ang kabaybayunan, Walog sa suba binisbisan</span><br/>
+			<span>Puti ang kabaybayunan, Walog sa suba binisbisan</span><br />
 			<strong className="bybyn">ᜉᜓᜆᜒ ᜀᜅ᜔ ᜃᜊᜌ᜔ᜊᜌᜓᜈᜈ᜔, ᜏᜎᜓᜄ᜔ ᜐ ᜐᜓᜊ ᜊᜒᜈᜒᜐ᜔ᜊᜒᜐᜈ᜔᜔</strong>
 		</p>
 		<p>
-			<span>Bahandi sa dagat ug kapatagan</span><br/>
+			<span>Bahandi sa dagat ug kapatagan</span><br />
 			<strong className="bybyn">ᜊᜑᜈ᜔ᜇᜒ ᜐ ᜇᜄᜆ᜔ ᜂᜄ᜔ ᜃᜉᜆᜄᜈ᜔</strong>
 		</p>
 		<p>
-			<span>Gugma ang tuburan.  Sa kagawasan sa tanan</span><br/>
+			<span>Gugma ang tuburan.  Sa kagawasan sa tanan</span><br />
 			<strong className="bybyn">ᜄᜓᜄ᜔ᜋ ᜀᜅ᜔ ᜆᜓᜊᜓᜍᜈ᜔. ᜐ ᜃᜄᜏᜐᜈ᜔ ᜐ ᜆᜈᜈ᜔᜔</strong>
 		</p>
 		<p>
-			<span>Panalanginan ka.  Ihalad ko lawas ug kalag</span><br/>
-			<strong className="bybyn">ᜉᜈᜎᜅᜒᜈᜈ᜔ ᜃ.  ᜁᜑᜎᜇ᜔ ᜃᜓ ᜎᜏᜐ᜔ ᜂᜄ᜔ ᜃᜎᜄ᜔</strong>
+			<span>Panalanginan ka.  Ihalad ko lawas ug kalag</span><br />
+			<strong className="bybyn">ᜉᜈᜎᜅᜒᜈᜈ᜔ ᜃ. ᜁᜑᜎᜇ᜔ ᜃᜓ ᜎᜏᜐ᜔ ᜂᜄ᜔ ᜃᜎᜄ᜔</strong>
 		</p>
 		<p>
-			<span>Sa mutya kong Bohol.</span><br/>
+			<span>Sa mutya kong Bohol.</span><br />
 			<strong className="bybyn">ᜐ ᜋᜓᜆ᜔ᜌ ᜃᜓᜅ᜔ ᜊᜓᜑᜓᜎ᜔.</strong>
 		</p>
 	</div>
@@ -67,7 +119,7 @@ export const boholHymnDetails = <Fragment>
 
 export const lusonensisDetails =
 	<Fragment>
-		<br/>
+		<br />
 		<div className="inline-image" style={ { backgroundImage: `url(${ teeth })` } } />
 		<h2>New Species Of Ancient Human Discovered In The Philippines!</h2>
 		<div className="inline-flex-image">
@@ -141,14 +193,14 @@ export const lusonensisDetails =
 		</div>
 		
 		<h3>What Do we Know About The Philippines?</h3>
-		<p>According to <a href="//en.wikipedia.org/wiki/Homo_luzonensis" target="_blank" rel="noreferrer">wikipedia</a> -
+		<span>According to <a href="//en.wikipedia.org/wiki/Homo_luzonensis" target="_blank" rel="noreferrer">wikipedia</a> -
 			"It is possible that—like what is hypothesized for H. floresiensis from Flores, Indonesia—H. luzonensis
 			descended
 			from an early H. erectus dispersal across Southeast Asia. It is also possible that these two insular archaic
-			humans descend from an entirely different Homo species <strong>possibly earlier than H. erectus</strong>."</p>
+			humans descend from an entirely different Homo species <strong>possibly earlier than H. erectus</strong>."</span>
 		<p>So ...</p>
-		<p>1) Homo Luzonensis is old!</p>
-		<p>2) we have a Gold jewelry found and dated <strong>1st century</strong> egypt.</p>
+		<span>1) Homo Luzonensis is old!</span>
+		<span>2) we have a Gold jewelry found and dated <strong>1st century</strong> egypt.</span><br/>
 		<div className="inline-image" style={ { backgroundImage: `url(${ firstCenturyGold })` } } />
 		<div className="inline-image" style={ { backgroundImage: `url(${ philippineCollar })` } } />
 		<br />
@@ -201,7 +253,7 @@ export const lusonensisDetails =
 
 export const baybayinKeyboardDetails =
 	<Fragment>
-		<br/>
+		<br />
 		<div className="inline-image" style={ { backgroundImage: `url(${ qwerty })` } } />
 		<h3>Let’s talk about how to install it first and foremost.</h3>
 		<p>Follow the instructions from this incredible blog post: <a
@@ -213,7 +265,7 @@ export const baybayinKeyboardDetails =
 		<h3>In Mac OSX, given you’d setup yours correctly, the keyboard selection should look like this:</h3>
 		<div className="inline-image" style={ { backgroundImage: `url(${ baybayinInMac })` } } />
 		<h3>All you have to do is select the Baybayin keyboard and type on with it.</h3>
-		<p>Easy right? Well, I would say not quite. Here’s why:</p>
+		<span>Easy right? Well, I would say not quite. Here’s why:</span>
 		<p>
 			As you can see on the keyboard layout (credits to <a
 			href="//nordenx.blogspot.com/" target="_blank" rel="noreferrer">nordenx.blogspot.com</a>), the baybayin
@@ -224,7 +276,7 @@ export const baybayinKeyboardDetails =
 		</p>
 		<p>What do I mean by that? Well, consider the following words and the ways on how we would be typing them.</p>
 		<h3>Kamusta (How are you)</h3>
-		<ul>
+		<ul style={{marginTop: 0}}>
 			<li>
 				Using latin/roman keys, obviously it is the combination of individual keys: <strong>k, a, m, u, s, t &
 				a</strong>; This is what we all got used to typing
@@ -233,12 +285,12 @@ export const baybayinKeyboardDetails =
 				translates to <strong>kamusata</strong></li>
 		</ul>
 		<h3>Magaling (Good)</h3>
-		<ul>
+		<ul style={{marginTop: 0}}>
 			<li>With the same latin/roman typing ways on baybayin keyboard will produce: <span
 				className="bold bybyn">ᜋᜄᜎᜒᜈᜄ</span> which translates to <strong>magalinaga</strong></li>
 		</ul>
 		<h3>Maaga (Early)</h3>
-		<ul>
+		<ul style={{marginTop: 0}}>
 			<li><span className="bold bybyn">ᜋᜄ</span> which translates to <strong>maga</strong></li>
 		</ul>
 		<h3>What do you think is wrong?</h3>
@@ -318,11 +370,22 @@ export const baybayinKeyboardDetails =
 				<li>It is <strong>not!</strong></li>
 				<li>Baybayin is a <strong>writing system!</strong></li>
 			</ul>
-			<li>Writing Baybayin with <a href="//en.wikipedia.org/wiki/English_alphabet" target="_blank" rel="noreferrer">English Alphabet</a> in mind.</li>
+			<li>Writing Baybayin with <a href="//en.wikipedia.org/wiki/English_alphabet" target="_blank" rel="noreferrer">English
+				Alphabet</a> in mind.
+			</li>
 			<ul>
 				<li>Is <strong>Wrong!</strong></li>
-				<li><a href="//en.wikipedia.org/wiki/Kulitan" target="_blank" rel="noreferrer">Kulitan</a>, <a href="//en.wikipedia.org/wiki/File:Kurdita.jpg" target="_blank" rel="noreferrer">Kurdita</a>, <a href="//en.wikipedia.org/wiki/Baybayin" target="_blank" rel="noreferrer">Baybayin</a>, <a href="//en.wikipedia.org/wiki/Tagbanwa_script" target="_blank" rel="noreferrer">Tagbanwa</a>, <a href="//en.wikipedia.org/wiki/Basahan" target="_blank" rel="noreferrer">Basahan</a>, <a href="//akopito.weebly.com/suwat-bisaya.html" target="_blank" rel="noreferrer">Badlit</a>, etc... are writing systems in the Philippines!</li>
-				<li>Our languages and dialects are originally using <a href="//en.wikipedia.org/wiki/Abakada_alphabet" target="_blank" rel="noreferrer">Abakada alphabet</a>!</li>
+				<li><a href="//en.wikipedia.org/wiki/Kulitan" target="_blank" rel="noreferrer">Kulitan</a>, <a
+					href="//en.wikipedia.org/wiki/File:Kurdita.jpg" target="_blank" rel="noreferrer">Kurdita</a>, <a
+					href="//en.wikipedia.org/wiki/Baybayin" target="_blank" rel="noreferrer">Baybayin</a>, <a
+					href="//en.wikipedia.org/wiki/Tagbanwa_script" target="_blank" rel="noreferrer">Tagbanwa</a>, <a
+					href="//en.wikipedia.org/wiki/Basahan" target="_blank" rel="noreferrer">Basahan</a>, <a
+					href="//akopito.weebly.com/suwat-bisaya.html" target="_blank" rel="noreferrer">Badlit</a>, etc... are
+					writing systems in the Philippines!
+				</li>
+				<li>Our languages and dialects are originally using <a href="//en.wikipedia.org/wiki/Abakada_alphabet"
+				                                                       target="_blank" rel="noreferrer">Abakada alphabet</a>!
+				</li>
 				<li>That is what Baybayin and many other scripts in the Philippines are made for!</li>
 			</ul>
 		</ol>

@@ -2,8 +2,10 @@
 import keyboard from './images/blogs/baybayin_keyboard.png';
 import ancientHumanPH from './images/blogs/ancientHumanPH.jpg';
 import awitSaBohol from './images/blogs/awit-sa-bohol.jpg';
+import lapulapuDecals from './images/blogs/lapulapuDecals.jpg';
 
 import {
+	kadauganDetails,
 	boholHymnDetails,
 	baybayinKeyboardDetails,
 	lusonensisDetails
@@ -34,5 +36,14 @@ export const blogList = [
 		title: 'Bohol Hymn',
 		image: awitSaBohol,
 		details: boholHymnDetails
+	}, {
+		id: 'kadaugan_sa_mactan',
+		date: '05/01/2021',
+		subject: {
+			name: 'Kadaugan Sa Mactan',
+		},
+		title: 'Chief Lapu-Lapu',
+		image: lapulapuDecals,
+		details: kadauganDetails
 	}
 ]
