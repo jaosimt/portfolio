@@ -8,7 +8,7 @@ import {
 
 export const projectList = [
 	{
-		id: 'baybayin-pilipinas',
+		id: 'baybayin_pilipinas',
 		subject: {
 			name: 'Baybayin Pilipinas',
 			website: '//baybayin.jaosimt.com/'

@@ -11,7 +11,7 @@ import {
 
 export const blogList = [
 	{
-		id: 'baybayin-keyboard',
+		id: 'baybayin_keyboard',
 		subject: {
 			name: 'How to use the Baybayin Keyboard',
 		},
@@ -19,7 +19,7 @@ export const blogList = [
 		image: keyboard,
 		details: baybayinKeyboardDetails
 	}, {
-		id: 'lusonensis',
+		id: 'homo_lusonensis',
 		subject: {
 			name: 'Homo Luzonensis',
 		},
@@ -27,7 +27,7 @@ export const blogList = [
 		image: ancientHumanPH,
 		details: lusonensisDetails
 	}, {
-		id: 'awit-sa-bohol',
+		id: 'awit_sa_bohol',
 		subject: {
 			name: 'Awit Sa Bohol',
 		},

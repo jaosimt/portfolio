@@ -67,6 +67,7 @@ export const boholHymnDetails = <Fragment>
 
 export const lusonensisDetails =
 	<Fragment>
+		<br/>
 		<div className="inline-image" style={ { backgroundImage: `url(${ teeth })` } } />
 		<h2>New Species Of Ancient Human Discovered In The Philippines!</h2>
 		<div className="inline-flex-image">
@@ -200,6 +201,7 @@ export const lusonensisDetails =
 
 export const baybayinKeyboardDetails =
 	<Fragment>
+		<br/>
 		<div className="inline-image" style={ { backgroundImage: `url(${ qwerty })` } } />
 		<h3>Let’s talk about how to install it first and foremost.</h3>
 		<p>Follow the instructions from this incredible blog post: <a
@@ -304,12 +306,27 @@ export const baybayinKeyboardDetails =
 			are as follows:</p>
 		<ul>
 			<li><span className="bybyn">ᜃᜋᜓᜐ᜔ᜆ</span> ➛ <strong>kmus=t</strong> or <strong>kamus=ta</strong></li>
-			<li><span className="bybyn">ᜋᜄᜎᜒᜅ</span>᜔ ➛ <strong>mgliN=</strong> or <strong>magaliNa=</strong></li>
+			<li><span className="bybyn">ᜋᜄᜎᜒᜅ᜔</span> ➛ <strong>mgliN=</strong> or <strong>magaliNa=</strong></li>
 			<li><span className="bybyn">ᜋᜀᜄ</span> ➛ <strong>mAg</strong> or <strong>maAga</strong></li>
 		</ul>
 		<p>That’s it! Once you keep all that in mind? You will be typing baybayin like you’re doing it with latin/roman
 			scripts.</p>
-		<p>Do take note that in baybayin, always write it how you pronounced it!</p>
+		<h3>Common mistakes</h3>
+		<ol>
+			<li>Thinking of Baybayin as a Language.</li>
+			<ul>
+				<li>It is <strong>not!</strong></li>
+				<li>Baybayin is a <strong>writing system!</strong></li>
+			</ul>
+			<li>Writing Baybayin with <a href="//en.wikipedia.org/wiki/English_alphabet" target="_blank" rel="noreferrer">English Alphabet</a> in mind.</li>
+			<ul>
+				<li>Is <strong>Wrong!</strong></li>
+				<li><a href="//en.wikipedia.org/wiki/Kulitan" target="_blank" rel="noreferrer">Kulitan</a>, <a href="//en.wikipedia.org/wiki/File:Kurdita.jpg" target="_blank" rel="noreferrer">Kurdita</a>, <a href="//en.wikipedia.org/wiki/Baybayin" target="_blank" rel="noreferrer">Baybayin</a>, <a href="//en.wikipedia.org/wiki/Tagbanwa_script" target="_blank" rel="noreferrer">Tagbanwa</a>, <a href="//en.wikipedia.org/wiki/Basahan" target="_blank" rel="noreferrer">Basahan</a>, <a href="//akopito.weebly.com/suwat-bisaya.html" target="_blank" rel="noreferrer">Badlit</a>, etc... are writing systems in the Philippines!</li>
+				<li>Our languages and dialects are originally using <a href="//en.wikipedia.org/wiki/Abakada_alphabet" target="_blank" rel="noreferrer">Abakada alphabet</a>!</li>
+				<li>That is what Baybayin and many other scripts in the Philippines are made for!</li>
+			</ul>
+		</ol>
+		<h3>Do take note that in baybayin, always write it how you pronounced it!</h3>
 		<p className="bybyn">ᜇᜄ᜔ᜑᜅ᜔ ᜐᜎᜋᜆ᜔᜶ ᜉᜈᜎᜅᜒᜈᜈ᜔ ᜃ ᜈᜒ ᜊᜆ᜔ᜑᜎ!</p>
 	</Fragment>
 ;
