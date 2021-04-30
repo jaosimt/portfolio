@@ -101,6 +101,7 @@ export default function ContentContainer() {
 				<Route path="/about">
 					<About offset={ offset } />
 				</Route>
+				
 				<Route exact path="/employment/:id">
 					<Details
 						data={ workList }
@@ -119,6 +120,7 @@ export default function ContentContainer() {
 						setMenuItem={ setMenuItem }
 						offset={ offset } />
 				</Route>
+				
 				<Route exact path="/employment">
 					<List
 						logHistory={ logHistory }
