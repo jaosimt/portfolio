@@ -31,7 +31,7 @@ export const blogList = [
 		subject: {
 			name: 'Awit Sa Bohol',
 		},
-		title: 'Mutya Kung Bohol',
+		title: 'Mutya Ko\'ng Bohol',
 		image: awitSaBohol,
 		details: boholHymnDetails
 	}

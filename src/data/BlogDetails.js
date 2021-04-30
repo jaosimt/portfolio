@@ -25,11 +25,11 @@ export const boholHymnDetails = <Fragment>
 		</p>
 		<p>
 			<span>Dinasig sa kinaiyahan, Sa mga bayaning yutawhan</span><br/>
-			<strong className="bybyn">ᜇᜒᜈᜐᜒᜄ᜔ ᜐ ᜃᜒᜈᜁᜌᜑᜈ᜔, ᜐ ᜋ᜔ᜄ ᜊᜌᜈᜒᜅ᜔ ᜌᜓᜆᜏ᜔ᜑᜈ</strong>
+			<strong className="bybyn">ᜇᜒᜈᜐᜒᜄ᜔ ᜐ ᜃᜒᜈᜁᜌᜑᜈ᜔, ᜐ ᜋᜅ ᜊᜌᜈᜒᜅ᜔ ᜌᜓᜆᜏ᜔ᜑᜈ᜔</strong>
 		</p>
 		<p>
 			<span>Imong kalinaw gi-ampingan.  Lungsod sa bungtod nga matunhay</span><br/>
-			<strong className="bybyn">ᜁᜋᜓᜅ᜔ ᜃᜎᜒᜈᜏ᜔ ᜄᜒ-ᜀᜋ᜔ᜉᜒᜅᜈ᜔. ᜎᜓᜅ᜔ᜐᜓᜇ᜔ ᜐ ᜊᜓᜅ᜔ᜆᜓᜇ᜔ ᜅ ᜋᜆᜓᜈ᜔ᜑᜌ</strong>
+			<strong className="bybyn">ᜁᜋᜓᜅ᜔ ᜃᜎᜒᜈᜏ᜔ ᜄᜒ-ᜀᜋ᜔ᜉᜒᜅᜈ᜔. ᜎᜓᜅ᜔ᜐᜓᜇ᜔ ᜐ ᜊᜓᜅ᜔ᜆᜓᜇ᜔ ᜅ ᜋᜆᜓᜈ᜔ᜑᜌ᜔</strong>
 		</p>
 		<p>
 			<span>Ug matam-is nga kinampay</span><br/>
