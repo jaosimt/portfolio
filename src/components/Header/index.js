@@ -15,7 +15,7 @@ class Header extends Component {
 	
 	render() {
 		const { right } = this.state;
-		const { selected, setRef, history, setMenuItem } = this.props;
+		const { selected, setRef, history, setMenuItem, onThemeChange, theme } = this.props;
 		
 		return <div className={ `Header ${ selected }-page` } ref={ setRef }>
 			<div
@@ -42,6 +42,10 @@ class Header extends Component {
 						</li>
 					})
 				}
+				<select name="theme-changer" onChange={ onThemeChange } value={ theme }>
+					<option value="light">Light</option>
+					<option value="dark">Dark</option>
+				</select>
 			</ul>
 		</div>
 	}
@@ -49,7 +53,7 @@ class Header extends Component {
 	menuItemClick = e => {
 		const { right } = this.state,
 			{ onClick } = this.props;
-
+		
 		onClick(e);
 		
 		if (right === '0px') this.toggleMenu();

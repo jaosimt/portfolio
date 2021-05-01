@@ -55,7 +55,8 @@ export const kadauganDetails = <Fragment>
 	<span>Is it Chief Lapu-lapu? His bravery for standing his ground against the colonizers? And most probably Christianity is one of the reason he stood his ground and fought.</span>
 	<p>None of these make any sense to me at all!</p>
 	<p>We are not respecting Chief Lapu-lapu if we're infusing the very same thing, religion or someone else's tradition that he probably fought against, especially during the celebration of what is supposed to be <strong className="italic">The Kadaugan sa Mactan</strong>.</p>
-	<p>This is my humble opinion and my opinion alone and I am asking...</p>
+	<p>This is my humble opinion and my opinion alone.</p>
+	<p>And so, I am asking....</p>
 	<h3>Did he really win?</h3>
 	<br/>
 </Fragment>;

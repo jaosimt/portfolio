@@ -25,7 +25,7 @@
 
   ul {
     font-weight: bold;
-    transition: all ease-in-out 100ms;
+    transition: all ease-in-out 100ms, background-color ease-in-out 1000ms, color ease-in-out 1000ms;
     list-style: none;
     display: flex;
     margin: 0;
@@ -74,6 +74,17 @@
 
         &:active { opacity: 0.3; }
       }
+    }
+
+    select[name="theme-changer"] {
+      cursor: pointer;
+      outline: none;
+      padding: 7px;
+
+      -webkit-appearance: button;
+      -moz-appearance: button;
+      -webkit-user-select: none;
+      -moz-user-select: none;
     }
   }
 
@@ -125,6 +136,10 @@
       }
 
       #menu-hamburger { display: flex; }
+
+      select[name="theme-changer"] {
+        margin-top: 14px;
+      }
     }
 
     #header-hamburger {

@@ -20,7 +20,7 @@ import employmentBanner from "./images/professional-experience.jpg";
 import projectBanner from "./images/projects.jpg";
 import blogBanner from "./images/blogs.jpg";
 
-export default function ContentContainer() {
+export default function ContentContainer(props) {
 	const history = useHistory();
 	
 	const [ pathname, setPathname ] = useState(history.location.pathname);
@@ -86,6 +86,8 @@ export default function ContentContainer() {
 		minHeight: `calc(100vh - ${ offset.header + offset.margin }px)`
 	} }>
 		<Header
+			theme={ props.theme }
+			onThemeChange={ props.onThemeChange }
 			history={ history }
 			setRef={ setHeaderRef }
 			onClick={ menuClickHandler }
