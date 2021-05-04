@@ -4,7 +4,7 @@ import baybayinCharacters from './images/projects/baybayinCharacters.png';
 import sImoUI from './images/projects/simo-ui-full.jpg';
 
 export const simoUIDetails = <Fragment>
-	<h5 className="topic-label"><a href="//simo-ui.jaosimt.com">simo-ui.jaosimt.com</a></h5>
+	<h5 className="topic-label"><a href="//simo-ui.jaosimt.com" target="_blank" rel="noreferrer">simo-ui.jaosimt.com</a></h5>
 	<p>
 		A lightweight Javascript library.  Originally built just for fun and practice.  Turns out it came handy on one of my small web project.  Thus, it can be a tool or a stepping stone for students and beginners alike.
 	</p>
@@ -14,7 +14,7 @@ export const simoUIDetails = <Fragment>
 	<p>Copy it in your web project and simply paste the following line at the end of your html's body tag.</p>
 	<code>{`<script type="text/javascript" src="sImoJS/sImo.js"></script>`}</code>
 	<p>For more information and documentation, click the logo or the link provided above.</p>
-	<a href="//simo-ui.jaosimt.com">
+	<a href="//simo-ui.jaosimt.com" target="_blank" rel="noreferrer">
 		<div className="inline-image" style={ { backgroundSize: 'contain', backgroundImage: `url(${ sImoUI })` } } />
 	</a>
 	<br/>
