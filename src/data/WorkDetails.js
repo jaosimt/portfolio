@@ -3,6 +3,7 @@ import React, { Fragment } from "react";
 import foxPro from './images/work/FoxPro_2.6_Developers_Guide_Cover.png';
 import foxProDosScreens from './images/work/FoxproDosScreens.png';
 import sbt from './images/work/sbtAccounting.png';
+import jaoCert from './images/work/jao-cert.jpg';
 
 export const codevDetails = <Fragment>
 	<p className='italic'>CoDev solves staffing problems by providing highly skilled professionals to growing technical companies.</p>
@@ -46,11 +47,15 @@ export const codevDetails = <Fragment>
 			</ul>
 		</ul>
 	</ul>
-	<h4 className="label">Nomination</h4>
+	<h4 className="label">Nominations</h4>
 	<ul>
 		<li>Nominee for May 2020 Employee of the Month</li>
 		<li>Nominee for March 2021 Employee of the Month</li>
 	</ul>
+	<h4 className="label">Awards & Recognitions</h4>
+	<div className="inline-image" style={ { backgroundImage: `url(${ jaoCert })`, height: '300px', backgroundSize: 'contain', marginTop: '14px' } } />
+	<br/>
+	<br/>
 </Fragment>
 
 export const metroDetails = <Fragment>

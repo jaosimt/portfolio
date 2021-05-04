@@ -3,6 +3,7 @@ import { useParams, useHistory } from "react-router-dom";
 import './details.scss';
 import PageNotFound from "../PageNotFound";
 import noImage from "../../images/noimage.png";
+import { Capitalize } from "../../scripts/utils";
 
 export default function Details(props) {
 	const { id } = useParams(),
@@ -28,8 +29,8 @@ export default function Details(props) {
 	pathNames = pathNames.join("/");
 	
 	const backButton = <button className="go-back" onClick={ () => {
-		history.push(`${pathNames}#${ data.id }`);
-	} }>← Go Back</button>;
+		history.push(`${ pathNames }#${ data.id }`);
+	} }>{ `← ${ Capitalize( pathNames.replace(/^\//, '')) }` }</button>;
 	
 	useEffect(() => {
 		window.scrollTo({ top: 0 });

@@ -2,14 +2,23 @@
 import baybayinPilipinas from './images/projects/baybayin-pilipinas.jpg';
 import underConstruction from '../components/PageNotFound/under-construction.png';
 import simoUI from './images/projects/simo-ui.jpg';
+import pcpLogo from './images/projects/pcp-logo.png';
 
 import {
 	baybayinPilipinasDetails,
-	simoUIDetails
+	simoUIDetails,
+	pcPrejanDetails
 } from './ProjectDetails';
 
 export const projectList = [
 	{
+		id: 'more-to-come',
+		subject: {
+			name: 'Stay Tuned!'
+		},
+		title: 'More To Come',
+		image: underConstruction
+	}, {
 		id: 'baybayin_pilipinas',
 		subject: {
 			name: 'Baybayin Pilipinas',
@@ -19,6 +28,14 @@ export const projectList = [
 		image: baybayinPilipinas,
 		details: baybayinPilipinasDetails
 	}, {
+		id: 'pcprejan',
+		subject: {
+			name: 'PCP Architectural Services Webapp'
+		},
+		title: 'PCP Web App',
+		image: pcpLogo,
+		details: pcPrejanDetails
+	}, {
 		id: 'simo-ui',
 		subject: {
 			name: 'simo UI Widgets',
@@ -27,12 +44,5 @@ export const projectList = [
 		title: 'JS Library',
 		image: simoUI,
 		details: simoUIDetails
-	}, {
-		id: 'more-to-come',
-		subject: {
-			name: 'Stay Tuned!'
-		},
-		title: 'More To Come',
-		image: underConstruction
 	}
 ]
