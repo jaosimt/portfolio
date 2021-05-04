@@ -6,10 +6,15 @@ import pcPrejanVid from './media/pcPrejan2.mp4';
 
 export const pcPrejanDetails = <Fragment>
 	<h5 className="topic-label">Unpublished</h5>
-	<p>A web application that allows <strong>PCP Architectural Services</strong> to add/update/remove projects and/or images and
-		details with search capabilities and interactions to viewers/potential client inquires via comments on each and every uploaded project
+	<p>A web application that allows <strong>PCP Architectural Services</strong> to add/update/remove projects and/or
+		images and
+		details with search capabilities and interactions to viewers/potential client inquires via comments on each and
+		every uploaded project
 		images.</p>
-	<video controls>
+	<h4 className="label">Video/Snapshots</h4>
+	<video controls style={ {
+		marginTop: '14px'
+	} }>
 		<source src={ pcPrejanVid } type="video/mp4" />
 		<source src={ pcPrejanVid } type="video/ogg" />
 		Your browser does not support the video tag.
@@ -19,8 +24,8 @@ export const pcPrejanDetails = <Fragment>
 		<li>HTML, CSS & (Vanilla) JavaScript</li>
 		<li>Powered by <a href="/projects/simo-ui" target="_blank" rel="noreferrer">sImo-ui</a></li>
 	</ul>
-	<br/>
-	<br/>
+	<br />
+	<br />
 </Fragment>
 
 export const simoUIDetails = <Fragment>
@@ -73,4 +78,4 @@ export const baybayinPilipinasDetails = <Fragment>
 	</ul>
 	<br />
 	<br />
-</Fragment>;
+</Fragment>
