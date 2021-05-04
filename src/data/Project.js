@@ -21,7 +21,7 @@ export const projectList = [
 	}, {
 		id: 'simo-ui',
 		subject: {
-			name: 'simo UI Widget',
+			name: 'simo UI Widgets',
 			website: '//simo-ui.jaosimt.com/'
 		},
 		title: 'JS Library',
