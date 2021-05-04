@@ -61,8 +61,6 @@ export const kadauganDetails = <Fragment>
 	<p>This is my humble opinion and my opinion alone.</p>
 	<p>And so, I am asking....</p>
 	<h3>Did he really win?</h3>
-	<br />
-	<br />
 </Fragment>;
 
 export const boholHymnDetails = <Fragment>
@@ -119,8 +117,6 @@ export const boholHymnDetails = <Fragment>
 		<source src={ boholHymn } type="audio/mpeg" />
 		Your browser does not support the audio element.
 	</audio>
-	<br />
-	<br />
 </Fragment>;
 
 export const lusonensisDetails = <Fragment>
@@ -253,8 +249,6 @@ export const lusonensisDetails = <Fragment>
 	        allowFullScreen></iframe>
 	<br />
 	<h4>What do you think?</h4>
-	<br />
-	<br />
 </Fragment>
 
 export const baybayinKeyboardDetails = <Fragment>

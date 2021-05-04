@@ -61,8 +61,6 @@ export const codevDetails = <Fragment>
 		backgroundSize: 'contain',
 		marginTop: '14px'
 	} } />
-	<br />
-	<br />
 </Fragment>
 
 export const metroDetails = <Fragment>
@@ -138,8 +136,6 @@ export const metroDetails = <Fragment>
 			Your browser does not support the video tag.
 		</video>
 	</div>
-	<br />
-	<br />
 </Fragment>
 
 export const tietoDetails = <Fragment>
@@ -169,8 +165,6 @@ export const tietoDetails = <Fragment>
 		<li>Java JSF</li>
 		<li>Selenium, Robot Framework</li>
 	</ul>
-	<br/>
-	<br/>
 </Fragment>
 
 export const rphcDetails = <Fragment>
@@ -224,8 +218,6 @@ export const rphcDetails = <Fragment>
 		<li>MSSql, PostgreSQL</li>
 		<li>IIS, Tomcat</li>
 	</ul>
-	<br/>
-	<br/>
 </Fragment>
 
 export const kimwaDetails = <Fragment>
@@ -365,8 +357,6 @@ export const kimwaDetails = <Fragment>
 		permits and collaborations are concerned.
 	</p>
 	<p>Crazy but more than educational.</p>
-	<br/>
-	<br/>
 </Fragment>;
 
 export const hmcDetails = <Fragment>
@@ -425,6 +415,4 @@ export const hmcDetails = <Fragment>
 		<div className="img" style={ { backgroundImage: `url(${ foxPro })` } } />
 		<div className="img" style={ { backgroundImage: `url(${ foxProDosScreens })` } } />
 	</div>
-	<br/>
-	<br/>
 </Fragment>;

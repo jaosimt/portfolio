@@ -28,9 +28,9 @@ export default function Details(props) {
 	pathNames.pop();
 	pathNames = pathNames.join("/");
 	
-	const backButton = <button className="go-back" onClick={ () => {
+	const backButton = <button style={ { marginTop: '35px' } } className="go-back" onClick={ () => {
 		history.push(`${ pathNames }#${ data.id }`);
-	} }>{ `← ${ Capitalize( pathNames.replace(/^\//, '')) }` }</button>;
+	} }>{ `← ${ Capitalize(pathNames.replace(/^\//, '')) }` }</button>;
 	
 	useEffect(() => {
 		window.scrollTo({ top: 0 });

@@ -24,8 +24,6 @@ export const pcPrejanDetails = <Fragment>
 		<li>HTML, CSS & (Vanilla) JavaScript</li>
 		<li>Powered by <a href="/projects/simo-ui" target="_blank" rel="noreferrer">sImo-ui</a></li>
 	</ul>
-	<br />
-	<br />
 </Fragment>
 
 export const simoUIDetails = <Fragment>
@@ -51,8 +49,6 @@ export const simoUIDetails = <Fragment>
 	<ul>
 		<li>HTML, CSS & (Vanilla) JavaScript</li>
 	</ul>
-	<br />
-	<br />
 </Fragment>
 
 export const baybayinPilipinasDetails = <Fragment>
@@ -62,13 +58,13 @@ export const baybayinPilipinasDetails = <Fragment>
 		multiple sources.</p>
 	<h4 className="label">What is Baybayin</h4>
 	<p>
-		Baybayin is an ancient pre-colonial Philippine writing system.<br />A writing system native to the Philippines,
+		Baybayin is an ancient Philippine writing system.<br />A writing system native to the Philippines,
 		attested from before Spanish colonization through to at least the eighteenth century. The term Baybay literally
 		means "to spell" in Tagalog. Baybayin was extensively documented by the Spanish.
 	</p>
 	<div className="inline-image" style={ { backgroundImage: `url(${ baybayinCharacters })` } } />
-	<p>
-		Baybayin is just one of many writing system in the Philippines
+	<p style={ { marginTop: '14px' } }>
+		Baybayin is just one of many writing systems in the Philippines
 	</p>
 	<div className="inline-image" style={ { backgroundImage: `url(${ philippineScripts })` } } />
 	<br />
@@ -76,6 +72,4 @@ export const baybayinPilipinasDetails = <Fragment>
 	<ul>
 		<li>React JS</li>
 	</ul>
-	<br />
-	<br />
 </Fragment>
