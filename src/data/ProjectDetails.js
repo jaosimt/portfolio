@@ -19,7 +19,8 @@ export const pcPrejanDetails = <Fragment>
 		<li>HTML, CSS & (Vanilla) JavaScript</li>
 		<li>Powered by <a href="/projects/simo-ui" target="_blank" rel="noreferrer">sImo-ui</a></li>
 	</ul>
-	
+	<br/>
+	<br/>
 </Fragment>
 
 export const simoUIDetails = <Fragment>
@@ -46,6 +47,7 @@ export const simoUIDetails = <Fragment>
 		<li>HTML, CSS & (Vanilla) JavaScript</li>
 	</ul>
 	<br />
+	<br />
 </Fragment>
 
 export const baybayinPilipinasDetails = <Fragment>
@@ -69,5 +71,6 @@ export const baybayinPilipinasDetails = <Fragment>
 	<ul>
 		<li>React JS</li>
 	</ul>
+	<br />
 	<br />
 </Fragment>;

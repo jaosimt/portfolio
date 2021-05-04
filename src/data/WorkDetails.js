@@ -4,9 +4,11 @@ import foxPro from './images/work/FoxPro_2.6_Developers_Guide_Cover.png';
 import foxProDosScreens from './images/work/FoxproDosScreens.png';
 import sbt from './images/work/sbtAccounting.png';
 import jaoCert from './images/work/jao-cert.jpg';
+import metronCJ from './media/metronMobileWebAppCJ.mp4';
 
 export const codevDetails = <Fragment>
-	<p className='italic'>CoDev solves staffing problems by providing highly skilled professionals to growing technical companies.</p>
+	<p className="italic">CoDev solves staffing problems by providing highly skilled professionals to growing technical
+		companies.</p>
 	<p>In June 2019, I was blessed to have been considered and boarded in this wonderful family.</p>
 	<h4 className="label"><span>Employment</span><span>2019 - present</span></h4>
 	<ul>
@@ -53,17 +55,28 @@ export const codevDetails = <Fragment>
 		<li>Nominee for March 2021 Employee of the Month</li>
 	</ul>
 	<h4 className="label">Awards & Recognitions</h4>
-	<div className="inline-image" style={ { backgroundImage: `url(${ jaoCert })`, height: '300px', backgroundSize: 'contain', marginTop: '14px' } } />
-	<br/>
-	<br/>
+	<div className="inline-image" style={ {
+		backgroundImage: `url(${ jaoCert })`,
+		height: '300px',
+		backgroundSize: 'contain',
+		marginTop: '14px'
+	} } />
+	<br />
+	<br />
 </Fragment>
 
 export const metroDetails = <Fragment>
-	<p className='italic'>
-		A Silicon Valley technology start up that propels some of the biggest fitness coaches & brands in the world generating millions in revenue. We provide the tools and services they need to automate their business, so they can focus on what they do best.
+	<p className="italic">
+		A Silicon Valley technology start up that propels some of the biggest fitness coaches & brands in the world
+		generating millions in revenue. We provide the tools and services they need to automate their business, so they
+		can focus on what they do best.
 	</p>
 	<p>
-		In 2013, I was approached by a colleague to work as a par-time Front-End Developer.  I was asked if I'm familiar with <a href="https://en.wikipedia.org/wiki/JavaScriptMVC" target="_blank" rel="noreferrer">JavaScriptMVC</a> and I said, I know JavaScript and I may have an idea what JavaScriptMVC is.  But no, I haven't come across with it.  And so I asked if I can take a look at it first prior to committing on the offered job.  And so I did.  Little did I know I already started working on the project.
+		In 2013, I was approached by a colleague to work as a par-time Front-End Developer. I was asked if I'm familiar
+		with <a href="https://en.wikipedia.org/wiki/JavaScriptMVC" target="_blank" rel="noreferrer">JavaScriptMVC</a> and
+		I said, I know JavaScript and I may have an idea what JavaScriptMVC is. But no, I haven't come across with it. And
+		so I asked if I can take a look at it first prior to committing on the offered job. And so I did. Little did I
+		know I already started working on the project.
 	</p>
 	<p>
 		In 2014, I officially signed a contract as a full-time Senior Front-end Engineer.
@@ -73,12 +86,16 @@ export const metroDetails = <Fragment>
 		<li className="bold">Responsibilities</li>
 		<ul>
 			<li className="italic">Lead and mentor Cebu UI development team</li>
-			<li className="italic">Help facilitate operations and the point of contact for Metron Innovation(formerly MailFin Inc dba WorkoutInbox) Cebu</li>
+			<li className="italic">Help facilitate operations and the point of contact for Metron Innovation(formerly
+				MailFin Inc dba WorkoutInbox) Cebu
+			</li>
 			<li className="italic">Help recruit team members and build camaraderie and productivity</li>
 			<li className="italic">Development of the UI architecture to build usability, performance and scalability</li>
 			<li className="italic">Maintain and enhance current UI standards and libraries</li>
 			<li className="italic">Own and establish the documentation standards for the shared UI pattern library</li>
-			<li className="italic">Participate design, task break down, implementation, code reviews and ensure project schedule and quality</li>
+			<li className="italic">Participate design, task break down, implementation, code reviews and ensure project
+				schedule and quality
+			</li>
 		</ul>
 		<li className="bold">Development</li>
 		<ul>
@@ -90,7 +107,9 @@ export const metroDetails = <Fragment>
 		</ul>
 		<li className="bold">Deployment</li>
 		<ul>
-			<li>Spearheaded the Cebu Team during Application deployment of JavaScript (JavaScriptMVC & React JS) applications - hand-in-hand with the U.S. Team.</li>
+			<li>Spearheaded the Cebu Team during Application deployment of JavaScript (JavaScriptMVC & React JS)
+				applications - hand-in-hand with the U.S. Team.
+			</li>
 		</ul>
 	</ul>
 	<h4 className="label">&nbsp;<span>2017 - 2018</span></h4>
@@ -111,14 +130,27 @@ export const metroDetails = <Fragment>
 		<li>Bash script, subversion, Apache</li>
 		<li>IOS Swift</li>
 	</ul>
+	<h4 className="label">Video/Snapshots</h4>
+	<div>
+		<video controls style={ { width: '300px', maxWidth: '100%', marginTop: '14px' } }>
+			<source src={ metronCJ } type="video/mp4" />
+			<source src={ metronCJ } type="video/ogg" />
+			Your browser does not support the video tag.
+		</video>
+	</div>
+	<br />
+	<br />
 </Fragment>
 
 export const tietoDetails = <Fragment>
-	<p className='italic'>
-		A leading Nordic IT services and software company.  A globally recognized technology company with strong drive to grasp the opportunities of the data-driven world and the aim to become customer’s first choice for business renewal.
+	<p className="italic">
+		A leading Nordic IT services and software company. A globally recognized technology company with strong drive to
+		grasp the opportunities of the data-driven world and the aim to become customer’s first choice for business
+		renewal.
 	</p>
 	<p>
-		In 2012 I was one of the blessed Cebuano who became a part of Tieto - Philipines.  I boarded as a member of a small group developing a UI framework; A proprietary UI framework use to develop the clients web application.
+		In 2012 I was one of the blessed Cebuano who became a part of Tieto - Philipines. I boarded as a member of a small
+		group developing a UI framework; A proprietary UI framework use to develop the clients web application.
 	</p>
 	<h4 className="label"><span>Employment</span><span>2012 - 2014</span></h4>
 	<ul>
@@ -137,10 +169,13 @@ export const tietoDetails = <Fragment>
 		<li>Java JSF</li>
 		<li>Selenium, Robot Framework</li>
 	</ul>
+	<br/>
+	<br/>
 </Fragment>
 
 export const rphcDetails = <Fragment>
-	<p className='italic'>Owner and operator of an appliance dealer, furniture manufacturer, memorial park, hotel and apartelle services.</p>
+	<p className="italic">Owner and operator of an appliance dealer, furniture manufacturer, memorial park, hotel and
+		apartelle services.</p>
 	<p>Hired as EDP Head back in 2008 after the Company acquired an Accounting Information System.</p>
 	<h4 className="label"><span>Employment</span><span>20018 - 2012</span></h4>
 	<ul>
@@ -173,7 +208,9 @@ export const rphcDetails = <Fragment>
 		</ul>
 	</ul>
 	<p>
-		There was wide array of language that I juggled almost all at the same time. It was NEVER easy considering that I was derailed from the I.T. industry for a decade on top of the learning curve from an xbase language programmer to becoming a Web Developer.
+		There was wide array of language that I juggled almost all at the same time. It was NEVER easy considering that I
+		was derailed from the I.T. industry for a decade on top of the learning curve from an xbase language programmer to
+		becoming a Web Developer.
 	</p>
 	<p>
 		Struggled but learned it by doing it! Nevertheless, the support of at least 2 wonderful individuals, (1)my
@@ -187,13 +224,17 @@ export const rphcDetails = <Fragment>
 		<li>MSSql, PostgreSQL</li>
 		<li>IIS, Tomcat</li>
 	</ul>
+	<br/>
+	<br/>
 </Fragment>
 
 export const kimwaDetails = <Fragment>
-	<p className='italic'>One of, if not the largest and pioneer supplier of ready-mixed concrete, and quality aggregates in the Visayas and Mindanao.</p>
+	<p className="italic">One of, if not the largest and pioneer supplier of ready-mixed concrete, and quality aggregates
+		in the Visayas and Mindanao.</p>
 	<p>Started as EDP Head in 1997. Heavy Equipment & Transport Supervisor in 2000, and end up as a Plant
 		Supervisor/Manager/ET AL in 2002.</p>
-	<h4 className="label"><span>Employment</span><span><span>EDP Head</span>&nbsp;|&nbsp;<span>1997 - 1998</span></span></h4>
+	<h4 className="label"><span>Employment</span><span><span>EDP Head</span>&nbsp;|&nbsp;<span>1997 - 1998</span></span>
+	</h4>
 	<ul>
 		<li className="bold">Administration</li>
 		<ul>
@@ -207,7 +248,8 @@ export const kimwaDetails = <Fragment>
 			<li>Human Resource Information System</li>
 		</ul>
 	</ul>
-	<h4 className="label">&nbsp;<span><span>Outsourced to Subsidiary CYL Trading</span>&nbsp;|&nbsp;<span>1998 – 1999</span></span></h4>
+	<h4 className="label">&nbsp;<span><span>Outsourced to Subsidiary CYL Trading</span>&nbsp;|&nbsp;
+		<span>1998 – 1999</span></span></h4>
 	<ul>
 		<li className="bold">Development</li>
 		<ul>
@@ -216,7 +258,8 @@ export const kimwaDetails = <Fragment>
 			<li>Trucking Billing System</li>
 		</ul>
 	</ul>
-	<h4 className="label">&nbsp;<span><span>Heavy Equipment & Transport Supervisor</span>&nbsp;|&nbsp;<span>2000 – 2002</span></span></h4>
+	<h4 className="label">&nbsp;<span><span>Heavy Equipment & Transport Supervisor</span>&nbsp;|&nbsp;
+		<span>2000 – 2002</span></span></h4>
 	<ul>
 		<li className="bold">Supervisory</li>
 		<ul>
@@ -228,7 +271,8 @@ export const kimwaDetails = <Fragment>
 			<li>Equipment Maintenance & Monitoring System</li>
 		</ul>
 	</ul>
-	<h4 className="label">&nbsp;<span><span>Aggregates Plant Supervisor</span>&nbsp;|&nbsp;<span>2002 – 2007</span></span></h4>
+	<h4 className="label">&nbsp;<span><span>Aggregates Plant Supervisor</span>&nbsp;|&nbsp;
+		<span>2002 – 2007</span></span></h4>
 	<ul>
 		<li className="bold">Supervisory / Management</li>
 		<ul>
@@ -321,10 +365,12 @@ export const kimwaDetails = <Fragment>
 		permits and collaborations are concerned.
 	</p>
 	<p>Crazy but more than educational.</p>
+	<br/>
+	<br/>
 </Fragment>;
 
 export const hmcDetails = <Fragment>
-	<p className='italic'>Was a startup company owned by a Pilipino-American.</p>
+	<p className="italic">Was a startup company owned by a Pilipino-American.</p>
 	<p>Right after graduation in 1996, I was hired after rendering OJT on the same Company.</p>
 	<p>
 		The Company provides I.T. services, sales & consultancy with address at 11 P. Zamora street, Cebu City,
@@ -379,4 +425,6 @@ export const hmcDetails = <Fragment>
 		<div className="img" style={ { backgroundImage: `url(${ foxPro })` } } />
 		<div className="img" style={ { backgroundImage: `url(${ foxProDosScreens })` } } />
 	</div>
+	<br/>
+	<br/>
 </Fragment>;
