@@ -3,6 +3,38 @@ import philippineScripts from './images/projects/philippineScripts.jpg';
 import baybayinCharacters from './images/projects/baybayinCharacters.png';
 import sImoUI from './images/projects/simo-ui-full.jpg';
 import pcPrejanVid from './media/pcPrejan2.mp4';
+import pinoyKeyboardApk from './media/pinoyKeyboard.apk';
+import pinoyKeyboardToggle from './images/projects/pinoyKeyboardToggle.jpg';
+
+export const pinoyKeyboardDetails = <Fragment>
+	<h5 className="topic-label">Unpublished</h5>
+	<p>Pinoy Keyboard is a baybayin B17+ keyboard extension.</p>
+	<p>Unfortunately, due to the fact that I am not ready to pay google app store yet 😂, I did not publish it. However,
+		at your own risk, if you are technical enough to install manually, you can do so by downloading Pinoy Keyboard
+		extension app for andriod in <a href={ pinoyKeyboardApk } target="_blank" rel="noreferrer">here</a>! Rest assured,
+		that it is safe and no hidden agenda whatsoever! It is just a straight keyboard extension application that a
+		handful of people are already using.</p>
+	<div className="inline-image" style={ { backgroundImage: `url(${ pinoyKeyboardToggle })`, height: '300px' } } />
+	<p>Above illustration shows a key that toggles the keyboard characters from baybayin to roman/latin and/or vice
+		versa. Ideal for those who are still studying and beginners alike in baybayin.</p>
+	<p>As you can see, character placement are ordered left-to-right with <strong>ba ka da ga ha la ma</strong> and
+		etc... respectively for easy remembering with the <a
+			href="//en.wikipedia.org/wiki/Abakada_alphabet" target="_blank" rel="noreferrer">Abakada</a> alphabet in where
+		baybayin and other Philipine scripts are based of.</p>
+	<p>The topmost 3 keys are nothing more than a vowel selector. Normally, baybayin characters are syllables by default
+		with the vowel <strong>a</strong>. However, for easy transition from the typical typing that we all used to with
+		the roman/latin keys, I thought, that it would be easier to start with the same. Meaning, with this keyboard, the
+		keys starts with the <b><i>pamatay pantining</i></b> or <b><i>disemvowelment</i></b> of the default syllable
+		baybayin character/s.</p>
+	<p>That said, when you type <span
+		className="bybyn bold x-large">ᜊ</span> or <strong className="x-large">b</strong>, you will have the character <span
+		className="bybyn bold x-large">ᜊ᜔</span>. And if that is not your intention, you will
+		then follow it with one of the <b>3 topmost (vowel selector)</b> keys as follows:</p>
+	<span className="bold">Top-Left -> A</span>
+	<span className="bold">Top-Center -> E/I</span>
+	<span className="bold">Top-Right -> O/U</span>
+	<p>That's It!  For any questions, do reach me out to any of the social media platforms below.</p>
+</Fragment>
 
 export const pcPrejanDetails = <Fragment>
 	<h5 className="topic-label">Unpublished</h5>
