@@ -49,7 +49,7 @@ export const pinoyKeyboardDetails = <Fragment>
 	<span className="bold">Top-Left -> A</span>
 	<span className="bold">Top-Center -> E/I</span>
 	<span className="bold">Top-Right -> O/U</span>
-	<p>By the way, you're android phone might not be able to download the apk on a simple click.  If that is your case, try long-pressing the link and wait for the context menu and download from there.</p>
+	<h4 className='label'>By the way, you're android phone might not be able to download the apk on a simple click.  If that is your case, try long-pressing the link and wait for the context menu and download from there.</h4>
 	<p>That's It! For any questions, do reach me out to any of the social media platforms below.</p>
 </Fragment>
 
