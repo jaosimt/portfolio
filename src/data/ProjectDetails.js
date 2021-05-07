@@ -68,7 +68,7 @@ export const pcPrejanDetails = <Fragment>
 		<source src={ pcPrejanVid } type="video/ogg" />
 		Your browser does not support the video tag.
 	</video>
-	<h4 className="label">Language</h4>
+	<h4 className="label">Languages/Frameworks/Tools:</h4>
 	<ul>
 		<li>HTML, CSS & (Vanilla) JavaScript</li>
 		<li>Powered by <a href="/projects/simo-ui" target="_blank" rel="noreferrer">sImo-ui</a></li>
@@ -94,7 +94,7 @@ export const simoUIDetails = <Fragment>
 	<a href="//simo-ui.jaosimt.com" target="_blank" rel="noreferrer">
 		<div className="inline-image" style={ { backgroundSize: 'contain', backgroundImage: `url(${ sImoUI })` } } />
 	</a>
-	<h4 className="label">Language</h4>
+	<h4 className="label">Languages/Frameworks/Tools:</h4>
 	<ul>
 		<li>HTML, CSS & (Vanilla) JavaScript</li>
 	</ul>
@@ -117,7 +117,7 @@ export const baybayinPilipinasDetails = <Fragment>
 	</p>
 	<div className="inline-image" style={ { backgroundImage: `url(${ philippineScripts })` } } />
 	<br />
-	<h4 className="label">Language</h4>
+	<h4 className="label">Languages/Frameworks/Tools:</h4>
 	<ul>
 		<li>React JS</li>
 	</ul>

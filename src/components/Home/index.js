@@ -32,7 +32,6 @@ class Home extends Component {
 				
 				if (idxs.length !== this.imageArray.length) {
 					if (!idxs.includes(imageIndex)) idxs.push(imageIndex);
-					console.log('idxs:', idxs);
 				} else {
 					timeout = 14000;
 					this.setState({ imageOpacity: 1});

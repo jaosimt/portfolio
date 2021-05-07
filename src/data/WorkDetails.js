@@ -17,9 +17,9 @@ export const codevDetails = <Fragment>
 		</li>
 		<ul>
 			<li>Develop and maintain front-end projects</li>
-			<li className="italic">Language</li>
+			<li className="italic">Languages/Frameworks/Tools:</li>
 			<ul>
-				<li>React JS, Cucumber, Java, JSP</li>
+				<li>React JS, Cucumber, Java, JSP, Git</li>
 			</ul>
 		</ul>
 		<li className="bold">VisionEm</li>
@@ -30,9 +30,9 @@ export const codevDetails = <Fragment>
 				<li><a href="//allegroreviews.visionem.org/" target="_blank" rel="noreferrer">AllegroReviews</a></li>
 				<li><a href="//excellerence.visionem.org/" target="_blank" rel="noreferrer">Excellerence</a></li>
 			</ul>
-			<li className="italic">Language</li>
+			<li className="italic">Languages/Frameworks/Tools:</li>
 			<ul>
-				<li>HTML, CSS, JavaScript, jQuery, PHP</li>
+				<li>HTML, CSS, JavaScript, jQuery, PHP, Subversion</li>
 			</ul>
 		</ul>
 		<li className="bold">
@@ -43,9 +43,9 @@ export const codevDetails = <Fragment>
 			<ul>
 				<li><a href="//scifcom.com/" target="_blank" rel="noreferrer">scifcom.com</a></li>
 			</ul>
-			<li className="italic">Language</li>
+			<li className="italic">Languages/Frameworks/Tools:</li>
 			<ul>
-				<li>HTML, CSS, JavaScript, jQuery, PHP</li>
+				<li>HTML, CSS, JavaScript, jQuery, Java, Subversion</li>
 			</ul>
 		</ul>
 	</ul>
@@ -54,7 +54,7 @@ export const codevDetails = <Fragment>
 		<li>Nominee for May 2020 Employee of the Month</li>
 		<li>Nominee for March 2021 Employee of the Month</li>
 	</ul>
-	<h4 className="label">Awards & Recognitions</h4>
+	<h4 className="label">Awards/Recognitions</h4>
 	<div className="inline-image" style={ {
 		backgroundImage: `url(${ jaoCert })`,
 		height: '300px',
@@ -117,7 +117,7 @@ export const metroDetails = <Fragment>
 			<li>IOS Fitness Application [Metron App]</li>
 		</ul>
 	</ul>
-	<h4 className="label">Language:</h4>
+	<h4 className="label">Languages/Frameworks/Tools:</h4>
 	<ul>
 		<li>HTML, CSS</li>
 		<li>JavaScript</li>
@@ -159,11 +159,12 @@ export const tietoDetails = <Fragment>
 			<li>Merlin Production Pipe</li>
 		</ul>
 	</ul>
-	<h4 className="label">Language:</h4>
+	<h4 className="label">Languages/Frameworks/Tools:</h4>
 	<ul>
 		<li>HTML, CSS, JavaScript</li>
 		<li>Java JSF</li>
 		<li>Selenium, Robot Framework</li>
+		<li>Jenkins, MPP</li>
 	</ul>
 </Fragment>
 
@@ -211,7 +212,7 @@ export const rphcDetails = <Fragment>
 		brother, a Network Administrator from a reputable Japanese company and (2)a seasoned Java developer that believes
 		in me really was a big deal. This was the reboot to my I.T. career that opened a few doors.
 	</p>
-	<h4 className="label">Language</h4>
+	<h4 className="label">Languages/Frameworks/Tools:</h4>
 	<ul>
 		<li>HTML, CSS, JavaScript, jQuery, ASP.Net</li>
 		<li>C#, Java JSP/JSF</li>
@@ -303,7 +304,7 @@ export const kimwaDetails = <Fragment>
 		Considering that nobody was there to walk me through the technical aspect of the system, it was a blessing that it
 		was built using Foxpro. And, it does comes with a dozen books or so that helps me up to speed.
 	</p>
-	<h4 className="label">Language</h4>
+	<h4 className="label">Languages/Frameworks/Tools:</h4>
 	<ul>
 		<li><a href="//en.wikipedia.org/wiki/FoxPro" target="_blank" rel="noreferrer">Foxpro</a></li>
 		<li><a href="//en.wikipedia.org/wiki/Novell" target="_blank" rel="noreferrer">Novell Netware</a></li>
@@ -404,7 +405,7 @@ export const hmcDetails = <Fragment>
 	<p>
 		Nevertheless, It was an achievement and an experience, my very first in-fact after college.
 	</p>
-	<h4 className="label">Language:</h4>
+	<h4 className="label">Languages/Frameworks/Tools:</h4>
 	<ul>
 		<li><a href="//en.wikipedia.org/wiki/FoxPro" target="_blank" rel="noreferrer">Foxpro Dos</a></li>
 		<ul>
