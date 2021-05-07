@@ -5,9 +5,24 @@ import sImoUI from './images/projects/simo-ui-full.jpg';
 import pcPrejanVid from './media/pcPrejan2.mp4';
 import pinoyKeyboardApk from './media/pinoyKeyboard.apk';
 import pinoyKeyboardToggle from './images/projects/pinoyKeyboardToggle.jpg';
+import navKeyboardToggle from './images/projects/navKeyboardToggle.jpg';
 
 export const pinoyKeyboardDetails = <Fragment>
 	<h5 className="topic-label">Unpublished</h5>
+	<br/>
+	<h3><span style={ { color: 'red', backgroundColor: 'white' } }>IMPORTANT REMINDER:</span> MAKE SURE THAT YOU WILL BE
+		ABLE TO TOGGLE KEYBOARDS FROM YOUR NAVIGATION MENU (NAVIGATION BUTTONS) AS ILLUSTRATED BELLOW:</h3>
+	<div className="inline-image"
+	     style={ { backgroundImage: `url(${ navKeyboardToggle })`, height: '300px', marginTop: '14px' } } />
+	<h3><span style={ { color: 'red', backgroundColor: 'white' } }>WHY?</span> WELL, THIS VERSION DOES NOT HAVE A NUMBER
+		KEYS YET. AND IF YOUR PHONE IS PASSWORD PROTECTED WITH PASSWORD EITHER ALPHA, NUMERIC, OR ALPHA NUMERIC
+		COMBINATION, YOU MIGHT NOT BE ABLE TO UNLOCK YOUR PHONE WHEN YOU ENABLE THIS KEYBOARD!</h3>
+	<h3><span style={ { color: 'red', backgroundColor: 'white' } }>HOWEVER:</span> MOST UNLOCK KEYBOARDS ARE NUMBERS AND NOT WHATEVER KEYBOARD IS INSTALLED AND ACTIVATED IN YOUR PHONE.  BUT REGARDLESS, DO CHECK FIRST.  IT IS BETTER TO BE SAFE THAN SORRY 😜 <span className="x-large" style={ {
+		color: 'red',
+		backgroundColor: 'white'
+	} }>YOU HAD BEEN WARNED!</span></h3>
+	<br/>
+	<br/>
 	<p>Pinoy Keyboard is a baybayin B17+ keyboard extension.</p>
 	<p>Unfortunately, due to the fact that I am not ready to pay google app store yet 😂, I did not publish it. However,
 		at your own risk, if you are technical enough to install manually, you can do so by downloading Pinoy Keyboard
@@ -27,13 +42,15 @@ export const pinoyKeyboardDetails = <Fragment>
 		keys starts with the <b><i>pamatay pantining</i></b> or <b><i>disemvowelment</i></b> of the default syllable
 		baybayin character/s.</p>
 	<p>That said, when you type <span
-		className="bybyn bold x-large">ᜊ</span> or <strong className="x-large">b</strong>, you will have the character <span
-		className="bybyn bold x-large">ᜊ᜔</span>. And if that is not your intention, you will
+		className="bybyn bold x-large">ᜊ</span> or <strong className="x-large">b</strong>, you will have the
+		character <span
+			className="bybyn bold x-large">ᜊ᜔</span>. And if that is not your intention, you will
 		then follow it with one of the <b>3 topmost (vowel selector)</b> keys as follows:</p>
 	<span className="bold">Top-Left -> A</span>
 	<span className="bold">Top-Center -> E/I</span>
 	<span className="bold">Top-Right -> O/U</span>
-	<p>That's It!  For any questions, do reach me out to any of the social media platforms below.</p>
+	<p>By the way, you're android phone might not be able to download the apk on a simple click.  If that is your case, try long-pressing the link and wait for the context menu and download from there.</p>
+	<p>That's It! For any questions, do reach me out to any of the social media platforms below.</p>
 </Fragment>
 
 export const pcPrejanDetails = <Fragment>
