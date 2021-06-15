@@ -9,20 +9,6 @@ import navKeyboardToggle from './images/projects/navKeyboardToggle.jpg';
 
 export const pinoyKeyboardDetails = <Fragment>
 	<h5 className="topic-label">Unpublished</h5>
-	<br/>
-	<h3><span style={ { color: 'red', backgroundColor: 'white' } }>IMPORTANT REMINDER:</span> MAKE SURE THAT YOU WILL BE
-		ABLE TO TOGGLE KEYBOARDS FROM YOUR NAVIGATION MENU (NAVIGATION BUTTONS) AS ILLUSTRATED BELLOW:</h3>
-	<div className="inline-image"
-	     style={ { backgroundImage: `url(${ navKeyboardToggle })`, height: '300px', marginTop: '14px' } } />
-	<h3><span style={ { color: 'red', backgroundColor: 'white' } }>WHY?</span> WELL, THIS VERSION DOES NOT HAVE A NUMBER
-		KEYS YET. AND IF YOUR PHONE IS PASSWORD PROTECTED WITH PASSWORD EITHER ALPHA, NUMERIC, OR ALPHA NUMERIC
-		COMBINATION, YOU MIGHT NOT BE ABLE TO UNLOCK YOUR PHONE WHEN YOU ENABLE THIS KEYBOARD!</h3>
-	<h3><span style={ { color: 'red', backgroundColor: 'white' } }>HOWEVER:</span> MOST UNLOCK KEYBOARDS ARE NUMBERS AND NOT WHATEVER KEYBOARD IS INSTALLED AND ACTIVATED IN YOUR PHONE.  BUT REGARDLESS, DO CHECK FIRST.  IT IS BETTER TO BE SAFE THAN SORRY 😜 <span className="x-large" style={ {
-		color: 'red',
-		backgroundColor: 'white'
-	} }>YOU HAD BEEN WARNED!</span></h3>
-	<br/>
-	<br/>
 	<p>Pinoy Keyboard is a baybayin B17+ keyboard extension.</p>
 	<p>Unfortunately, due to the fact that I am not ready to pay google app store yet 😂, I did not publish it. However,
 		at your own risk, if you are technical enough to install manually, you can do so by downloading Pinoy Keyboard
