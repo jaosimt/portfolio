@@ -5,7 +5,6 @@ import sImoUI from './images/projects/simo-ui-full.jpg';
 import pcPrejanVid from './media/pcPrejan2.mp4';
 import pinoyKeyboardApk from './media/pinoyKeyboard.apk';
 import pinoyKeyboardToggle from './images/projects/pinoyKeyboardToggle.jpg';
-import navKeyboardToggle from './images/projects/navKeyboardToggle.jpg';
 
 export const pinoyKeyboardDetails = <Fragment>
 	<h5 className="topic-label">Unpublished</h5>
