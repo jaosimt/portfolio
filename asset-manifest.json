@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.2526da1f.chunk.css",
-    "main.js": "/static/js/main.5e76a6c6.chunk.js",
-    "main.js.map": "/static/js/main.5e76a6c6.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.fd1ce5ef.js",
-    "runtime-main.js.map": "/static/js/runtime-main.fd1ce5ef.js.map",
+    "main.css": "/static/css/main.4bc29ff3.chunk.css",
+    "main.js": "/static/js/main.526171c1.chunk.js",
+    "main.js.map": "/static/js/main.526171c1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bcdb3d4b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bcdb3d4b.js.map",
     "static/js/2.d5e53154.chunk.js": "/static/js/2.d5e53154.chunk.js",
     "static/js/2.d5e53154.chunk.js.map": "/static/js/2.d5e53154.chunk.js.map",
-    "static/js/3.01596743.chunk.js": "/static/js/3.01596743.chunk.js",
-    "static/js/3.01596743.chunk.js.map": "/static/js/3.01596743.chunk.js.map",
+    "static/js/3.235fdf56.chunk.js": "/static/js/3.235fdf56.chunk.js",
+    "static/js/3.235fdf56.chunk.js.map": "/static/js/3.235fdf56.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.2526da1f.chunk.css.map": "/static/css/main.2526da1f.chunk.css.map",
+    "static/css/main.4bc29ff3.chunk.css.map": "/static/css/main.4bc29ff3.chunk.css.map",
     "static/js/2.d5e53154.chunk.js.LICENSE.txt": "/static/js/2.d5e53154.chunk.js.LICENSE.txt",
     "static/media/Awit-sa-Bohol-Bohol-Hymn.8cd41838.mp3": "/static/media/Awit-sa-Bohol-Bohol-Hymn.8cd41838.mp3",
     "static/media/App.scss": "/static/media/Tahoma_Bold.9d58a73b.ttf",
@@ -65,9 +65,9 @@
     "static/media/under-construction.506bfbfa.png": "/static/media/under-construction.506bfbfa.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.fd1ce5ef.js",
+    "static/js/runtime-main.bcdb3d4b.js",
     "static/js/2.d5e53154.chunk.js",
-    "static/css/main.2526da1f.chunk.css",
-    "static/js/main.5e76a6c6.chunk.js"
+    "static/css/main.4bc29ff3.chunk.css",
+    "static/js/main.526171c1.chunk.js"
   ]
 }
