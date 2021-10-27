@@ -1,0 +1,23 @@
+.Parsonize {
+  display: flex;
+  pointer-events: none;
+
+  &[data-deli='default'] { flex-direction: column; }
+  &[data-deli='dot'] { flex-direction: row; }
+
+  .draggable {
+    padding: 3px 7px;
+    border: 1px solid #ccc;
+    margin: 3px;
+    cursor: move;
+    display: inline-flex;
+    white-space: pre;
+    width: 100%;
+    pointer-events: initial;
+
+    &.over {
+      border-style: dashed !important;
+      background-color: #ccc !important;
+    }
+  }
+}

@@ -7,11 +7,15 @@ import simo4 from './simo4.jpg';
 import simo5 from './simo5.jpg';
 import simo6 from './simo6.jpg';
 import simo7 from './simo7.jpg';
+import Parsonize from "../Parsonize";
+
+const ExerciseSolution = 'System.out.print("Hello, world!");';
 
 class Home extends Component {
 	state = {
 		imageIndex: 0,
-		imageOpacity: 0
+		imageOpacity: 0,
+		parsonize: ''
 	}
 	
 	imageArray = [ simo2, simo1, simo3, simo4, simo5, simo6, simo7 ];
@@ -42,8 +46,10 @@ class Home extends Component {
 		rotateImgIndex();
 	}
 	
+	parsonizeChangeHandler = parsonize => this.setState({ parsonize });
+	
 	render() {
-		const { imageIndex, imageOpacity } = this.state;
+		const { imageIndex, imageOpacity, parsonize } = this.state;
 		
 		return <div className="Home">
 			<h2 title="Greetings" className="greetings bybyn">ᜃᜋᜓᜐ᜔ᜆ</h2>
@@ -65,6 +71,15 @@ class Home extends Component {
 				<p>
 					At times, I may be annoying and loud, but I am kind of a laid-back person really.
 				</p>
+				<div style={{
+					textAlign: 'center',
+					margin: '21px 0'
+				}}>-oOo-</div>
+				<Parsonize
+					onChange={ this.parsonizeChangeHandler }
+					exerciseSolution={ ExerciseSolution }
+				/>
+				<p style={{ color: ExerciseSolution === parsonize ? '#0cc10c' : '#ff3c00' }}><b>{ parsonize }</b></p>
 			</div>
 		</div>
 	}
