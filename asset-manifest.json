@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.4bc29ff3.chunk.css",
-    "main.js": "/static/js/main.be848f4c.chunk.js",
-    "main.js.map": "/static/js/main.be848f4c.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.bcdb3d4b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.bcdb3d4b.js.map",
-    "static/js/2.d5e53154.chunk.js": "/static/js/2.d5e53154.chunk.js",
-    "static/js/2.d5e53154.chunk.js.map": "/static/js/2.d5e53154.chunk.js.map",
-    "static/js/3.235fdf56.chunk.js": "/static/js/3.235fdf56.chunk.js",
-    "static/js/3.235fdf56.chunk.js.map": "/static/js/3.235fdf56.chunk.js.map",
+    "main.css": "/static/css/main.3b5a295a.chunk.css",
+    "main.js": "/static/js/main.7a18e3b0.chunk.js",
+    "main.js.map": "/static/js/main.7a18e3b0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b1646a30.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b1646a30.js.map",
+    "static/js/2.dd52d55f.chunk.js": "/static/js/2.dd52d55f.chunk.js",
+    "static/js/2.dd52d55f.chunk.js.map": "/static/js/2.dd52d55f.chunk.js.map",
+    "static/js/3.1652d901.chunk.js": "/static/js/3.1652d901.chunk.js",
+    "static/js/3.1652d901.chunk.js.map": "/static/js/3.1652d901.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.4bc29ff3.chunk.css.map": "/static/css/main.4bc29ff3.chunk.css.map",
-    "static/js/2.d5e53154.chunk.js.LICENSE.txt": "/static/js/2.d5e53154.chunk.js.LICENSE.txt",
+    "static/css/main.3b5a295a.chunk.css.map": "/static/css/main.3b5a295a.chunk.css.map",
+    "static/js/2.dd52d55f.chunk.js.LICENSE.txt": "/static/js/2.dd52d55f.chunk.js.LICENSE.txt",
     "static/media/Awit-sa-Bohol-Bohol-Hymn.8cd41838.mp3": "/static/media/Awit-sa-Bohol-Bohol-Hymn.8cd41838.mp3",
     "static/media/App.scss": "/static/media/Tahoma_Bold.9d58a73b.ttf",
     "static/media/FlagOfBohol.ee764b8d.jpg": "/static/media/FlagOfBohol.ee764b8d.jpg",
@@ -30,6 +30,7 @@
     "static/media/codev.9d2d9c0f.webp": "/static/media/codev.9d2d9c0f.webp",
     "static/media/SocialMediaLinks.scss": "/static/media/instagram.b7c5e343.jpg",
     "static/media/jao-cert.c8d3406d.jpg": "/static/media/jao-cert.c8d3406d.jpg",
+    "static/media/jao-cert1.c13c762f.jpg": "/static/media/jao-cert1.c13c762f.jpg",
     "static/media/kadaugan.c5650d01.jpeg": "/static/media/kadaugan.c5650d01.jpeg",
     "static/media/kadauganSaMactan.6c071319.jpg": "/static/media/kadauganSaMactan.6c071319.jpg",
     "static/media/kimwa.f213f3fe.png": "/static/media/kimwa.f213f3fe.png",
@@ -65,9 +66,9 @@
     "static/media/under-construction.506bfbfa.png": "/static/media/under-construction.506bfbfa.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.bcdb3d4b.js",
-    "static/js/2.d5e53154.chunk.js",
-    "static/css/main.4bc29ff3.chunk.css",
-    "static/js/main.be848f4c.chunk.js"
+    "static/js/runtime-main.b1646a30.js",
+    "static/js/2.dd52d55f.chunk.js",
+    "static/css/main.3b5a295a.chunk.css",
+    "static/js/main.7a18e3b0.chunk.js"
   ]
 }
