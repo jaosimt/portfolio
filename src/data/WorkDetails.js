@@ -57,17 +57,19 @@ export const codevDetails = <Fragment>
 		<li>Nominee for April 2022 Employee of the Month</li>
 	</ul>
 	<h4 className="label">Awards/Recognitions</h4>
+	<p style={{marginBottom: 0}}>March 2021 Kudos awardee</p>
 	<div className="inline-image" style={ {
 		backgroundImage: `url(${ jaoCert })`,
 		height: '300px',
 		backgroundSize: 'contain',
-		marginTop: '14px'
+		marginTop: '7px'
 	} } />
+	<p style={{marginBottom: 0}}>April 2022 Employee of the Month</p>
 	<div className="inline-image" style={ {
 		backgroundImage: `url(${ jaoCert1 })`,
 		height: '300px',
 		backgroundSize: 'contain',
-		marginTop: '14px'
+		marginTop: '7px'
 	} } />
 </Fragment>
 
