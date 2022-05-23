@@ -27,11 +27,11 @@ class Parsonize extends Component {
 	
 	dragStartHandler = e => {
 		// eslint-disable-next-line no-console
-		if (e.isDefaultPrevented()) console.log('DEFAULT IS PREVENTED!!!');
+		if (e.isDefaultPrevented()) console.log('[Parsonize] dragStartHandler DEFAULT IS PREVENTED!!!');
 		const { currentTarget } = e;
 		
 		// eslint-disable-next-line no-console
-		console.log(`${ e.type}:`, currentTarget);
+		console.log(`[Parsonize] ${ e.type}:`, currentTarget);
 		
 		this.dragged = currentTarget;
 	}
@@ -39,7 +39,7 @@ class Parsonize extends Component {
 	dragEndHandler = e => {
 		const { currentTarget } = e;
 		// eslint-disable-next-line no-console
-		console.log(`${ e.type}:`, currentTarget);
+		console.log(`[Parsonize] ${ e.type}:`, currentTarget);
 		
 		currentTarget.classList.remove('over');
 	}
@@ -49,7 +49,7 @@ class Parsonize extends Component {
 			{ onChange } = this.props;
 		
 		// eslint-disable-next-line no-console
-		console.log(`${ e.type}:`, currentTarget);
+		console.log(`[Parsonize] ${ e.type}:`, currentTarget);
 		
 		currentTarget.classList.remove('over');
 		
@@ -69,7 +69,7 @@ class Parsonize extends Component {
 		const _shouldIt = nextCode !== code;
 		
 		// eslint-disable-next-line no-console
-		console.log('shouldComponentUpdate:', _shouldIt);
+		console.log('[Parsonize] shouldComponentUpdate:', _shouldIt);
 		
 		return _shouldIt;
 	}
@@ -96,7 +96,7 @@ class Parsonize extends Component {
 			} while(original === code.join(''));
 		}
 		
-		console.log('code: ', code);
+		console.log('[Parsonize] componentDidMount->code: ', code);
 		
 		this.setState({
 			delimiter,
@@ -123,7 +123,7 @@ class Parsonize extends Component {
 		const { delimiter, code } = this.state;
 		
 		// eslint-disable-next-line no-console
-		console.log('render', delimiter, code);
+		console.log('[Parsonize] render', delimiter, code);
 		
 		return <div
 			ref={ ref => this.parsonizeRef = ref }

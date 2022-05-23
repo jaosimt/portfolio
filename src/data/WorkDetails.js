@@ -4,6 +4,7 @@ import foxPro from './images/work/FoxPro_2.6_Developers_Guide_Cover.png';
 import foxProDosScreens from './images/work/FoxproDosScreens.png';
 import sbt from './images/work/sbtAccounting.png';
 import jaoCert from './images/work/jao-cert.jpg';
+import jaoCert1 from './images/work/jao-cert1.jpg';
 import metronCJ from './media/metronMobileWebAppCJ.mp4';
 
 export const codevDetails = <Fragment>
@@ -53,10 +54,17 @@ export const codevDetails = <Fragment>
 	<ul>
 		<li>Nominee for May 2020 Employee of the Month</li>
 		<li>Nominee for March 2021 Employee of the Month</li>
+		<li>Nominee for April 2022 Employee of the Month</li>
 	</ul>
 	<h4 className="label">Awards/Recognitions</h4>
 	<div className="inline-image" style={ {
 		backgroundImage: `url(${ jaoCert })`,
+		height: '300px',
+		backgroundSize: 'contain',
+		marginTop: '14px'
+	} } />
+	<div className="inline-image" style={ {
+		backgroundImage: `url(${ jaoCert1 })`,
 		height: '300px',
 		backgroundSize: 'contain',
 		marginTop: '14px'

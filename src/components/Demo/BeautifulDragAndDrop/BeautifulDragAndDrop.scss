@@ -1,0 +1,9 @@
+.TOC-Item {
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  > span {
+    transition: margin-left ease-in-out 300ms;
+  }
+}

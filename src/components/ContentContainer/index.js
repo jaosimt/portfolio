@@ -19,6 +19,7 @@ import { blogList } from "../../data/Blogs";
 import employmentBanner from "./images/professional-experience.jpg";
 import projectBanner from "./images/projects.jpg";
 import blogBanner from "./images/blogs.jpg";
+import Demo from "../Demo";
 
 export default function ContentContainer(props) {
 	const history = useHistory();
@@ -115,6 +116,11 @@ export default function ContentContainer(props) {
 						data={ projectList }
 						setMenuItem={ setMenuItem }
 						offset={ offset } />
+				</Route>
+				<Route exact path="/demo">
+					<Demo
+						offset={ offset }
+					/>
 				</Route>
 				<Route exact path="/blogs/:id">
 					<Details
