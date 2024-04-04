@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect, memo} from "react";
 import {
-	Switch,
+	Routes,
 	Route,
-	useHistory
+	useLocation,
+	useNavigate
 } from "react-router-dom";
 import Header from "../Header";
 import Home from "../Home";
@@ -20,11 +21,13 @@ import employmentBanner from "./images/professional-experience.jpg";
 import projectBanner from "./images/projects.jpg";
 import blogBanner from "./images/blogs.jpg";
 import Demo from "../Demo";
+import deepEqual from "deep-equal";
 
-export default function ContentContainer(props) {
-	const history = useHistory();
+function ContentContainer(props) {
+	const location = useLocation(),
+		navigate = useNavigate();
 	
-	const [ pathname, setPathname ] = useState(history.location.pathname);
+	const [ pathname, setPathname ] = useState(location.pathname);
 	const [ menuItem, setMenuItem ] = useState(window.location.pathname === '/' ? 'home' : window.location.pathname.replace(/^\//, ""));
 	const [ offset, setOffset ] = useState({
 		header: 0,
@@ -38,8 +41,8 @@ export default function ContentContainer(props) {
 	const menuClickHandler = e => setMenuItem(e.currentTarget.getAttribute('data-value'));
 	
 	const logHistory = e => {
-		console.log('[logHistory] history.location.pathname:', history.location.pathname);
-		setPathname(history.location.pathname);
+		console.log('[logHistory] location.pathname:', location.pathname);
+		setPathname(location.pathname);
 	}
 	
 	const setHeaderRef = ref => headerRef = ref;
@@ -50,9 +53,9 @@ export default function ContentContainer(props) {
 	}, [])
 	
 	useEffect(() => {
-		const pathName = history.location.pathname;
+		const pathName = location.pathname;
 		
-		console.log('[ContentContainer] [useEffect] [componentDidUpdate] history.location.pathname:', pathName);
+		console.log('[ContentContainer] [useEffect] [componentDidUpdate] location.pathname:', pathName);
 		
 		const offsetHeight = () => {
 			return {
@@ -67,7 +70,7 @@ export default function ContentContainer(props) {
 		setPathname(pathName);
 		
 		if (window.location.pathname !== pathName) {
-			history.push(window.location.pathname);
+			navigate(window.location.pathname);
 		}
 		
 		const currentPath = pathName.replace(/^\//, '').split("/")[ 0 ];
@@ -77,9 +80,9 @@ export default function ContentContainer(props) {
 	}, [
 		footerRef.clientHeight,
 		headerRef.clientHeight,
-		history,
-		history.location.pathname,
-		menuItem
+		location.pathname,
+		menuItem,
+		navigate
 	])
 	
 	return <div className="ContentContainer" style={ {
@@ -89,7 +92,7 @@ export default function ContentContainer(props) {
 		<Header
 			theme={ props.theme }
 			onThemeChange={ props.onThemeChange }
-			history={ history }
+			navigate={ navigate }
 			setRef={ setHeaderRef }
 			onClick={ menuClickHandler }
 			setMenuItem={ setMenuItem }
@@ -97,74 +100,56 @@ export default function ContentContainer(props) {
 		
 		<span />
 		{
-			<Switch>
-				<Route exact path="/">
-					<Home />
-				</Route>
-				<Route path="/about">
-					<About offset={ offset } />
-				</Route>
+			<Routes>
+				<Route exact path="/" element={<Home />} />
+				<Route path="/about" element={<About offset={ offset } />} />
+				<Route exact path="/employment/:id" element={<Details
+					data={ workList }
+					setMenuItem={ setMenuItem }
+					offset={ offset } />} />
+				<Route exact path="/projects/:id" element={<Details
+					data={ projectList }
+					setMenuItem={ setMenuItem }
+					offset={ offset } />} />
+				<Route exact path="/demo" element={<Demo offset={ offset } />} />
+				<Route exact path="/blogs/:id" element={<Details
+					data={ blogList }
+					setMenuItem={ setMenuItem }
+					offset={ offset } />} />
 				
-				<Route exact path="/employment/:id">
-					<Details
-						data={ workList }
-						setMenuItem={ setMenuItem }
-						offset={ offset } />
-				</Route>
-				<Route exact path="/projects/:id">
-					<Details
-						data={ projectList }
-						setMenuItem={ setMenuItem }
-						offset={ offset } />
-				</Route>
-				<Route exact path="/demo">
-					<Demo
-						offset={ offset }
-					/>
-				</Route>
-				<Route exact path="/blogs/:id">
-					<Details
-						data={ blogList }
-						setMenuItem={ setMenuItem }
-						offset={ offset } />
-				</Route>
-				
-				<Route exact path="/employment">
-					<List
+				<Route exact path="/employment" element={<List
 						logHistory={ logHistory }
 						offset={ offset }
-						history={ history }
+						navigate={ navigate }
+						location={ location }
 						data={ workList }
 						banner={ employmentBanner }
-						title="Employment" />
-				</Route>
-				<Route exact path="/projects">
-					<List
+						title="Employment" />}/>
+				<Route exact path="/projects" element={<List
 						logHistory={ logHistory }
 						offset={ offset }
-						history={ history }
+						navigate={ navigate }
+						location={ location }
 						data={ projectList }
 						banner={ projectBanner }
-						title="Projects" />
-				</Route>
-				<Route path="/blogs">
-					<List
+						title="Projects" />}/>
+				<Route path="/blogs" element={<List
 						logHistory={ logHistory }
 						offset={ offset }
-						history={ history }
+						navigate={ navigate }
+						location={ location }
 						data={ blogList }
 						banner={ blogBanner }
 						title={ <div style={ { display: 'flex', flexFlow: 'column' } }><span>Random Articles</span><span
-							style={ { fontSize: '21px', textTransform: 'none' } }>Anything Out Of The Blue</span></div> } />
-				</Route>
-				<Route path="*">
-					<PageNotFound
+							style={ { fontSize: '21px', textTransform: 'none' } }>Anything Out Of The Blue</span></div> } />}/>
+				<Route path="*" element={<PageNotFound
 						setMenuItem={ setMenuItem }
-						title={ history.location.pathname }
-						history={ history } />
-				</Route>
-			</Switch>
+						title={ location.pathname }
+						navigate={ navigate } />}/>
+			</Routes>
 		}
 		<Footer currentPath={ pathname } setRef={ setFooterRef } />
 	</div>
 }
+
+export default memo(ContentContainer, deepEqual)

@@ -53,7 +53,7 @@ export const kadauganDetails = <Fragment>
 	     style={ { backgroundSize: 'cover', minHeight: 300, backgroundImage: `url(${ moreDecals })` } } />
 	<br />
 	<h3>So who or what are we commemorating?</h3>
-	<span>Is it Chief Lapu-lapu? His bravery for standing his ground against the colonizers? And most probably Christianity is one of the reason he stood his ground and fought.</span>
+	<span>Is it Chief Lapu-lapu? His bravery for standing his ground against the colonizers? And it's highly likely that religion is amongst the reason he stood his ground and fought.</span>
 	<p>None of these make any sense to me at all!</p>
 	<p>We are not respecting Chief Lapu-lapu if we're infusing the very same thing, religion or someone else's tradition
 		that he probably fought against, especially during the celebration of what is supposed to be <strong

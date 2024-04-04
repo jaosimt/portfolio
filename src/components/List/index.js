@@ -1,16 +1,16 @@
-import React, { Component } from "react";
+import React, {Component, memo} from "react";
 import './list.scss';
 import Tiles from "../Tiles";
+import deepEqual from "deep-equal";
 
 class List extends Component {
 	componentDidMount() {
-		const { history } = this.props;
-		const { logHistory } = this.props;
+		const { location, logHistory } = this.props;
 		logHistory();
 		
 		
-		if (history.location.hash) {
-			const target = document.querySelector(history.location.hash);
+		if (location.hash) {
+			const target = document.querySelector(location.hash);
 			if (target) setTimeout(() => {
 				target.scrollIntoView({
 					behavior: 'smooth',
@@ -22,7 +22,7 @@ class List extends Component {
 	}
 	
 	render() {
-		const { offset: o, history, logHistory, data, title, banner } = this.props;
+		const { offset: o, location, navigate, logHistory, data, title, banner } = this.props;
 		const offset = o.header + o.footer + o.margin;
 		
 		return <div
@@ -35,11 +35,11 @@ class List extends Component {
 			} }>{ title }</div>
 			<div className="list-items">
 				{
-					data.map((w, i) => <Tiles key={ i } data={ w } history={ history } logHistory={ logHistory } />)
+					data.map((w, i) => <Tiles key={ i } data={ w } location={ location } navigate={navigate} logHistory={ logHistory } />)
 				}
 			</div>
 		</div>
 	}
 }
 
-export default List;
+export default memo(List, deepEqual);

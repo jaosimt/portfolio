@@ -5,7 +5,7 @@ import underConstruction from './under-construction.png'
 class PageNotFound extends Component {
 	
 	render() {
-		const { history, isUnderConstruction, title, setMenuItem } = this.props;
+		const { navigate, isUnderConstruction, title, setMenuItem } = this.props;
 		
 		return <div className="PageNotFound">
 			{
@@ -25,11 +25,11 @@ class PageNotFound extends Component {
 			<span
 				className="description-two">{ isUnderConstruction ? 'Please revisit this page some time soon.' : 'Sorry but the page you are looking for does not exist, have been removed, renamed or temporarily unavailable!' }</span>
 			{
-				history &&
+				navigate &&
 				<button
 					onClick={ () => {
 						if (typeof setMenuItem === 'function') {
-							history.push('/');
+							navigate('/');
 							setMenuItem('home');
 						} else window.location = '/'
 					} }>

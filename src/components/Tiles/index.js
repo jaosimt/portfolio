@@ -1,7 +1,8 @@
-import React, { Component } from "react";
+import React, {Component, memo} from "react";
 import PropTypes from 'prop-types';
 import './tiles.scss';
 import noImage from '../../images/noimage.png';
+import deepEqual from "deep-equal";
 
 class Tiles extends Component {
 	state = {
@@ -9,9 +10,12 @@ class Tiles extends Component {
 	}
 	
 	componentDidMount() {
-		if (this.logoRef) this.setState({
-			logoHeight: this.logoRef.clientWidth
-		})
+		if (this.logoRef) {
+			// noinspection JSSuspiciousNameCombination
+			this.setState({
+				logoHeight: this.logoRef.clientWidth
+			})
+		}
 	}
 	
 	render() {
@@ -61,11 +65,11 @@ class Tiles extends Component {
 	}
 	
 	readMoreClick = () => {
-		const { data, history, logHistory } = this.props;
+		const { data, location, navigate, logHistory } = this.props;
 		const { id } = data;
-		const path = `${ history.location.pathname }/${ id }`;
-		
-		history.push(path)
+		const path = `${ location.pathname }/${ id }`;
+
+		navigate(path)
 		logHistory();
 	};
 }
@@ -83,4 +87,4 @@ Tiles.propTypes = {
 	})
 };
 
-export default Tiles;
+export default memo(Tiles, deepEqual);

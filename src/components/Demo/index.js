@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Demo.scss';
 import Parsonize from "../Parsonize";
-import TOC from "./TOC";
+// import TOC from "./TOC";
 import BeautifulDragAndDrop from "./BeautifulDragAndDrop";
 
 class Demo extends Component {

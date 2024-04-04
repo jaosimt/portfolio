@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useParams, useHistory } from "react-router-dom";
+import { useParams, useLocation, useNavigate } from "react-router-dom";
 import './details.scss';
 import PageNotFound from "../PageNotFound";
 import noImage from "../../images/noimage.png";
@@ -7,7 +7,8 @@ import { Capitalize } from "../../scripts/utils";
 
 export default function Details(props) {
 	const { id } = useParams(),
-		history = useHistory();
+		location = useLocation(),
+		navigate = useNavigate();
 	
 	
 	let data = props.data.filter(d => d.id === id);
@@ -24,12 +25,12 @@ export default function Details(props) {
 			backgroundImage: `url(${ data && data.image ? data.image : noImage })`
 		} } />;
 	
-	let pathNames = history.location.pathname.split('/');
+	let pathNames = location.pathname.split('/');
 	pathNames.pop();
 	pathNames = pathNames.join("/");
 	
 	const backButton = <button style={ { marginTop: '35px' } } className="go-back" onClick={ () => {
-		history.push(`${ pathNames }#${ data.id }`);
+		navigate(`${ pathNames }#${ data.id }`);
 	} }>{ `← ${ Capitalize(pathNames.replace(/^\//, '')) }` }</button>;
 	
 	useEffect(() => {
@@ -64,7 +65,7 @@ export default function Details(props) {
 		</div>
 	</div> : <PageNotFound
 		setMenuItem={ setMenuItem }
-		title={ `${ history.location.pathname }` }
-		history={ history }
+		title={ `${ location.pathname }` }
+		location={ location }
 		isUnderConstruction={ true } />
 }

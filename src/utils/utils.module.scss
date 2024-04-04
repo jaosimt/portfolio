@@ -1,0 +1,34 @@
+//From https://stackoverflow.com/a/4407335
+.noselect {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+//Visually hide elements, but still make them
+//readable to screen readers.
+//https://webaim.org/techniques/css/invisiblecontent/
+.vhide {
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+}
+
+//For whatever reason, the exclamation points
+//prevents webpack from removing these styles
+//when bundling
+.noop {
+	/*! keep me */
+}
+
+.nooptwo {
+	/*! keep me */
+}

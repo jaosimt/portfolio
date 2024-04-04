@@ -15,12 +15,12 @@ class Header extends Component {
 	
 	render() {
 		const { right } = this.state;
-		const { selected, setRef, history, setMenuItem, onThemeChange, theme } = this.props;
+		const { selected, setRef, navigate, setMenuItem, onThemeChange, theme } = this.props;
 		
 		return <div className={ `Header ${ selected }-page` } ref={ setRef }>
 			<div
 				onClick={ () => {
-					history.push('/');
+					navigate('/');
 					setMenuItem('home');
 				} }
 				className="logo bybyn">

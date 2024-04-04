@@ -1,0 +1,8 @@
+[ignore]
+<PROJECT_ROOT>/node_modules/draft-js/.*
+[include]
+<PROJECT_ROOT>/src
+[libs]
+[options]
+module.name_mapper='.*\(.css\)' -> 'empty/object'
+suppress_type=$FlowIssue
