@@ -11,7 +11,7 @@ export const codevDetails = <Fragment>
 	<p className="italic">CoDev solves staffing problems by providing highly skilled professionals to growing technical
 		companies.</p>
 	<p>In June 2019, I was blessed to have been considered and boarded in this wonderful family.</p>
-	<h4 className="label"><span>Employment</span><span>2019 - present</span></h4>
+	<h4 className="label"><span>Employment</span><span>2019 - 2025</span></h4>
 	<ul>
 		<li className="bold">
 			<a href="//turingscraft.com" target="_blank" rel="noreferrer">TuringsCraft</a>
@@ -371,7 +371,7 @@ export const kimwaDetails = <Fragment>
 </Fragment>;
 
 export const hmcDetails = <Fragment>
-	<p className="italic">Was a startup company owned by a Pilipino-American.</p>
+	<p className="italic">Was a startup company owned by a Filipino-American.</p>
 	<p>Right after graduation in 1996, I was hired after rendering OJT on the same Company.</p>
 	<p>
 		The Company provides I.T. services, sales & consultancy with address at 11 P. Zamora street, Cebu City,

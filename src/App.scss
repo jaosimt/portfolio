@@ -57,6 +57,10 @@
 
   .Details {
     .logo-wrapper {
+      position: sticky;
+      top: 0;
+      height: 400px;
+
       .subject-logo {
         background-color: #fff;
       }
@@ -72,6 +76,7 @@
       }
     }
   }
+
   .Footer {
     .current-page {
       .bybyn {

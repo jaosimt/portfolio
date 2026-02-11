@@ -31,12 +31,12 @@ export const kadauganDetails = <Fragment>
 	     style={ { backgroundPosition: 'center', backgroundSize: 'cover', backgroundImage: `url(${ kadaugan2 })` } } />
 	<br />
 	<h3>A battle won! Or is it?</h3>
-	<span>This year, 2021, We are commemorating the 500th anniversary of the arrival of Christianity in the Philippines. BSP
+	<span>Year 2021, Mactan commemorates the 500th anniversary of the arrival of Catholicism in the Philippines. BSP
 		even printed a Php5000 Lapu-lapu commemorative banknote with the Quincentennial Commemoration logo in it.</span><br />
 	<div className="inline-image" style={ { backgroundSize: 'cover', backgroundImage: `url(${ fiveK })` } } />
 	<br />
-	<h3>Did Chief Lapu-lapu embraced Christianity?</h3>
-	<span>I think not! He fought and won! And probably died hating it... Or not liking it at-least.</span><br />
+	<h3>Did Chief Lapu-lapu embraced Catholicism?</h3>
+	<span>I think not! He fought and probably died disliking it at-least! Because why else did he fought!</span><br />
 	<div style={ {
 		backgroundColor: '#000',
 		color: "#FFF",
@@ -59,8 +59,7 @@ export const kadauganDetails = <Fragment>
 		that he probably fought against, especially during the celebration of what is supposed to be <strong
 			className="italic">The Kadaugan sa Mactan</strong>.</p>
 	<p>This is my humble opinion and my opinion alone.</p>
-	<p>And so, I am asking....</p>
-	<h3>Did he really win?</h3>
+	<p>And so, <strong>Did he really win?</strong></p>
 </Fragment>;
 
 export const boholHymnDetails = <Fragment>
@@ -274,14 +273,14 @@ export const baybayinKeyboardDetails = <Fragment>
 		do not pay attention to such details. And besides we are used to typing with the latin scripts.
 	</p>
 	<p>What do I mean by that? Well, consider the following words and the ways on how we would be typing them.</p>
-	<h3>Kamusta (How are you)</h3>
+	<h3>Kumusta (How are you)</h3>
 	<ul style={ { marginTop: 0 } }>
 		<li>
-			Using latin/roman keys, obviously it is the combination of individual keys: <strong>k, a, m, u, s, t &
+			Using latin/roman keys, obviously it is the combination of individual keys: <strong>k, u, m, u, s, t &
 			a</strong>; This is what we all got used to typing
 		</li>
-		<li>Using Baybayin with the above typing habit will produce: <span className="bold bybyn">ᜃᜋᜓᜐᜆ</span> which
-			translates to <strong>kamusata</strong></li>
+		<li>Using Baybayin with the above typing habit will produce: <span className="bold bybyn">ᜃᜓᜋᜓᜐᜆ</span> which
+			translates to <strong>kumusata</strong></li>
 	</ul>
 	<h3>Magaling (Good)</h3>
 	<ul style={ { marginTop: 0 } }>
@@ -292,17 +291,17 @@ export const baybayinKeyboardDetails = <Fragment>
 	<ul style={ { marginTop: 0 } }>
 		<li><span className="bold bybyn">ᜋᜄ</span> which translates to <strong>maga</strong></li>
 	</ul>
-	<h3>What do you think is wrong?</h3>
+	<h3>These are not even a valid Tagalog words! What do you think is wrong?</h3>
 	<p>With baybayin keyboard, <strong>always type baybayin with your caps lock OFF.</strong></p>
 	<p>Now, typing characters like you are typing them using the latin/roman keyboard will NOT work! And yes, you will
 		have a bunch of typos if you won’t disconnect yourself from the latin/roman typing ways.</p>
-	<p>Why? Baybayin characters are not really letters. <strong>They are syllables, except the vowels and the ones
+	<p>Why? Baybayin characters are not really "letters". <strong>They are syllables, except the vowels and the ones
 		with
 		a <a href="https://en.wikipedia.org/wiki/Virama" target="_blank" rel="noreferrer">virama</a></strong>. Meaning,
 		and by default, each baybayin “characters” are a pair of one consonant (or two with the syllable nga) and a
 		vowel.
 		Again, except the vowels and the ones with a virama.</p>
-	<p>How typing works in baybayin keyboard? The default is a pair of <strong>one consonant</strong> (or two for nga)
+	<p><strong>How to correctly use this baybayin keyboard?</strong><br/>First, always remember its default, which is a pair of <strong>one consonant</strong> (or two for nga)
 		and the vowel <strong>a</strong>.</p>
 	<p>For example the <span className="bold bybyn">ᜃ</span> character; A press on the key <strong>k</strong> on your
 		keyboard will show the <strong>ka (<span className="bybyn">ᜃ</span>)</strong> character. So if you only need it
@@ -310,28 +309,28 @@ export const baybayinKeyboardDetails = <Fragment>
 		be just the <strong>k</strong>, you need to press the <strong>equal sign (=)</strong> key after it. That is how
 		we
 		bring the virama to disemvowel a syllable.</p>
-	<p>On that note, typing <strong>kamusta</strong> using baybayin keyboard is either one of two ways. A combination
+	<p>On that note, typing <strong>kumusta</strong> using baybayin keyboard is either one of two ways. A combination
 		of
 		key presses as follows:</p>
 	<ul>
-		<li><strong>k, mo, s=</strong> and <strong>t</strong></li>
-		<li><strong>ka, mo, s=</strong> and <strong>ta</strong></li>
+		<li><strong>ku, mu, s=</strong> and <strong>t</strong></li>
+		<li><strong>ku, mu, s</strong> and <strong>ta</strong></li>
 	</ul>
-	<p>How about the word <strong>magaling</strong>? Well, just the same. What’s special here is
+	<p>How about the word <strong>magaling(<i>good</i>)</strong>? Well, just the same. What’s special here is
 		the <strong>ng</strong>.
-		Typing ng directly will produce <span className="bold bybyn">ᜈᜄ</span> which translates
+		Typing <strong>ng</strong> directly will produce <span className="bold bybyn">ᜈᜄ</span> which translates
 		to <strong>naga</strong>.
 		That would make it <strong>magalinaga</strong> as shown above which is needless to say that it is wrong.</p>
 	<p>If I would call it a trick, like how the virama is brought up, the character/letter case also plays an
 		important
 		role in the baybayin keyboard typing. Thus the word <strong>magaling</strong> was chosen for this purpose.</p>
-	<p>Look back up when I noted to always type with you caps lock OFF, simply because of a few things. One is the
-		distinction between the <strong>na (<span className="bybyn">ᜈ</span>)</strong> and <strong>nga (<span
+	<p>As I mentioned above, always type with your caps lock OFF, simply because of a few things. One is the
+		distinction on typing <strong>na (<span className="bybyn">ᜈ</span>)</strong> and <strong>nga (<span
 			className="bybyn">ᜅ</span>)</strong> syllables.</p>
 	<p>Typing it is one of two ways again and are as follows:</p>
 	<ul>
 		<li><strong>m, g, li</strong> and <strong>N=</strong></li>
-		<li><strong>ma, ga, li</strong> and <strong>Na=</strong></li>
+		<li><strong>ma, ga, li</strong> and <strong>N=</strong></li>
 	</ul>
 	<p>That’s right, a little bit weird, maybe crazy… but that is how it works. Perhaps a specification on typing such
 		is
@@ -342,8 +341,7 @@ export const baybayinKeyboardDetails = <Fragment>
 			className="bybyn">ᜈ</span>)</strong> while typing <strong>N</strong> will bring the syllable <strong>nga
 			(<span
 				className="bybyn">ᜅ</span>)</strong>. And this is why the character/letter case plays an important role
-		in
-		baybayin keyboard.</p>
+		in this particular baybayin keyboard.</p>
 	<p>How about the word <strong>maaga</strong>?</p>
 	<p>Whenever you need to be typing <strong>a vowel after a vowel</strong>, the same uppercase letter role plays the
 		part. One of two ways yet again and are as follows:</p>
@@ -351,16 +349,16 @@ export const baybayinKeyboardDetails = <Fragment>
 		<li><strong>m, A</strong> and <strong>g</strong></li>
 		<li><strong>ma, A</strong> and <strong>ga</strong></li>
 	</ul>
-	<p>The same is true when you are typing any vowel as the first character. For
-		example: <strong>aklat</strong>, <strong>ilog</strong> and <strong>ulo</strong> amongst others.</p>
+	<p>The same is true when you are typing a word that starts with a vowel! For
+		example: <strong>aklat(<i>book</i>)</strong>, <strong>ilog(<i>river</i>)</strong> and <strong>ulo(<i>head</i>)</strong> amongst others.</p>
 	<p>So, the next time that you would see such writing, you should know that the latin/roman key presses equivalents
 		are as follows:</p>
 	<ul>
-		<li><span className="bybyn">ᜃᜋᜓᜐ᜔ᜆ</span> ➛ <strong>kmus=t</strong> or <strong>kamus=ta</strong></li>
-		<li><span className="bybyn">ᜋᜄᜎᜒᜅ᜔</span> ➛ <strong>mgliN=</strong> or <strong>magaliNa=</strong></li>
+		<li><span className="bybyn">ᜃᜓᜋᜓᜐ᜔ᜆ</span> ➛ <strong>kumus=t</strong> or <strong>kumus=ta</strong></li>
+		<li><span className="bybyn">ᜋᜄᜎᜒᜅ᜔</span> ➛ <strong>mgliN=</strong> or <strong>magaliN=</strong></li>
 		<li><span className="bybyn">ᜋᜀᜄ</span> ➛ <strong>mAg</strong> or <strong>maAga</strong></li>
 	</ul>
-	<p>That’s it! Once you keep all that in mind? You will be typing baybayin like you’re doing it with latin/roman
+	<p>That’s it! Once you keep all that in mind? You will be typing baybayin in this keyboard like you’re doing it with latin/roman
 		scripts.</p>
 	<h3>Common mistakes</h3>
 	<ol>
@@ -382,10 +380,10 @@ export const baybayinKeyboardDetails = <Fragment>
 				href="//akopito.weebly.com/suwat-bisaya.html" target="_blank" rel="noreferrer">Badlit</a>, etc... are
 				writing systems in the Philippines!
 			</li>
-			<li>Our languages and dialects are originally using <a href="//en.wikipedia.org/wiki/Abakada_alphabet"
+			<li>Filipino languages and dialects are originally using <a href="//en.wikipedia.org/wiki/Abakada_alphabet"
 			                                                       target="_blank" rel="noreferrer">Abakada alphabet</a>!
 			</li>
-			<li>That is what Baybayin and many other scripts in the Philippines are made for!</li>
+			<li>And since the Abakada alphabet has I (pronounced with a long "ee" sound as in me or she), E (pronounced with a short "e" sound as in bed or set) and O (pronounced with a short "o" sound as in so or tow), U (pronounced with a long "oo" sound as in foot or took) which are absent (or interchangeable) in the scripts, I think it's safe to say that the alphabet are derived and updated from Baybayin!</li>
 		</ul>
 	</ol>
 	<h3>Do take note that in baybayin, always write it how you pronounced it!</h3>

@@ -52,13 +52,13 @@ class Home extends Component {
 		const { imageIndex, imageOpacity, parsonize } = this.state;
 		
 		return <div className="Home">
-			<h2 title="Greetings" className="greetings bybyn">ᜃᜋᜓᜐ᜔ᜆ</h2>
+			<h2 title="Greetings" className="greetings bybyn">ᜃᜓᜋᜓᜐ᜔ᜆ</h2>
 			<div className="profile-image" style={ {
 				backgroundImage: `url(${this.imageArray[ imageIndex ]})`,
 				opacity: imageOpacity
 			} } />
 			<div className="profile-description">
-				<div className="greetings bybyn">ᜃᜋᜓᜐ᜔ᜆ</div>
+				<div className="greetings bybyn">ᜃᜓᜋᜓᜐ᜔ᜆ</div>
 				<h1 className="name gold">Sim Jao</h1>
 				<p>
 					I am a web designer and developer specializing in JavasSript including but not limited to React JS.
@@ -79,7 +79,7 @@ class Home extends Component {
 					onChange={ this.parsonizeChangeHandler }
 					exerciseSolution={ ExerciseSolution }
 				/>
-				<p style={{ color: ExerciseSolution === parsonize ? '#0cc10c' : '#ff3c00' }}><b>{ parsonize }</b></p>
+				<p style={{ whiteSpace: 'nowrap', color: ExerciseSolution === parsonize ? '#0cc10c' : '#ff3c00' }}><b>{ parsonize }</b></p>
 			</div>
 		</div>
 	}

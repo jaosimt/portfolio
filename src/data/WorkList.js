@@ -17,7 +17,7 @@ import {
 export const workList = [
 	{
 		id: 'codev',
-		date: '2019 to present',
+		date: '2019 to 2025',
 		subject: {
 			name: 'Complete Development (CoDev)',
 			website: '//www.codev.com',
