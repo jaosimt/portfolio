@@ -38,7 +38,8 @@ class Header extends Component {
 						           data-value={ menuItem }
 						           className={ `${ menuItem } ${ selected === menuItem && 'selected' }` }
 						           onClick={ this.menuItemClick }>
-							<NavLink to={ `/${ menuItem === 'home' ? '' : menuItem }` }>{ Capitalize(m) }</NavLink>
+							{/*<NavLink to={ `/${ menuItem === 'home' ? '' : menuItem }` }>{ Capitalize(m) }</NavLink>*/}
+                            <NavLink to={ `/portfolio/${ menuItem === 'home' ? '' : menuItem }` }>{ Capitalize(m) }</NavLink>
 						</li>
 					})
 				}

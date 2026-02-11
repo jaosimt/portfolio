@@ -101,47 +101,88 @@ function ContentContainer(props) {
 		<span />
 		{
 			<Routes>
-				<Route exact path="/" element={<Home />} />
-				<Route path="/about" element={<About offset={ offset } />} />
-				<Route exact path="/employment/:id" element={<Details
-					data={ workList }
-					setMenuItem={ setMenuItem }
-					offset={ offset } />} />
-				<Route exact path="/projects/:id" element={<Details
-					data={ projectList }
-					setMenuItem={ setMenuItem }
-					offset={ offset } />} />
-				<Route exact path="/demo" element={<Demo offset={ offset } />} />
-				<Route exact path="/blogs/:id" element={<Details
-					data={ blogList }
-					setMenuItem={ setMenuItem }
-					offset={ offset } />} />
-				
-				<Route exact path="/employment" element={<List
-						logHistory={ logHistory }
-						offset={ offset }
-						navigate={ navigate }
-						location={ location }
-						data={ workList }
-						banner={ employmentBanner }
-						title="Employment" />}/>
-				<Route exact path="/projects" element={<List
-						logHistory={ logHistory }
-						offset={ offset }
-						navigate={ navigate }
-						location={ location }
-						data={ projectList }
-						banner={ projectBanner }
-						title="Projects" />}/>
-				<Route path="/blogs" element={<List
-						logHistory={ logHistory }
-						offset={ offset }
-						navigate={ navigate }
-						location={ location }
-						data={ blogList }
-						banner={ blogBanner }
-						title={ <div style={ { display: 'flex', flexFlow: 'column' } }><span>Random Articles</span><span
-							style={ { fontSize: '21px', textTransform: 'none' } }>Anything Out Of The Blue</span></div> } />}/>
+				{<Route exact path="/" element={<Home />} />
+                    /*<Route path="/about" element={<About offset={ offset } />} />
+                    <Route exact path="/employment/:id" element={<Details
+                        data={ workList }
+                        setMenuItem={ setMenuItem }
+                        offset={ offset } />} />
+                    <Route exact path="/projects/:id" element={<Details
+                        data={ projectList }
+                        setMenuItem={ setMenuItem }
+                        offset={ offset } />} />
+                    <Route exact path="/demo" element={<Demo offset={ offset } />} />
+                    <Route exact path="/blogs/:id" element={<Details
+                        data={ blogList }
+                        setMenuItem={ setMenuItem }
+                        offset={ offset } />} />
+
+                    <Route exact path="/employment" element={<List
+                            logHistory={ logHistory }
+                            offset={ offset }
+                            navigate={ navigate }
+                            location={ location }
+                            data={ workList }
+                            banner={ employmentBanner }
+                            title="Employment" />}/>
+                    <Route exact path="/projects" element={<List
+                            logHistory={ logHistory }
+                            offset={ offset }
+                            navigate={ navigate }
+                            location={ location }
+                            data={ projectList }
+                            banner={ projectBanner }
+                            title="Projects" />}/>
+                    <Route path="/blogs" element={<List
+                            logHistory={ logHistory }
+                            offset={ offset }
+                            navigate={ navigate }
+                            location={ location }
+                            data={ blogList }
+                            banner={ blogBanner }
+                            title={ <div style={ { display: 'flex', flexFlow: 'column' } }><span>Random Articles</span><span
+                                style={ { fontSize: '21px', textTransform: 'none' } }>Anything Out Of The Blue</span></div> } />}/>*/}
+                <Route exact path="/portfolio/" element={<Home />} />
+                <Route path="/portfolio/about" element={<About offset={ offset } />} />
+                <Route exact path="/portfolio/employment/:id" element={<Details
+                    data={ workList }
+                    setMenuItem={ setMenuItem }
+                    offset={ offset } />} />
+                <Route exact path="/portfolio/projects/:id" element={<Details
+                    data={ projectList }
+                    setMenuItem={ setMenuItem }
+                    offset={ offset } />} />
+                <Route exact path="/portfolio/demo" element={<Demo offset={ offset } />} />
+                <Route exact path="/portfolio/blogs/:id" element={<Details
+                    data={ blogList }
+                    setMenuItem={ setMenuItem }
+                    offset={ offset } />} />
+
+                <Route exact path="/portfolio/employment" element={<List
+                    logHistory={ logHistory }
+                    offset={ offset }
+                    navigate={ navigate }
+                    location={ location }
+                    data={ workList }
+                    banner={ employmentBanner }
+                    title="Employment" />}/>
+                <Route exact path="/portfolio/projects" element={<List
+                    logHistory={ logHistory }
+                    offset={ offset }
+                    navigate={ navigate }
+                    location={ location }
+                    data={ projectList }
+                    banner={ projectBanner }
+                    title="Projects" />}/>
+                <Route path="/portfolio/blogs" element={<List
+                    logHistory={ logHistory }
+                    offset={ offset }
+                    navigate={ navigate }
+                    location={ location }
+                    data={ blogList }
+                    banner={ blogBanner }
+                    title={ <div style={ { display: 'flex', flexFlow: 'column' } }><span>Random Articles</span><span
+                        style={ { fontSize: '21px', textTransform: 'none' } }>Anything Out Of The Blue</span></div> } />}/>
 				<Route path="*" element={<PageNotFound
 						setMenuItem={ setMenuItem }
 						title={ location.pathname }

@@ -14,7 +14,7 @@ class PageNotFound extends Component {
 			}
 			<span
 				className={ `${ isUnderConstruction ? 'font-smaller ' : '' }bybyn` }>
-				{ isUnderConstruction ? 'ᜊᜎᜒᜃ᜔ ᜎᜅ᜔ ᜉᜓᜑᜓᜈ᜔' : 'ᜇᜒᜎᜒ ᜋᜃᜒᜆ' }
+				{ isUnderConstruction ? 'ᜊᜎᜒᜃ᜔ ᜎᜅ᜔ ᜉᜓᜑᜓᜈ᜔' : 'ᜇᜒᜎᜒ ᜋ ᜃᜒᜆ' }
 			</span>
 			<span className={ `message ${ !isUnderConstruction ? 'four-o-four' : '' }` }>{ isUnderConstruction ?
 				<img height={ 175 }
