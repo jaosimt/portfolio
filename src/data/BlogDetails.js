@@ -201,7 +201,7 @@ export const lusonensisDetails = <Fragment>
     <div className="inline-image" style={{ backgroundImage: `url(${firstCenturyGold})` }}/>
     <div className="inline-image" style={{ backgroundImage: `url(${philippineCollar})` }}/>
     <br/>
-    <p>3) Then we know that this guys exist in abundance when the Spañards came.</p>
+    <p>3) Then we know that these guys exist in abundance when the Spañards came.</p>
     <div className="inline-image" style={{ backgroundImage: `url(${boxerCodex})` }}/>
     <br/>
     <p>4) Then we have the Surigao treasures which is also pre colonial.</p>
