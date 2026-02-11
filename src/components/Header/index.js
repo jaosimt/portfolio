@@ -20,7 +20,7 @@ class Header extends Component {
 		return <div className={ `Header ${ selected }-page` } ref={ setRef }>
 			<div
 				onClick={ () => {
-					navigate('/');
+					navigate('/portfolio/');
 					setMenuItem('home');
 				} }
 				className="logo bybyn">
