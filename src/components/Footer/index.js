@@ -8,7 +8,7 @@ function Footer(props) {
 	console.log('[Footer] currentPath:', currentPath);
 	
 	return <div className="Footer" ref={ setRef }>
-			<span className="current-page">{ currentPath !== "/" ? currentPath.replace(/^\//, '').split("/").join(".") : <span className='bybyn'>
+			<span className="current-page">{ currentPath !== "/" ? currentPath.replace(/^\/(portfolio\/)*/, '').split("/").join(".") : <span className='bybyn'>
 					<span title="Bisaya"><strong>ᜊᜒᜐᜌᜓ</strong></span>&nbsp;|&nbsp;
 				<span title="Filipino">ᜉᜒᜎᜒᜉᜒᜈᜓ</span>
 				</span> }</span>

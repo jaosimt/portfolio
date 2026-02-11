@@ -31,7 +31,7 @@ export default function Details(props) {
 	
 	const backButton = <button style={ { marginTop: '35px' } } className="go-back" onClick={ () => {
 		navigate(`${ pathNames }#${ data.id }`);
-	} }>{ `← ${ Capitalize(pathNames.replace(/^\//, '')) }` }</button>;
+	} }>{ `← ${ Capitalize(pathNames.replace(/^\/portfolio\//, '')) }` }</button>;
 	
 	useEffect(() => {
 		window.scrollTo({ top: 0 });
