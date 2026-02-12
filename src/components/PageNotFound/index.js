@@ -10,7 +10,7 @@ class PageNotFound extends Component {
 		return <div className="PageNotFound">
 			{
 				title &&
-				<span className="title">{ title }</span>
+				<span className="title">{ title.replace(/\/portfolio\//, '') }</span>
 			}
 			<span
 				className={ `${ isUnderConstruction ? 'font-smaller ' : '' }bybyn` }>
