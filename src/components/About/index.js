@@ -44,7 +44,7 @@ const About = ({offset: o}) =>{
 				</p>
 				<img className='award' src={ award } alt="" />
 				<p>
-					My first ever job awaits me even before I graduated which was awesome.  Lost it however almost as early as I have it; <span className='link font-smaller' onClick={() => navigate('/employment/hmc')} >(You may refer to this page for more details.)</span>  Soon after that, thankfully had my second, my third, my fourth, my fifth then my sixth up to the present.
+					My first ever job awaits me even before I graduated which was awesome.  Lost it however almost as early as I have it; <span className='link font-smaller' onClick={() => navigate('/portfolio/employment/hmc')} >(You may refer to this page for more details.)</span>  Soon after that, thankfully had my second, my third, my fourth, my fifth then my sixth up to the present.
 				</p>
 			</div>
 		</div>
