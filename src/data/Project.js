@@ -4,22 +4,32 @@ import underConstruction from '../components/PageNotFound/under-construction.png
 import simoUI from './images/projects/simo-ui.jpg';
 import pcpLogo from './images/projects/pcp-logo.png';
 import pinoyKeyboard from './images/projects/pinoyKeyboard.jpg';
+import htmlParser from './images/projects/htmlParser.png';
 
 import {
-	pinoyKeyboardDetails,
-	baybayinPilipinasDetails,
-	simoUIDetails,
-	pcPrejanDetails
+    pinoyKeyboardDetails,
+    baybayinPilipinasDetails,
+    simoUIDetails,
+    pcPrejanDetails, reactParseHtmlString
 } from './ProjectDetails';
 
 export const projectList = [
-	{
-		id: 'more-to-come',
+	// {
+	// 	id: 'more-to-come',
+	// 	subject: {
+	// 		name: 'Stay Tuned!'
+	// 	},
+	// 	title: 'More To Come',
+	// 	image: underConstruction
+	// },
+    {
+		id: 'npm-react-parse-htmlstring',
 		subject: {
-			name: 'Stay Tuned!'
+			name: 'React Parse HTML String'
 		},
-		title: 'More To Come',
-		image: underConstruction
+		title: 'HTML String Parser for React ',
+		image: htmlParser,
+		details: reactParseHtmlString
 	}, {
 		id: 'pinoy-keyboard',
 		subject: {
