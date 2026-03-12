@@ -15,6 +15,7 @@ import moreDecals from './images/blogs/moreDecals.jpg';
 export const kadauganDetails = <Fragment>
     <br/>
     <div className="inline-image" style={{
+        minHeight: '400px',
         backgroundPosition: 'center top',
         backgroundSize: 'cover',
         backgroundImage: `url(${kadaugan})`
