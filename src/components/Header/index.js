@@ -20,7 +20,7 @@ class Header extends Component {
 		return <div className={ `Header ${ selected }-page` } ref={ setRef }>
 			<div
 				onClick={ () => {
-					navigate('/portfolio/');
+					navigate('/');
 					setMenuItem('home');
 				} }
 				className="logo bybyn">
@@ -39,7 +39,7 @@ class Header extends Component {
 						           className={ `${ menuItem } ${ selected === menuItem && 'selected' }` }
 						           onClick={ this.menuItemClick }>
 							{/*<NavLink to={ `/${ menuItem === 'home' ? '' : menuItem }` }>{ Capitalize(m) }</NavLink>*/}
-                            <NavLink to={ `/portfolio/${ menuItem === 'home' ? '' : menuItem }` }>{ Capitalize(m) }</NavLink>
+                            <NavLink to={ `/${ menuItem === 'home' ? '' : menuItem }` }>{ Capitalize(m) }</NavLink>
 						</li>
 					})
 				}
