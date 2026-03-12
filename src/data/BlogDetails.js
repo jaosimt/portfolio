@@ -25,11 +25,11 @@ export const kadauganDetails = <Fragment>
     <span>The bloody Battle of Mactan took place in April 27, 1521 when the iron-clad soldiers of Ferdinand Magellan reached the shores of the island but was fiercely confronted by Chief Lapu-Lapu and his fighters.</span><br/>
     <span>During the confrontation, the Portuguese explorer lost the battle and met his fate together with most of his soldiers. Most historians have agreed that the event actually took place and there is no doubt that it happened.</span><br/>
     <div className="inline-image"
-         style={{ backgroundPosition: 'center', backgroundSize: 'cover', backgroundImage: `url(${kadaugan2})` }}/>
+         style={{ minHeight: '399px', backgroundPosition: 'center', backgroundSize: 'cover', backgroundImage: `url(${kadaugan2})` }}/>
     <br/>
     <h3>A battle won! Or is it?</h3>
     <span>Year 2021, Mactan commemorates the 500th anniversary of the arrival of Catholicism in the Philippines. BSP even printed a Php5000 Lapu-lapu commemorative banknote with the Quincentennial Commemoration logo in it.</span><br/>
-    <div className="inline-image" style={{ backgroundSize: 'cover', backgroundImage: `url(${fiveK})` }}/>
+    <div className="inline-image" style={{ minHeight: '432px', backgroundSize: 'cover', backgroundImage: `url(${fiveK})` }}/>
     <br/>
     <h3>Did Chief Lapu-lapu embraced Catholicism?</h3>
     <span>I think not! He fought and probably died disliking it at-least! Because why else did he fought!</span><br/>
@@ -46,7 +46,7 @@ export const kadauganDetails = <Fragment>
     </div>
     <br/>
     <div className="inline-image"
-         style={{ backgroundSize: 'cover', minHeight: 300, backgroundImage: `url(${moreDecals})` }}/>
+         style={{ backgroundSize: 'cover', minHeight: '454px', backgroundImage: `url(${moreDecals})` }}/>
     <br/>
     <h3>So who or what are we commemorating?</h3>
     <span>Is it Chief Lapu-lapu? His bravery for standing his ground against the colonizers? And it's highly likely that religion is amongst the reason he stood his ground and fought.</span>
