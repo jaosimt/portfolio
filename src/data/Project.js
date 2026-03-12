@@ -1,6 +1,5 @@
 // PROJECT LOGOS
 import baybayinPilipinas from './images/projects/baybayin-pilipinas.jpg';
-import underConstruction from '../components/PageNotFound/under-construction.png';
 import simoUI from './images/projects/simo-ui.jpg';
 import pcpLogo from './images/projects/pcp-logo.png';
 import pinoyKeyboard from './images/projects/pinoyKeyboard.jpg';
