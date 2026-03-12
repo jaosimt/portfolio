@@ -51,10 +51,10 @@ export const kadauganDetails = <Fragment>
     <h3>So who or what are we commemorating?</h3>
     <span>Is it Chief Lapu-lapu? His bravery for standing his ground against the colonizers? And it's highly likely that religion is amongst the reason he stood his ground and fought.</span>
     <p>None of these make any sense to me at all!</p>
-    <p>We are not respecting Chief Lapu-lapu if we're associating the very same thing, religion or someone else's
-        tradition that he probably fought against, especially during the celebration of what is supposed to be <strong
+    <p>I was raised, baptized and married as a Roman Catholic! So please don't get me wrong...</p>
+    <p>But It feels a bit contradictory to honor Chief Lapu-Lapu by including the same stuffs, religion or someone else's tradition he probably fought to resist, especially during a celebration of what is supposed to be <strong
             className="italic">The Kadaugan sa Mactan</strong>.</p>
-    <p>This is my humble opinion and my opinion alone.</p>
+    <p>This is my humble opinion and my opinion only!</p>
     <p>And so, <strong>Did he really win?</strong></p>
 </Fragment>;
 
