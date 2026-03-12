@@ -4,12 +4,13 @@ import simoUI from './images/projects/simo-ui.jpg';
 import pcpLogo from './images/projects/pcp-logo.png';
 import pinoyKeyboard from './images/projects/pinoyKeyboard.jpg';
 import htmlParser from './images/projects/htmlParser.png';
+import reactTs from './images/projects/react-ts.svg';
 
 import {
-    pinoyKeyboardDetails,
-    baybayinPilipinasDetails,
-    simoUIDetails,
-    pcPrejanDetails, reactParseHtmlString
+	pinoyKeyboardDetails,
+	baybayinPilipinasDetails,
+	simoUIDetails,
+	pcPrejanDetails, reactParseHtmlString, reactTSAppTemplate
 } from './ProjectDetails';
 
 export const projectList = [
@@ -22,11 +23,19 @@ export const projectList = [
 	// 	image: underConstruction
 	// },
     {
+		id: 'ts-app-template',
+		subject: {
+			name: 'React TypScript App Template'
+		},
+		title: 'Starter App Template for React + TypeScript',
+		image: reactTs,
+		details: reactTSAppTemplate
+	}, {
 		id: 'npm-react-parse-htmlstring',
 		subject: {
 			name: 'React Parse HTML String'
 		},
-		title: 'HTML String Parser for React ',
+		title: 'HTML String Parser for React',
 		image: htmlParser,
 		details: reactParseHtmlString
 	}, {

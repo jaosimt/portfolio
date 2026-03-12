@@ -5,6 +5,29 @@ import sImoUI from './images/projects/simo-ui-full.jpg';
 import pcPrejanVid from './media/pcPrejan2.mp4';
 import pinoyKeyboardApk from './media/pinoyKeyboard.apk';
 import pinoyKeyboardToggle from './images/projects/pinoyKeyboardToggle.jpg';
+import tsAppTemplate from './images/projects/tsAppTemplate.jpeg';
+
+export const reactTSAppTemplate = <Fragment>
+    <h5 className="topic-label"><a target="_blank" rel="noreferrer" href="https://jaosimt-ts-app-template.vercel.app/">https://jaosimt-ts-app-template.vercel.app/</a></h5>
+    <p><strong>Why start from scratch? Templates will save a good amount of your time!</strong></p>
+    <p>
+        After much thought on the pain of creating a react application from scratch, I decided to create a template that contains the basic necessities for a react application.
+    </p>
+    <p>
+        Libraries such as react-router, sass, axios, etc... are setup for you out of the box.
+    </p>
+    <p>
+        Custom components are also included such as Button, Dropdown, Modal, Toast, etc... ready to be used.
+    </p>
+    <p>
+        For the toast component, yes, I could have just use existing libraries such as react-tostify but I thought I needed much simpler and lighter which does absolutely the same!
+        And yes, that's my way of saying, I just wanted to create my own far simpler and lighter toast component 😎.
+    </p>
+    <div className="inline-image" style={{ minHeight: '399px', backgroundSize: 'cover', backgroundImage: `url(${tsAppTemplate})` }}/>
+    <p>
+        For more details, please visit the vercel deployed app template <a target="_blank" rel="noreferrer" href="https://jaosimt-ts-app-template.vercel.app/">here</a>.
+    </p>
+</Fragment>
 
 export const reactParseHtmlString = <Fragment>
     <h5 className="topic-label"><a target="_blank" rel="noreferrer" href="https://www.npmjs.com/package/react-parse-htmlstring">https://www.npmjs.com/package/react-parse-htmlstring</a></h5>
